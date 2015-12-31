@@ -3,8 +3,7 @@ layout: post
 title: Prova nova entrada
 ---
 
-# Titol
-Hola que tal
+És una prova d'entrada per veure què tal funciona
 
 ## Subtitol
 
