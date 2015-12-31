@@ -1,11 +1,11 @@
 # Site settings
-title:       estribancus
+title:       Estribancus - Es blog de'n Pere Vilàs
 email:       pvilas@gmail.com
-author:      Pere Vilás
+author:      Pere Vilàs
 description: "Blog de'n Pere Vilás. Hi ha coses de programació, espai, recetes i altres coses que m'interessan"
 baseurl:     ""
 url:         "http://pvilas.com"
-date_format: "%b %-d, %Y"
+date_format: "%-d %b %Y"
 
 # Google services
 google_analytics:
