@@ -1,0 +1,12 @@
+---
+layout: post
+title: Linux esborrar directoris ocults
+date: '2014-04-11T10:09:00.004+02:00'
+author: Pere Vilas
+tags: 
+modified_time: '2014-04-11T10:09:57.519+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-8466608359325416424
+blogger_orig_url: http://www.pvilas.com/2014/04/linux-esborrar-directoris-ocults.html
+---
+
+Windows o macos &nbsp;tenen el costum de crear directoris o fitxers ocults de thumnails o similars a qualsevol unitat a la que accedeixen. Si des de Linux volem veure aquests directoris podem fer:<br /><br />Per a els fitxers<br /><span style="font-family: Courier New, Courier, monospace;">find . -name ".*" -type f -iname ".*" -ls</span><br /><br />Per als directoris<br /><span style="font-family: Courier New, Courier, monospace;">find . -name ".*" -type d -iname ".*" -ls</span><br /><br />I si volem esborrar-los (enseny!!)<br />        <br /><div class="p1"><span style="font-family: Courier New, Courier, monospace;">find . -type d -iname ".*" -exec rm -r {} \;</span></div>

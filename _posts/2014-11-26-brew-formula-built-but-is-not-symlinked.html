@@ -1,0 +1,14 @@
+---
+layout: post
+title: Brew The formula built, but is not symlinked into /usr/local
+date: '2014-11-26T01:00:00.003+01:00'
+author: Pere Vilas
+tags:
+- macos
+- brew
+modified_time: '2014-11-26T16:28:30.878+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-3404064712777628752
+blogger_orig_url: http://www.pvilas.com/2014/11/brew-formula-built-but-is-not-symlinked.html
+---
+
+<p>Si cuando instalamos algo con brew</p> <p><code>brew install bla-bla</code></p> <p>Nos aparece un error como este</p> <p><code>The linking step did not complete successfully <br>The formula built, but is not symlinked into /usr/local <br></code> <br>Es por que no hay permisos de escritura en algún sitio de /usr/local, lo mejor es hacer</p> <p><code>sudo chown -R usuario /usr/local</code></p> <p>siendo nuestro nombre de usuario </p> <p><code>who am i</code></p> <p>Ya podemos instalar.</p> <p>También es bueno tener los paquetes actualizados con</p> <p><code>brew update &amp;&amp; brew upgrade</code></p>

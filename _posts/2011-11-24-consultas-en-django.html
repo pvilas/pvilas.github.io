@@ -1,0 +1,294 @@
+---           
+layout: post
+title: Consultas en Django
+date: 2011-02-24 17:52:40 UTC
+comments: false
+categories: django
+---
+
+
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+<h1 id="internal-source-marker_0.23160702199675143" style="font-size: medium;">
+<span class="Apple-style-span" style="font-family: Arial; font-size: 15px; font-weight: normal; white-space: pre-wrap;">Unos pequeños apuntes cogidos al vuelo de consultas en django</span></h1>
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Un queryset sería el equivalente a un SELECT</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Un filter sería el equivalente a un WHERE</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Comandos de Query:</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Objeto.objects.all() -&gt; Todo el conjunto</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Objeto.objects.filter() -&gt; Un filtro para incluir</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Objeto.objects.exclude() -&gt; Un filtro para excluir</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Objeto.objects.get() -&gt; Busca un solo objeto</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Encadenado de filtros</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Entry.objects.filter(</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space: pre;"> </span>headline__startswith=’What’</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">).exclude(</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space: pre;"> </span>pub_date__gte=datetime.now()</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">).filter(</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space: pre;"> </span>pub_date__gte=datetime(2005,1,1)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">)</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Todos los que empiezan por What entre 1/1/2005 y ahora.</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Cada filtro crea una consulta única</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">q1=Entry.objects.filter(headline__startswith=’What’)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">q2=q1.exclude(pub_date__gte=datetime.now())</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">q3=q2.filter(pub_date__gte=datetime(2005,1,1))</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Buscar un solo objeto con get()</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">one_entry=Entry.objects.get(pk=1)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Si no hay datos salta la excepción DoesNotExist</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+</div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+from django.core.exceptions import ObjectdoesNotExist</div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+try:</div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+one_entry=Entry.object.get(pk=numero)</div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+except ObjectDoesNotExist, e:</div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+mensaje=("La entrada %n no existe" % (numero))</div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+<br /></div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+<br /></div>
+<br />
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+<br /></div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+<br /></div>
+<div style="background-color: transparent; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">En cambio filter()[0], no hace saltar ninguna excepción.</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Limitar el número de registros devueltos</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Entry.objects.all()[:5]  # los cinco primeros</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Entry.objects.all()[5:10]  # del quinto al décimo</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Buscar sobre campos</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Básicos: Son de la forma campo__tipobusqueda=valor</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Ejemplo: Entry.objects.filter(pub_date___lte=’2006-01-01’) se transforma en select from blog_entry where pub_date&lt;=’2006-01-01’</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">-&gt; exact : headline__exact=’algo’</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">-&gt; iexact: case insentive exact</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">-&gt; contains</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">-&gt; startswith</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">-&gt; endswith</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Relacionales</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Entry.objects.filter(blog__name__exact=’Pep’)</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Blogs.objects.filter(entry__headline__contains=’Pep’, entry__pub_date__year=2006) </span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Todos los blogs que tengan alguna entrada cuyo titulo tenga Pep y se haya publicado en 2006</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Blogs.objects.filter(entry__headline__contains=’Pep’).filter(entry__pub_date__year=2006) </span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Todos los que tengan Pep y todos los que se hayan publicado en 2006</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Filtros que referencian a otros campos del mismo modelo</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">from django.db.models import F</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Entry.objects.filter(n_coments__gt=F(‘n_pingbacks’))</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">gt: greather than</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">n_pingbacks: valor de otro campo del mismo modelo</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Primary key</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Blog.objects.get(pk=valor)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">.get(pk__in=[1,4,7])</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">.get(pk__gt=14)</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Caching</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Esta consulta se realiza dos veces:</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">print [e.headline from p in queryset]</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">print [e.pub_date from p in queryset]</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Esta, sólo una vez (cacheo de resultados):</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">queryset=Entry.objects.all()</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">print [p.headline form p in queryset] &lt;- En esta se cachea</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">print [p.pub_date form p in queryset] &lt;- en esta su usa la caché</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Consultas complejas con Q</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Las palabras clave en filter, etc... son ANDs, si queremos algo más complejo, necesitamos Qs</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">django.db.models.Q</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Q(question__startswith=’Who’) | Q(question__startswith=’What’)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Q(question__startswith=’Who’) | ~Q(question__startswith=’What’)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Poll.objects.get( Q(question__startswith=’Who’), </span>
+<br />
+<div style="font-family: 'Times New Roman'; font-size: medium; margin-bottom: 0pt; margin-top: 0pt; text-indent: 36pt;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Q(pub_date=date(2005,5,2)) | Q(pub_date=date(2005,5,6)) )</span></div>
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Comparando objetos</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Para comparar dos objetos usamos el == estándar de python</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">una_entrada==otra_entrada</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">La comparación se realiza siempre usando la clave primaria</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Borrando objetos</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Entry.objects.filter(pub_date__year=2005).delete()</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Borra todos los elementos y los foreign key que le apuntan </span><span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">en cascada</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">b=Blogs.objects.get(pk=1)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">b.delete()  -&gt; borra la entrada y todos sus comentarios</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Update de varios elementos</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Entry.objects.filter().update(headline=’Cambiado’)</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<h4 style="font-family: 'Times New Roman'; font-size: medium;">
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Objetos relacionados</span></h4>
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Si un modelo tiene un foreign key, podemos acceder al objeto foráneo via simple atributo del modelo:</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">e=Blog.objects.get(id=1)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">e.entry_set.all() --&gt; todas las entradas del primer blog</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">e.entry_set.filter(headline__contains=’Pep’)</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Si se ha usado el related_name en la definición del modelo, entonces ese es el nombre del atributo para acceder</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">blog=ForeignKey(Blog, related_name=’entries’)</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">b=Blog.objects.get(id=1)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">b.entries.all()</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">b.entries.count()</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Métodos del Foreign Manager:</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">relacionado.add(ob1, obj2, …) Añade al objeto relacionado</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">relacionado.create(**kwargs)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">relacionado.remove(obj1, obj2, …)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">relacionado.clear()  -&gt; borra todos los objetos relacionados</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">O también:</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">b=Blog.objects.get(id=1)</span>
+<br />
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">b.entry_set=[e1, e2, …] &lt;- un objeto iterable</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Hacer siempre el save del objeto principal para que permanente.</span>
+<br />
+<span style="background-color: transparent; background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"></span>
+
+<span style="background-color: transparent; color: black; font-family: Arial; font-size: 11pt; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"> </span></div>

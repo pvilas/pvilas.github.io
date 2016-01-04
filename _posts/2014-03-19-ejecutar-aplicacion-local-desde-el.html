@@ -1,0 +1,14 @@
+---
+layout: post
+title: Ejecutar aplicación local desde el navegador (Chrome en windows)
+date: '2014-03-19T20:34:00.000+01:00'
+author: Pere Vilas
+tags:
+- bookmarks
+- chrome
+modified_time: '2014-03-20T12:16:12.915+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-2270703737519022316
+blogger_orig_url: http://www.pvilas.com/2014/03/ejecutar-aplicacion-local-desde-el.html
+---
+
+Este pequeño workaround nos permitirá ejecutar una aplicación local desde "el navegador" sin que al usuario le parezca que "sale" de él. Es útil si tenemos que lanzar algo en batch.<br /><br />El truco está en salvar un marcador en la barra de marcadores cuya url es un ejecutable o un bat que está en el sistema local.<br /><br />Para evitar que el navegador nos muestre el contenido del fichero en vez de ejecutarlo, tenemos que crear un nuevo "protocolo" que en realidad no es más que la ejecución de una shell para nuestro programa.<br /><br />Para crear el protocolo, creamos una entrada de registro como, por ejemplo, appurl.reg<br /><br /><div></div><pre>Windows Registry Editor Version 5.00<br /><br />[HKEY_CLASSES_ROOT\appurl]<br />@="URL:AutoHotKey AppURL Protocol"<br />"URL Protocol"=""<br /><br />[HKEY_CLASSES_ROOT\appurl\DefaultIcon]<br />@="appurl.exe,1"<br /><br />[HKEY_CLASSES_ROOT\appurl\shell]<br /><br />[HKEY_CLASSES_ROOT\appurl\shell\open]<br /><br />[HKEY_CLASSES_ROOT\appurl\shell\open\command]<br />@="\"C:\\directorio\\programa.bat\" \"%1\""<br /></pre>y lo registramos (click derecho-&gt; Combinar). Esto nos crea el "protocolo" appurl. Ahora creamos el fichero <br /><pre>c:\directorio\programa.bat</pre>con nuestro código.<br /><br />Finalmente, en el chrome vamos a Marcadores-&gt;Añadir página y en la url ponemos<br /><br /><pre>appurl://lo-que-queramos-pasar-a-programaba.bat</pre><br />Si queremos llamar al protocolo desde chrome, podemos usar<br /><br /><pre>window.location.assign("appurl://algo");</pre><div><br /></div><br />Referencias:<br /><a href="http://www.autohotkey.com/board/topic/71831-application-url-launch-local-application-from-browser/">http://www.autohotkey.com/board/topic/71831-application-url-launch-local-application-from-browser/</a><br /><a href="http://stackoverflow.com/questions/2330545/is-it-possible-to-open-custom-url-scheme-with-google-chrome">http://stackoverflow.com/questions/2330545/is-it-possible-to-open-custom-url-scheme-with-google-chrome</a>

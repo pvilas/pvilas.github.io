@@ -1,0 +1,13 @@
+---
+layout: post
+title: Oracle formatear fecha incio sesión
+date: '2013-12-15T22:50:00.001+01:00'
+author: Pere Vilas
+tags:
+- oracle
+modified_time: '2013-12-15T23:15:37.044+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-1897134251812976687
+blogger_orig_url: http://www.pvilas.com/2013/12/oracle-formatear-fecha-incio-sesion.html
+---
+
+<span style="font-family: Courier New, Courier, monospace; font-size: x-small;">CREATE OR REPLACE</span><br /><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">TRIGGER set_formato_fecha</span><br /><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">AFTER LOGON ON SCHEMA</span><br /><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">BEGIN</span><br /><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">&nbsp; dbms_session.set_nls('nls_language','SPANISH');</span><br /><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">&nbsp; dbms_session.set_nls('nls_territory','SPAIN');</span><br /><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">&nbsp; dbms_session.set_nls('nls_date_format','''dd/mm/yyyy''');</span><br /><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">END set_formato_fecha;</span><br /><br />Mucho cuidado con el sqldeveloper: Formatea las fechas por su cuenta pasando de los nls.<br /><br />Recordar que siempre podemos forzar con<br /><br /><span style="font-family: Courier New, Courier, monospace;"><span style="background-color: white; color: #333333; font-size: 13px; line-height: 18px;">select to_char(sysdate,'"día" dd "de" month "de" yyyy','nls_date_language=spanish')</span><br style="background-color: white; color: #333333; font-size: 13px; line-height: 18px;" /><span style="background-color: white; color: #333333; font-size: 13px; line-height: 18px;">from dual;</span></span>

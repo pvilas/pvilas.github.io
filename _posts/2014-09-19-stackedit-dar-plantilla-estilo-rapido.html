@@ -1,0 +1,13 @@
+---
+layout: post
+title: Stackedit dar plantilla estilo rápido
+date: '2014-09-19T02:00:00.003+02:00'
+author: Pere Vilas
+tags:
+- stackedit
+modified_time: '2014-09-19T19:24:21.086+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-4085348128249437045
+blogger_orig_url: http://www.pvilas.com/2014/09/stackedit-dar-plantilla-estilo-rapido.html
+---
+
+<p>La forma más rápida de dar estilo en <a href="https://stackedit.io/editor#">Stackedit</a> es añadir código en la extensión “User custom extension”.</p> <p>Por ejemplo,</p> <pre class="prettyprint"><code class=" hljs javascript">userCustom.onReady = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span><br />    $(<span class="hljs-string">'head'</span>).append(<span class="hljs-string">'&lt;link href="https://dl.dropboxusercontent.com/u/23451370/BloggerStyles.css" rel="stylesheet" /&gt;'</span>);<br />};</code></pre> <p><a href="https://github.com/benweet/stackedit/issues/219">Ver</a> para más información. Tambien <a href="https://github.com/benweet/stackedit/issues/137#issuecomment-31410871">esto</a>.</p> <blockquote>  <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p></blockquote>

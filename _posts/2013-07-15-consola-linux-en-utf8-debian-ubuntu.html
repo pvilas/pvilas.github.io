@@ -1,0 +1,14 @@
+---
+layout: post
+title: Consola linux en utf8 (debian, ubuntu)
+date: '2013-07-15T15:17:00.003+02:00'
+author: Pere Vilas
+tags:
+- Linux
+- consola
+modified_time: '2013-07-15T15:17:46.833+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-2676143023119658993
+blogger_orig_url: http://www.pvilas.com/2013/07/consola-linux-en-utf8-debian-ubuntu.html
+---
+
+Un problema común cuando usamos la cónsola para pasar datos de una aplicación a otra o para pasar un dump de mysql a otro servidor es que la cónsola no acepta utf8 y nos corrompe los caracteres extendidos.<br /><br />Para que podamos usar la cónsola en utf8 con es_ES, hemos de asegurarnos, en primer lugar, de que los locales están generados haciendo:<br /><br /><code>sudo locale-gen es_ES.UTF-8<br />sudo dpkg-reconfigure locales</code><br /><br />y para que la sesión de bash use dicha configuración añadir en el .bashrc<br /><br /><code>export LANG=es_ES.UTF-8<br />export LANGUAGE=es_ES.UTF-8</code><br /><br />Si no funciona y estamos iniciando la sesión desde otra máquina hemos de asegurarnos de que el cliente también tenga dicha configuración. Si estamos usando putty para una sesión ssh hay que ir a Preferences-Window-Translation y poner el remote character set en UTF-8 y guardar el perfil.

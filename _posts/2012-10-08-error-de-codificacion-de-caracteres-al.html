@@ -1,0 +1,13 @@
+---
+layout: post
+title: Error de codificación de caracteres al generar pdf con django y pisa
+date: '2012-10-08T19:56:00.005+02:00'
+author: Pere Vilas
+tags:
+- django
+modified_time: '2012-10-08T19:56:42.573+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-2895882443083439972
+blogger_orig_url: http://www.pvilas.com/2012/10/error-de-codificacion-de-caracteres-al.html
+---
+
+Hacía tiempo que me perseguía un pequeño problema al generar pdf desde django/pisa con caracteres utf8&gt;255. Por defecto, pisa usa latin-1/ISO 8859-1 (un byte) para generar los pdf y al transcodificar los caracteres de la template (p.e. el símbolo euro €) me saltaban errores.<br /><br />En la doc oficial de pisa tenemos que:<br /><br /><br /><code>pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("UTF-8")), result)<br /></code><br /><br />Pero buscando en stackoverflow he encontrado que pisaDocument acepta además el parámetro encoding con el que en realidad le indicamos la codificación que debe usar con lo que queda:<br /><br /><code>pdf = pisa.pisaDocument(StringIO.StringIO(html.encode("UTF-8")), result, encoding='UTF-8')&nbsp;&nbsp;</code><br /><br />;-)

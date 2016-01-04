@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'subversion: volver a una versión anterior'
+date: '2012-07-05T15:59:00.002+02:00'
+author: Pere Vilas
+tags:
+- subversion
+modified_time: '2012-07-05T15:59:27.365+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-3564199169030212789
+blogger_orig_url: http://www.pvilas.com/2012/07/subversion-volver-una-version-anterior.html
+---
+
+Si estás modificando la versión 189 de tu código y quieres volver a la anterior, sólo tienes que hacer:<br /><br /><br /><pre style="background-attachment: initial; background-clip: initial; background-color: #eeeeee; background-image: initial; background-origin: initial; border-bottom-width: 0px; border-color: initial; border-image: initial; border-left-width: 0px; border-right-width: 0px; border-style: initial; border-top-width: 0px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif; font-size: 14px; line-height: 18px; margin-bottom: 10px; max-height: 600px; overflow-x: auto; overflow-y: auto; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px; text-align: left; vertical-align: baseline; width: auto;"><code style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; border-bottom-width: 0px; border-color: initial; border-image: initial; border-left-width: 0px; border-right-width: 0px; border-style: initial; border-top-width: 0px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; vertical-align: baseline;">svn update<br />svn merge -r 189:188 .<br />svn commit -m "Volviendo a la version r188"</code></pre>

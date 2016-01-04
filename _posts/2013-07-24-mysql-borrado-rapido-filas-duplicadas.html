@@ -1,0 +1,13 @@
+---
+layout: post
+title: Mysql borrado rápido filas duplicadas
+date: '2013-07-24T18:30:00.000+02:00'
+author: Pere Vilas
+tags:
+- mysql
+modified_time: '2013-07-24T18:30:03.642+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-7134008311559062533
+blogger_orig_url: http://www.pvilas.com/2013/07/mysql-borrado-rapido-filas-duplicadas.html
+---
+
+En <a href="http://dotbootstrap.x2q.net/mysql-remove-duplicate-entries/">este sitio</a>&nbsp;he encontrado una forma muy rápida de eliminar duplicados. Tan rápida que puede hacerse con una sola línea, se trata de crear ununique index con la palabra clave IGNORE. Tal que esto:<br /><code><br />ALTER IGNORE TABLE dupTest ADD UNIQUE INDEX(a,b);</code><br /><div><br /></div><div>Guay eh?</div>

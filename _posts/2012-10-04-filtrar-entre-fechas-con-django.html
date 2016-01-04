@@ -1,0 +1,13 @@
+---
+layout: post
+title: Filtrar entre fechas con django
+date: '2012-10-04T16:04:00.003+02:00'
+author: Pere Vilas
+tags:
+- django
+modified_time: '2012-10-04T16:05:22.861+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-6280489077282155937
+blogger_orig_url: http://www.pvilas.com/2012/10/filtrar-entre-fechas-con-django.html
+---
+
+Siempre se me olvida la sintaxis de range que selecciona entre dos valores&nbsp;inclusives:<br /><br /><pre class="prettyprint"><code><br />self.modelo.objects.filter(fecha__range=(desde, hasta))<br /><br /></code></pre>

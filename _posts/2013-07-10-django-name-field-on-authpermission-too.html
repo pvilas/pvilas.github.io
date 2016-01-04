@@ -1,0 +1,13 @@
+---
+layout: post
+title: Django name field on auth_permission too short
+date: '2013-07-10T18:09:00.001+02:00'
+author: Pere Vilas
+tags:
+- django
+modified_time: '2013-07-10T18:10:04.102+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-8488115373112852287
+blogger_orig_url: http://www.pvilas.com/2013/07/django-name-field-on-authpermission-too.html
+---
+
+<span style="background-color: white; line-height: 16.796875px;"><span style="font-family: Verdana, sans-serif;">If the verbose_name of the table is over 80 characters the syncdb command will silently fail.</span></span><br /><div style="line-height: 16.796875px; margin-bottom: 0.8em; margin-top: 0.6em;"><span style="background-color: white;"><span style="font-family: Verdana, sans-serif;">The name field on auth_permissions table is too short to store if verbose_name are that long, so it doesn't update and you cannot assign permissions.</span></span></div><div style="line-height: 16.796875px; margin-bottom: 0.8em; margin-top: 0.6em;"><span style="background-color: white;"><span style="font-family: Verdana, sans-serif;">The obvious workaround is to manually change the field length on the table.</span></span></div><span style="font-family: Verdana, sans-serif;">I have opened the ticket <a href="https://code.djangoproject.com/ticket/20728#ticket">20728</a></span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">Thanks Victor!</span>

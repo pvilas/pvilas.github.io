@@ -1,0 +1,15 @@
+---
+layout: post
+title: Yet another apache ssl installation manual on debian ubuntu / Aún otro manual
+  de instalación de apache ssl en debian ubuntu
+date: '2012-03-22T20:50:00.002+01:00'
+author: Pere Vilas
+tags:
+- Linux
+- ubuntu
+modified_time: '2012-03-22T20:50:30.504+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-8830795268501378822
+blogger_orig_url: http://www.pvilas.com/2012/03/yet-another-apache-ssl-installation.html
+---
+
+Nunca había instalado apache con SSL en debian. El proceso es muy sencillo: <br /><br />Activar el módulo ssl:<br /><span style="font-family: monospace;">sudo a2enmod ssl</span><br /><br />Crear el certificado; primero lo creamos y luego lo copiamos en el directorio por defecto:<br /><br /><span style="font-family: monospace;">$mkdir ssl</span><br /><span style="font-family: monospace;">cd ssl</span><br /><span style="font-family: monospace;">openssl genrsa -des3 -out server.key 1024</span><br /><span style="font-family: monospace;">openssl rsa -in server.key -out server.key.insecure</span><br /><span style="font-family: monospace;">openssl req -new -key server.key -out server.csr</span><br /><span style="font-family: monospace;">openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt</span><br /><br />Nota: si no queremos que cada vez que arrancamos el servidor http nos pida la clave del certificado hacemos, <br /><br /><span style="font-family: monospace;">openssl rsa -in server.key -out server.key.nopass</span><br /><br />Y ahora "instalamos" el certificado,<br /><br /><span style="font-family: monospace;">sudo cp server.crt /etc/ssl/certs</span><br /><span style="font-family: monospace;">sudo cp server.key.nopass /etc/ssl/private</span><br /><br />En nuestro fichero de configuración de apache tenemos que añadir algo parecido a esto:<br /><code> virtualhost *:443<br /> DocumentRoot /var/www/blahblah<br />        SSLEngine on<br /> SSLCertificateFile /etc/ssl/certs/server.crt<br /> SSLCertificateKeyFile /etc/ssl/private/server.key.nopass<br /><br />....<br /><br /></code>Ahora rearrancamos el servidor con <code>sudo service apache2 restart</code>, y ya tenemos soporte SSL. Naturalmente, como el certificado lo creamos nosotros, los navegadores nos avisarán de que no ha sido emitido por una entidad de confianza pero tendremos las comunicaciones con el servidor aseguradas por https.

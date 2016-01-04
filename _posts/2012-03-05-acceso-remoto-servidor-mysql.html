@@ -1,0 +1,13 @@
+---
+layout: post
+title: Acceso remoto a servidor Mysql
+date: '2012-03-05T16:39:00.000+01:00'
+author: Pere Vilas
+tags:
+- mysql
+modified_time: '2013-02-27T21:24:12.692+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-6778568323474234976
+blogger_orig_url: http://www.pvilas.com/2012/03/acceso-remoto-servidor-mysql.html
+---
+
+Para acceder remotamente a un servidor Mysql lo mejor es usar ssh y hacerlo en local desde la shell pero en los casos en que tengamos que conectar necesariamente desde otro host lo podemos hacer de la siguiente forma:<br /><br />1.- Editamos (/etc/mysql/my.cnf en Debian, /etc/my.cnf en CentOS) y ponemos la bind-address como la IP del propio servidor. Reiniciar el servicio mysql. Esto hará que escuche en el puerto 3306 del propio servidor en vez de sólo el bucle local localhost.<br /><br /><div style="border: 1px solid #DDD; padding: 1em 0.75em;"><code>bind-address = ip_servidor</code></div><br />Si está presente la directiva skip-networking hay que comentarla<br /><br />2.- Crear un usuario remoto. Entar en mysql y hacer<br /><br /><div style="border: 1px solid #DDD; padding: 1em 0.75em;"><code>GRANT ALL ON nombre_db.* TO 'usuario'@'ip-usuario' IDENTIFIED BY 'password';</code></div><br />O si queremos otorgar acceso remoto a root:<br /><br /><br /><div style="border: 1px solid rgb(221, 221, 221); padding: 1em 0.75em;"><code>GRANT ALL PRIVILEGES on *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;</code><br /><code>FLUSH PRIVILEGES;</code></div><br /><br />3.- Abrir el puerto 3306 con iptables,<br /><div style="border: 1px solid #DDD; padding: 1em 0.75em;"><code>#iptables -A INPUT -i eth0 -s ip_remota -p tcp --destination-port 3306 -j ACCEPT<br />#service iptables save<br /></code></div>O bien, si usamos ufw,<br /><div style="border: 1px solid #DDD; padding: 1em 0.75em;"><code>sudo ufw allow proto tcp from ip/mascara to any port 3306<br /></code></div>

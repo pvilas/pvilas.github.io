@@ -1,0 +1,14 @@
+---
+layout: post
+title: Django hacer POST desde javascript con contenido binario
+date: '2013-12-06T19:29:00.002+01:00'
+author: Pere Vilas
+tags:
+- django
+- javascript
+modified_time: '2013-12-06T19:29:53.262+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-8358801760085135336
+blogger_orig_url: http://www.pvilas.com/2013/12/django-hacer-post-desde-javascript-con.html
+---
+
+Si queremos hacer un POST con contenido binario como una imagen desde el navegador contra Django, tenemos que tener en cuenta que la llamada a ajax &nbsp;codifica el stream en UTF-8.<br /><br />Para desactivar este funcionamiento y hacer el envío "raw" tenemos que poner el responseType como 'blob', de esta forma:<br /><br /><pre class="brush:javascript;">    $("#bt_envia").on("click", function (e) {<br /><br />        var x = new XMLHttpRequest();<br />        x.onload = function() {<br />            // Create a form<br />            var fd = new FormData();<br />            fd.append("upfile", x.response); // x.response is a Blob object<br />            fd.append("csrfmiddlewaretoken", "{{ "{{" }} csrf_token }}");<br /><br />            // Upload to your server<br />            var y = new XMLHttpRequest();<br />            y.onload = function() {<br />                alert('Fichero subido!!');<br />            };<br />            y.open('POST', '/gestion/prova/');<br />            y.send(fd);<br />        };<br />        x.responseType = 'blob';   <br />        x.open('GET', 'http://planetary.s3.amazonaws.com/assets/images/spacecraft/2013/20131108_2013-3896_f537.jpg', true);<br />        x.send();<br /></pre><br />En la parte del servidor, los FILES nos vendrán directamente en el formato nativo, así que sólo tenemos que tratarlos directamente, por ejemplo grabando una imagen en un fichero.<br /><br /><pre class="brush:javascript;">def prova(request):<br />    #print str(request.body)<br />    # veure https://docs.djangoproject.com/en/dev/topics/http/file-uploads/<br />    print "Els files son ", str(request.FILES)<br />    f = request.FILES['upfile']    <br />    with open('c:/prova.jpg', 'wb+') as destination:<br />        for chunk in f.chunks():<br />            destination.write(chunk)<br /><br />    return HttpResponse('Mu guay')<br /></pre><br /><br /><span style="font-size: x-small;">Fuente: varios en stackoverflow</span>

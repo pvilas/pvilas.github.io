@@ -1,0 +1,14 @@
+---
+layout: post
+title: Django desde un template llamar a un procedimiento del primer objeto de un
+  query
+date: '2013-08-30T22:18:00.002+02:00'
+author: Pere Vilas
+tags:
+- django
+modified_time: '2013-08-30T22:20:01.835+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-4287728435006694191
+blogger_orig_url: http://www.pvilas.com/2013/08/django-desde-un-template-llamar-un.html
+---
+
+Puede usarse el with con esta sintaxis:<br /><br /><pre class="brush:python;">&lt;img {{ "{%" }} with im.inmuebleimagen_set.all|first as imagen %}<br />src="{{ "{{" }}imagen.get_url}}"{{ "{%" }}endwith%}<br />/&gt;<br /></pre>

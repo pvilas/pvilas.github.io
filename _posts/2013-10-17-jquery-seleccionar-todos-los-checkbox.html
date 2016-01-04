@@ -1,0 +1,13 @@
+---
+layout: post
+title: Jquery seleccionar todos los checkbox de una clase que están seleccionados
+date: '2013-10-17T12:54:00.001+02:00'
+author: Pere Vilas
+tags:
+- jquery
+modified_time: '2013-10-17T12:54:31.963+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-2408598767784633622
+blogger_orig_url: http://www.pvilas.com/2013/10/jquery-seleccionar-todos-los-checkbox.html
+---
+
+Este me ha costado un rato, para seleccionar todos los checkbox de una determinada clase que están seleccionados podemos usar los filtros en cascada $("[condicion1][condicion2]...") pero por alguna razón no he logrado que me funcione.<br /><br />Sin embargo, usando filter es trivial:<br /><br /><pre class="brush:javascript;">var n = $(".clase").filter(":checked").length;<br /><br />console.log("Se han seleccionado "+n);<br /><br /></pre><br /><br />

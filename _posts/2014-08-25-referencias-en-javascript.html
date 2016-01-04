@@ -1,0 +1,13 @@
+---
+layout: post
+title: Referencias en javascript
+date: '2014-08-25T02:00:00.001+02:00'
+author: Pere Vilas
+tags:
+- javascript
+modified_time: '2014-08-25T17:29:57.034+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-4786512776300329505
+blogger_orig_url: http://www.pvilas.com/2014/08/referencias-en-javascript.html
+---
+
+<p>Un caso de referencia incorrecta, sacado de <a href="http://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/">aquí</a>: </p> <pre><code>function addLinks () {<br />    for (var i=0, link; i&lt;5; i++) {<br />        link = document.createElement("a");<br />        link.innerHTML = "Link " + i;<br />        link.onclick = function () {<br />            alert(i);<br />        };<br />        document.body.appendChild(link);<br />    }<br />}<br />window.onload = addLinks;<br /></code></pre> <p>Clickando en cualquiera de los links siempre se referirá a Link5 ya que el onclick no se ejecuta.</p> <p>Para solucionarlo, debemos crear una closure en el onclick para que tome el valor de i en ese momento:</p> <pre><code>function addLinks () {<br />    for (var i=0, link; i&lt;5; i++) {<br />        link = document.createElement("a");<br />        link.innerHTML = "Link " + i;<br />        link.onclick = function (num) {<br />            return function () {<br />                alert(num);<br />            };<br />        }(i);<br />        document.body.appendChild(link);<br />    }<br />}<br />window.onload = addLinks;<br /></code></pre>

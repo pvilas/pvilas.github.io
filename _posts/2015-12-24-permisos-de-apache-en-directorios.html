@@ -1,0 +1,13 @@
+---
+layout: post
+title: Permisos de apache en directorios
+date: '2015-12-24T09:51:00.002+01:00'
+author: Pere Vilas
+tags:
+- apache
+modified_time: '2015-12-24T12:03:50.199+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-8735693526032150637
+blogger_orig_url: http://www.pvilas.com/2015/12/permisos-de-apache-en-directorios.html
+---
+
+Entrada bastante completa en <a href="http://serverfault.com/questions/357108/what-permissions-should-my-website-files-folders-have-on-a-linux-webserver">serverfault</a> que presenta distintos escenarios y las combinaciones de permisos óptimas.<br /><br /><br />Si el host es mantenido por un solo usuario:<br /><br /><pre style="background-color: #eeeeee; border: 0px; color: #222426; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; font-size: 13px; margin-bottom: 1em; max-height: 600px; overflow: auto; padding: 5px; width: auto; word-wrap: normal;"><code style="border: 0px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; margin: 0px; padding: 0px; white-space: inherit;">chown -R eve contoso.com<br />chgrp -R www-data contoso.com<br />chmod -R 750 contoso.com<br />chmod g+s contoso.com<br />ls -l<br />drwxr-s--- 2 eve      www-data   4096 Feb  5 22:52 contoso.com<br /></code></pre><div style="background-color: white; border: 0px; clear: both; color: #222426; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 15px; line-height: 19.5px; margin-bottom: 1em; padding: 0px;">Si Apache tiene que escribir en algún directorio, le damos permiso de escritura al grupo</div><pre style="background-color: #eeeeee; border: 0px; color: #222426; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; font-size: 13px; margin-bottom: 1em; max-height: 600px; overflow: auto; padding: 5px; width: auto; word-wrap: normal;"><code style="border: 0px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; margin: 0px; padding: 0px; white-space: inherit;">chmod g+w uploads<br />ls -l<br />drwxrws--- 2 eve      www-data   4096 Feb  5 22:52 uploads</code></pre>

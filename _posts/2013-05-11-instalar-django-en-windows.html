@@ -1,0 +1,14 @@
+---
+layout: post
+title: Instalar Django en Windows
+date: '2013-05-11T10:45:00.000+02:00'
+author: Pere Vilas
+tags:
+- django
+- windows
+modified_time: '2013-05-12T10:47:01.387+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-5612419017439984521
+blogger_orig_url: http://www.pvilas.com/2013/05/instalar-django-en-windows.html
+---
+
+Una de las formas es esta:<br /><ol><li>Bajar e instalar <a href="http://python.org/download/">python</a> (2.7 en este momento)</li><li>Incluir&nbsp;<i>C:\Python27;C:\Python27\Scripts</i> en el path</li><li>Copiar este <a href="http://python-distribute.org/distribute_setup.py">script</a> de instalación de distribute en un fichero (distribute_setup.py) y ejecutarlo <code><i>python distribute_setup.py</i></code></li><li>Bajar ultima versión de <a href="https://pypi.python.org/packages/source/p/pip/">pip</a> y copiar a directorio; instalar usando <code><i>python setup.py install</i></code></li><li>Instalar Django con <code><i>pip install Django==1.5</i></code> (1.5 es la última versión en este momento)</li><li>Probar <code><i>python -c "import django"</i></code> (no debe dar ningún error)</li><li>Crear la última killer app ;-)</li></ol><br /><br /><br />

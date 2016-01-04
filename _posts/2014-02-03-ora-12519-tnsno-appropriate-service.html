@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'ORA-12519: TNS:no appropriate service handler found'
+date: '2014-02-03T17:10:00.003+01:00'
+author: Pere Vilas
+tags:
+- oracle
+modified_time: '2014-02-03T17:10:45.462+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-3520229104499264087
+blogger_orig_url: http://www.pvilas.com/2014/02/ora-12519-tnsno-appropriate-service.html
+---
+
+El problema puede venir por que se sobrepasa el número máximo de conexiones.<br /><br />Para comprobarlo hacemos:<br /><br /><code>lsnrctl services</code><br /><br />si vemos que la instancia XE está BLOCKED podemos aumentar el número de processes con:<br /><br /><code>sqlplus / as sysdba<br />alter system set processes=300 scope=spfile;<br />shut immediate;<br />startup<br /></code><br /><br />fuente: https://community.oracle.com/thread/2471899?tstart=0<br /><br />

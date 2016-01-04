@@ -1,0 +1,13 @@
+---
+layout: post
+title: Parámetros por defecto en Javascript
+date: '2014-09-10T02:00:00.001+02:00'
+author: Pere Vilas
+tags:
+- javascript
+modified_time: '2014-09-10T11:00:09.482+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-6015888773180770554
+blogger_orig_url: http://www.pvilas.com/2014/09/parametros-por-defecto-en-javascript.html
+---
+
+<p>Ya sabemos que las funciones en Javascript no son otra cosa que un objeto <strong>Function</strong>. El resultado de la <em>evaluación del cuerpo</em> de ese objeto es lo que en otros lenguajes llamamos el resultado de la ejecución de la función.</p> <p>También sabemos que los “parámetros” del objeto Function son, a su vez, objetos. Esto es tan cierto que podemos pasar otra función (otro objeto Function) como parámetro.</p> <p>Un pequeño inconveniente de esta falta de tipado es que si no pasamos ningún argumento la referencia al objeto pasado queda con el valor especial <em>undefined</em>. Para dar un valor por defecto al objeto pasado podemos hacer:</p> <pre class="prettyprint"><code class=" hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span><span class="hljs-params">(param)</span> {</span><br />    <span class="hljs-comment">// comprobamos que el objeto param esté definido</span><br />    <span class="hljs-keyword">if</span> (param === <span class="hljs-literal">undefined</span>) {<br />        param = <span class="hljs-number">0</span>; <span class="hljs-comment">// le asignamos la primitiva int con valor cero</span><br />    }<br />}</code></pre> <p>o bien, más corto:</p> <pre class="prettyprint"><code class=" hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span><span class="hljs-params">(param)</span> {</span><br />    param = param || <span class="hljs-number">0</span>;<br />}</code></pre> <blockquote>  <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p></blockquote>

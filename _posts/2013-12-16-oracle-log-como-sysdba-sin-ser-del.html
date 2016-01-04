@@ -1,0 +1,13 @@
+---
+layout: post
+title: Oracle log como SYSDBA sin ser del grupo dba
+date: '2013-12-16T10:57:00.001+01:00'
+author: Pere Vilas
+tags:
+- oracle
+modified_time: '2013-12-16T10:57:43.987+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-4226111328380648262
+blogger_orig_url: http://www.pvilas.com/2013/12/oracle-log-como-sysdba-sin-ser-del.html
+---
+
+Para poder hacer este logeo, primero abrimos una sesión con sqlplus con la opción /nolog para que no escriba en el log del dba sin tener permisos. Luego logeamos como "as sysdba".<br /><br /><span style="font-family: Courier New, Courier, monospace;">$sqlplus /nolog</span><br /><span style="font-family: Courier New, Courier, monospace;">SQL&gt; connect sys/password as sysdba</span><br /><span style="font-family: Courier New, Courier, monospace;">Connected</span><br /><span style="font-family: Courier New, Courier, monospace;">SQL&gt;</span>

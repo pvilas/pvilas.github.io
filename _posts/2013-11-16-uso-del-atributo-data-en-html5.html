@@ -1,0 +1,14 @@
+---
+layout: post
+title: Uso del atributo data en html5
+date: '2013-11-16T16:53:00.000+01:00'
+author: Pere Vilas
+tags:
+- jquery
+- javascript
+modified_time: '2013-11-16T17:15:26.790+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-2001964816770864372
+blogger_orig_url: http://www.pvilas.com/2013/11/uso-del-atributo-data-en-html5.html
+---
+
+Html5 nos permite pasar datos arbitrarios en las etiquetas y que estas sigan siendo válidas sin tener que crear una dtd.   <br /><br />El único requerimiento es que el nombre del atributo de la etiqueta debe empezar por <b>data-<un car="" cter=""></un></b>.<br /><br />Así, esto es válido en html5:<br /><br /><pre class="brush:javascript;"><button class="btn btn-primary" data-cliente="{{ "{{" }} object_id }}" id="bt-imprimir-cliente" type="button"><br />     Imprimir<br /></button><br /><script><br />$("#bt-imprimir-cliente").on(<br />    "click", function(e) {<br />       alert( $( this ).attr('data-cliente') );<br />});<br /><br /></script><br /></pre><br /><br />E incluso podemos pasar datos en formato json:<br /><br /><br /><pre class="brush:javascript;"><button class="btn btn-primary" data-cliente="{&quot;codigo&quot;:&quot;{{ "{{" }} object_id }}&quot;, &quot;nombre&quot;:&quot;{{ "{{" }} object_name}}&quot;}" id="bt-imprimir-cliente" type="button"><br />      Imprimir<br /></button><br /><script><br />$("#bt-imprimir-cliente").on(<br />    "click", function(e) {       <br />       alert($(this).data('cliente').codigo);<br />});<br /></script><br /></pre><br />Realmente útil y además valida. <br /><br />Hey!, muy guay! ¿Pero qué hay acerca del tratamiento de estos atributos en la hoja de estilos?. Pues también mola porque podemos tratar los <b>data-</b> como cualquier otro atributo.<br /><br />Vamos a saludar el santo a todos clientes que se llamen Pepe con CSS:<br /><br /><pre class="brush:html;"><div class="cliente" data-nombre="Pepe" data-saludo=" feliz San José 2013!"><br />Rodrígez Pérez, José</div><br /></pre><br />Y la hoja de estilo: <br /><pre class="brush:html;">div[data-nombre="Pepe"] { <br />   background-color: red; <br />}<br />div[data-nombre="Pepe"]:after { <br />  content: attr(data-saludo); <br />}<br /></pre><br /><br /><br /><br />Para saber más:<br /><br /><a href="http://html5doctor.com/html5-custom-data-attributes/" target="_blank">htmldoctor</a><br /><a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/all-you-need-to-know-about-the-html5-data-attribute/" target="_blank">tutsplus</a>

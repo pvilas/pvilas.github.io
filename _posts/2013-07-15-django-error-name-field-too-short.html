@@ -1,0 +1,14 @@
+---
+layout: post
+title: Django error "name field too short" generando permisos en el admin si verbose_name
+  está presente
+date: '2013-07-15T15:39:00.001+02:00'
+author: Pere Vilas
+tags:
+- django
+modified_time: '2013-07-15T15:39:28.118+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-7836391016150554226
+blogger_orig_url: http://www.pvilas.com/2013/07/django-error-name-field-too-short.html
+---
+
+El verbose_name de un modelo sirve para dar una descripción extendida de él. Si está presente, es usada por el admin para describir el modelo, si no, se usa el nombre de la clase. Por ejemplo:<br /><br /><code>class Cliente(models.Model):<br />&nbsp; ...<br />&nbsp; ...<br />&nbsp; &nbsp;verbose_name=u"Esta descripción saldrá en el admin, es un poco larga para mostrar el error"<br />&nbsp; &nbsp;verbose_name_plural=u"Esta es la descripción que se usa en plural"</code><br /><br />Para poder administrar el modelo, lo incluimos y registramos en admin.py:<br /><br /><code>class ClienteAdmin(admin.ModelAdmin): &nbsp; <br />&nbsp; &nbsp; list_display=('nombre','codigo',) <br />&nbsp; &nbsp; ....<br />admin.site.register(Cliente, ClienteAdmin) &nbsp; </code><br /><br />En el primer runserver que hagamos, el admin intentará registrar el modelo y crear los permisos de <b>add, change y delete</b>. El problema es que la descripción del permiso es del estilo de "Can add "+verbose_name y se almacena en el campo <i>name</i> de la tabla <i>auth_permission</i> que está definido con 80 caracteres de largo. Por lo tanto, la creación de permisos fallará si se supera esa longuitud y nos encontraremos con <b>el modelo registrado en el admin pero sin poderle asignar permisos</b>.<br /><br /><a href="https://code.djangoproject.com/ticket/20728#ticket" target="_blank">Registré</a> el bug y resulta que lo han cerrado como duplicado &nbsp;de <b>otro de hace cinco años!!!. </b>Claro que es fácil quejarse y no currar en el proyecto....<br /><br />De momento, para resolverlo basta con editar a mano la longitud del campo:<br /><br /><code>ALTER TABLE auth_permission MODIFY name VARCHAR(500);</code><br /><br /><div><br /></div>

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Menor de edad en python / Legal age in python
+date: '2012-02-29T16:52:00.000+01:00'
+author: Pere Vilas
+tags:
+- django
+- python
+modified_time: '2012-02-29T17:10:57.957+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-693930997859583874
+blogger_orig_url: http://www.pvilas.com/2012/02/menor-de-edad-en-python-legal-age-in.html
+---
+
+Hoy día 29/02/2012 (29 de febrero de año bisiesto), me he encontrado con que el algoritmo que usaba para el cálculo de minoría de edad me ha fallado. Después de varias indagaciones he dejado este como bueno:<br /><br /><div style="background-color: lightgrey;"><code>from datetime import date, datetime, timedelta<br /><br />def menor_edad(nascut):<br />&nbsp;&nbsp;""" accepts a string date in iso format Y-m-d and returns True if<br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it is in spanish legal age today """<br />&nbsp;&nbsp;t=timedelta(seconds=31556926*18)<br />&nbsp;&nbsp;fa_divuit=date.today()-t<br />&nbsp;&nbsp;fecha=datetime.strptime(nascut, '%Y-%m-%d').date()<br />&nbsp;&nbsp;return (fecha &gt; =fa_divuit)<br /><br /></code></div><br />

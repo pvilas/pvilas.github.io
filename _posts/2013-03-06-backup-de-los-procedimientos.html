@@ -1,0 +1,15 @@
+---
+layout: post
+title: Backup de los procedimientos almacenados mysql
+date: '2013-03-06T08:51:00.003+01:00'
+author: Pere Vilas
+tags:
+- mysql
+- strored procedure
+- procedimiento almacenado
+modified_time: '2013-03-06T08:51:52.181+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-710064721930544118
+blogger_orig_url: http://www.pvilas.com/2013/03/backup-de-los-procedimientos.html
+---
+
+El mysqldump <b>no copia</b> los stored procedures por defecto pero si los triggers, es decir, los parámetros por defecto son:<br /><br />--routines FALSE por defecto<br />--triggers TRUE por defecto<br /><br />Para volcar sólo los procedimientos almacenados:<br /><br /><div style="border: 1px solid #DDD; padding: 1em 0.75em;"><code>mysqldump --routines --no-create-info --no-data --no-create-db --skip-opt  <i>database</i>&nbsp;&gt;<database>&nbsp;procedimientos.sql</database></code></div><br /><database>Para importar los procedimientos a otra db:</database><br /><database><br /></database><database></database><br /><div style="border: 1px solid #DDD; padding: 1em 0.75em;"><code>mysql database &lt; procedimientos.sql</code></div><br /><database>Para hacer un backup de datos y triggers que también copie los procedimientos almacenados:</database><br /><database><br /></database><database></database><br /><div style="border: 1px solid #DDD; padding: 1em 0.75em;"><code>mysqldump <other mysqldump="" options=""> --routines outputfile.sql</other></code></div><br /><br /><b><span style="font-size: x-small;">Fuente:</span></b><br /><span style="font-size: x-small;">http://www.ducea.com/2007/07/25/dumping-mysql-stored-procedures-functions-and-triggers/</span>

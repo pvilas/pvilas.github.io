@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Filtrado fácil de clave foránea en una ficha de django
+date: 2012-02-24 11:23:19 UTC
+updated: 2012-02-24 11:23:19 UTC
+comments: false
+categories: django python
+---
+
+Es sabido que django mapea las claves foráneas a un ModelChoiceField en ModelForm, pero ¿qué ocurre cuando sólo queremos seleccionar un subconjunto de ellas?.<br /><br />Por ejemplo, supongamos que estamos dando de alta un empleado y a la hora de seleccionar su categoría sólo queremos que aparezcan las que están asociadas a su sección.<br /><br />Tenemos la ficha:<br /><br /><div style="background-color: lightgrey;"><code></code><br />class AddForm(forms.ModelForm):<br />&nbsp;&nbsp;class Meta:<br />&nbsp;&nbsp;&nbsp;model=Empleado<br />&nbsp;&nbsp;&nbsp;&nbsp;fields=('clave', 'descripcion', 'categoria', 'jefe_seccion', 'email',)<br /><br /></div><br />La propiedad queryset del campo categoría estará definida por defecto como Categoria.objects.all(), así que hacemos:<br /><br /><div style="background-color: lightgrey;"><code>p=AddForm()<br />p.fields['categoria'].queryset=Categoria.objects.filter(seccion=self.seccion)<br /></code></div><br />Con lo que en la ficha sólo nos saldrán las categorías de la sección actual.<br />Otra forma más complicada consiste en pasarle el parámetro al constructor de la clase pero hay que hacerlo con los kwargs por que si no tendremos problemas en cuando queramos usar la ficha para editar.<br /><br /><div style="background-color: lightgrey;"><code>class AddForm(forms.ModelForm):<br />         &nbsp;&nbsp;categoria=forms.ModelChoiceField( label=u'Categoría', queryset = Categoria.objects.none())<br />&nbsp;&nbsp;def __init__(self, *args, **kwargs):<br />&nbsp;&nbsp;&nbsp;sec = kwargs.pop('sec', None)<br />  &nbsp;&nbsp;&nbsp;super(AddForm, self).__init__(*args, **kwargs)       <br />&nbsp;&nbsp;&nbsp;if sec:        <br />&nbsp;&nbsp;&nbsp;&nbsp;self.fields['categoria'].queryset = Categoria.objects.filter(seccion = sec)<br />&nbsp;&nbsp;class Meta:<br />&nbsp;&nbsp;&nbsp;model=Empleado<br />&nbsp;&nbsp;&nbsp;fields=('clave', 'descripcion', 'categoria', 'jefe_seccion', 'email',)<br /></code></div><br />

@@ -1,0 +1,16 @@
+---
+layout: post
+title: Apache redireccionar ciertas ip hacia https
+date: '2012-03-23T13:12:00.002+01:00'
+author: Pere Vilas
+tags:
+- http
+- mod_rewrite
+- apache
+- https
+modified_time: '2012-03-23T16:19:11.301+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-4421477735172986412
+blogger_orig_url: http://www.pvilas.com/2012/03/apache-redireccionar-ciertas-ip-hacia.html
+---
+
+<br />Queremos que sólo ciertas ip tengan acceso a contenido con http, y las demás las queremos redirigir a https. ¿Cómo lo hacemos?.<br /><br /><div>Podemos usar mod_rewrite con estas reglas:</div><div><code><br class="Apple-interchange-newline" />&nbsp; &nbsp; &nbsp; &nbsp;RewriteEngine On<br />&nbsp; &nbsp; &nbsp; &nbsp;RewriteCond %{REMOTE_ADDR} !^192\.168\.1\.4$<br />&nbsp; &nbsp; &nbsp; &nbsp;RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}</code></div><br />En este caso, sólo la dirección 192.168.1.4 tendría acceso via http, los demás serían redireccionados a https.

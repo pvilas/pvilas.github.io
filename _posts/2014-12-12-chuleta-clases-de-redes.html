@@ -1,0 +1,13 @@
+---
+layout: post
+title: Chuleta clases de redes
+date: '2014-12-12T01:00:00.017+01:00'
+author: Pere Vilas
+tags:
+- xarxes
+modified_time: '2014-12-12T15:30:19.316+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-4375403759702440246
+blogger_orig_url: http://www.pvilas.com/2014/12/chuleta-clases-de-redes.html
+---
+
+<h3 id="introducción">Introducción</h3> <p>Antes de nada, comentar que las clases de redes ya no se utilizan debido al crecimiento de Internet que ha provocado el agotamiento de las direcciones IP y la necesidad de mantener los routers constantemente actualizados con enormes tablas de encaminamiento. </p> <p>Actualmente se usa el método CIDR (Classless Interdomain Routing) para el enrutamiento que básicamente consiste en enviar la máscara de red junto con la dirección. </p>   <h3 id="clases-de-redes">Clases de redes</h3> <p>Los tres tipos de redes son:</p> <table><thead><tr>  <th align="right">Primer Octeto</th>  <th align="right">Bits cabecera</th>  <th align="right">Clase</th>  <th align="right">Network</th>  <th align="right">Hosts</th>  <th align="right">Forma</th></tr></thead><tbody><tr>  <td align="right">0-126</td>  <td align="right">0</td>  <td align="right">A</td>  <td align="right">8</td>  <td align="right">24</td>  <td align="right">n.h.h.h</td></tr><tr>  <td align="right">128-191</td>  <td align="right">10</td>  <td align="right">B</td>  <td align="right">16</td>  <td align="right">16</td>  <td align="right">n.n.h.h</td></tr><tr>  <td align="right">192-223</td>  <td align="right">110</td>  <td align="right">C</td>  <td align="right">24</td>  <td align="right">8</td>  <td align="right">n.n.n.h</td></tr></tbody></table>

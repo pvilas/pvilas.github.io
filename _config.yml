@@ -1,11 +1,15 @@
 # Site settings
 title:       Estribancus - Es blog de'n Pere Vilàs
 email:       pvilas@gmail.com
-author:      Pere Vilàs
+name: 		 Estribancus
 description: "Blog de'n Pere Vilás. Hi ha coses de programació, espai, recetes i altres coses que m'interessan"
 baseurl:     ""
 url:         "http://pvilas.com"
 date_format: "%-d %b %Y"
+
+# els permalinks els posam a l'estil de blogger per mantenir els links
+permalink: ./:year/:month/:title.html
+
 
 # Google services
 google_analytics:
@@ -55,11 +59,13 @@ share_reddit: false
 share_stumbleupon: false
 share_hackernews: false
 
+
+
 # Build settings
 markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
+# permalink:    pretty
 paginate:     4
 sass:
   compressed: true

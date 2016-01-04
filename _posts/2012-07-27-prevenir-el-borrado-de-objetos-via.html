@@ -1,0 +1,14 @@
+---
+layout: post
+title: Prevenir el borrado de objetos via clave foránea / Prevent object deletion
+  via foreign key
+date: '2012-07-27T17:45:00.000+02:00'
+author: Pere Vilas
+tags:
+- django
+modified_time: '2012-07-27T17:45:30.055+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-2714789143056176976
+blogger_orig_url: http://www.pvilas.com/2012/07/prevenir-el-borrado-de-objetos-via.html
+---
+
+Una de los comportamientos por defecto más problemáticos de django es el de emular el DELETE CASCADE &nbsp;cuando borramos una clave foránea. Desde luego, hay que ser animalito. Ya me veo a decenas de usuarios noveles preguntándose adonde han ido a parar sus datos después de efectuar un borrado de una clave foránea que tenía objetos relacionados.<br /><br />La forma de "proteger" los objetos relacionados es via la definición del ForeignKey.on_delete que puede tomar los siguientes valores<br /><br /><code><b>CASCADE</b>: Borrado en cascada, comportamiento por defecto.<br /><b>PROTECT</b>: Protege al objeto relacionado del borrado haciendo saltar la excepción django.db.models.ProtectedError.<br /><b>SET_NULL</b>: Asigna el valor null a la clave, sólo posible si null es True.<br /><b>SET_DEFAULT</b>: Pone la clave foránea a su valor por defecto (debe estar definido).<br /><b>SET()</b>: Asigna a la clave foránea el valor pasado en el set.<br /><b>DO_NOTHING</b>: No hace nada y deja el comportamiento por defecto de la db. (Si la hemos creado con syncdb, no hará nada)<br /></code><br /><br />Una práctica aconsejable en un entorno de usuario sería capturar la excepción via PROTECT y devolver un mensaje de error con la información para el usuario.Por ejemplo:<br /><br />Si en la definición del modelo <b>Factura</b> usamos<br /><br /><code>cliente=models.ForeignKey(Cliente, on_delete=models.PROTECT)</code><br /><br />Y ahora queremos borrar un cliente que tiene una factura asociada<br /><br /><code>try:<br />&nbsp;&nbsp;cliente.delete()<br />except django.db.models.ProtectedError, ex:<br />&nbsp;&nbsp;return HttpResponse( ('El cliente %s tiene al menos una factura y no puede borrarse.' % (cliente.descripcion,)), 'text/html')<br /></code>

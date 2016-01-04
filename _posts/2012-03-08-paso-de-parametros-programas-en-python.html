@@ -1,0 +1,14 @@
+---
+layout: post
+title: Paso de parámetros a programas en python / How to pass parameters to a python
+  program
+date: '2012-03-08T18:57:00.000+01:00'
+author: Pere Vilas
+tags:
+- python
+modified_time: '2012-03-08T19:30:53.218+01:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-5799396888174107587
+blogger_orig_url: http://www.pvilas.com/2012/03/paso-de-parametros-programas-en-python.html
+---
+
+Para pasar parámetros a los programas se usa el módulo getopt, que nos permite trabajar cómodamente con ellos.<br /><br />En primer lugar tenemos que saber que el contenido de la línea de comandos nos viene en forma de lista en sys.argv. <br /><br/>Si invocamos un programa en python, como parámetros nos interesará todo lo que venga después de la primera posición, es decir sys.argv[1:], así que en general llamaremos a una función main así <br /><pre class="brush: python">if __name__=='__main__':<br /> main(sys.argv[1:])<br /></pre><br />Ahora veremos el funcionamiento de getopt, os paso un ejemplo:<br /><pre class="brush: python">def main(argv): <br /> try:      <br />  opts, args = getopt.getopt(argv, "hps:", <br />                                                  ["help", "prn", "server="])<br /> except getopt.GetoptError:          <br />  print "Opcion no valida"<br />  usage()                         <br />  sys.exit(2)                     <br />  <br /></pre>Vemos que getopt toma tres argumentos:<br /><br /><ol><li>El primero es la cadena que le pasamos para analizar</li><li>El segundo son las opciones en forma corta, las que se usan con la sintaxis -h, -p, -s="algo"</li><li>El tercero son las mismas opciones pero en forma larga que se usan con dos guiones --help, --prn, --server="algo"</li></ol>Observamos que las opciones en forma corta seguidas de dos puntos o en forma larga seguidas del símbolo igual esperan que les pasemos un argumento. Getopt se encarga de que si al programa le pasamos alguna opción que no esté en la lista salte la excepción GetoptError.<br /><br/>Como ahora ya tenemos las opciones y sus posibles valores, el tratamiento será algo similar a esto<br /><pre class="brush: python">for opt, arg in opts:                <br />  if opt in ("-h", "--help"):      <br />   usage()                     <br />   sys.exit()                  <br />  elif opt in ('-p', "--prn"):                <br />   p_pantalla=True             <br />  elif opt in ("-s", "--server"):          <br />   r_server=arg            <br /></pre><br />Si hay algún tipo de error durante el parseado de los argumentos, es una buena idea dar una ayuda al usuario antes de terminar el programa, por ejemplo <br /><div><pre class="brush: python">def usage():<br /> print """<br />Opcions:<br />--help (-h)\t\tTreu aquesta ajuda<br />--prn (-p)\t\tTreu impressio de tickets per pantalla<br />--server (-s)\t\tServidor actualització<br />"""<br /></pre><br /><br />Y esto es todo por hoy<br/></div>

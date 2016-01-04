@@ -1,0 +1,16 @@
+---
+layout: post
+title: Sondear (refrescar) a largo plazo con javascript jquery / jquery javascript
+  long polling
+date: '2013-06-20T13:01:00.002+02:00'
+author: Pere Vilas
+tags:
+- jquery
+- http
+- javascript
+modified_time: '2013-06-20T13:02:34.420+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-5570248553158721868
+blogger_orig_url: http://www.pvilas.com/2013/06/sondear-refrescar-largo-plazo-con.html
+---
+
+Si queremos refrescar el contenido de una pagina web cada cierto tiempo hacemos<br /><br /><code>&lt;meta http-equiv="refresh" content="5"/&gt;</code><br /><br />Pero si queremos refrescar sólo un div y queremos estar seguros de que el refresco se realice incluso después de que falle alguna de las peticiones, podemos hacer:<br /><br /><code>$(document).ready(function(){<br /><span class="Apple-tab-span" style="white-space: pre;"> </span>function doPoll() {<br /><span class="Apple-tab-span" style="white-space: pre;">  </span>$.post('/pagina/').done(function(data) {<br /><span class="Apple-tab-span" style="white-space: pre;">  </span> <span class="Apple-tab-span" style="white-space: pre;"> </span>$('#contenedor').html(data);<br /><span class="Apple-tab-span" style="white-space: pre;">  </span>}).always(function() { setTimeout(doPoll, 5000); });<br /><span class="Apple-tab-span" style="white-space: pre;"> </span>}<br /><span class="Apple-tab-span" style="white-space: pre;"> </span>doPoll();<br />});</code><br /><br /><br />Nótese el empleo de always que es una manera elegante de no tener que pelearnos con la posibilidad de que falle una de las peticiones y el div se quede sin refrescar.

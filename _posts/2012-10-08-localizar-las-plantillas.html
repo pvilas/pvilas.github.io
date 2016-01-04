@@ -1,0 +1,13 @@
+---
+layout: post
+title: Localizar las plantillas
+date: '2012-10-08T20:20:00.004+02:00'
+author: Pere Vilas
+tags:
+- django
+modified_time: '2012-10-08T20:23:03.303+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-7269612950342483661
+blogger_orig_url: http://www.pvilas.com/2012/10/localizar-las-plantillas.html
+---
+
+Si queremos que los importes monetarios de nuestras plantillas nos salgan (en España) así: <br /><br /><code>1.256,56 €</code><br /><br />en vez de así:<br /><br /><code>1256.56 €</code><br /><br />tenemos que localizar la plantilla y dejar que django haga el trabajo duro.<br /><br />Para empezar, en settings.py indicamos que queremos usar la localización añadiendo:<br /><br /><code>DEFAULT_CHARSET='utf-8'<br />THOUSAND_SEPARATOR= '.'<br />DECIMAL_SEPARATOR = ','<br />NUMBER_GROUPING = 3<br />USE_THOUSAND_SEPARATOR = True<br />FIRST_DAY_OF_WEEK = 1<br />LANGUAGE_CODE = 'es-es'<br />USE_L10N = True<br /></code><br /><br />En la plantilla, cargamos l10n y activamos la localización así:<br /><br /><code>{{ "{%" }} load l10n %}<br />{{ "{%" }} localize on %}<br /><br />blah, blah, blah...<br /><br />{{ "{%" }} endlocalize %}</code><br /><br />Y de forma mágica los importes aparecerán correctamente formateados. Para controlar la cantidad de decimales diferentes del estándar también podemos usar el filtro floatformat:precision así:<br /><br /><code>{{ "{{" }} importe|floatformat:6 }}</code><br /><br /><br />

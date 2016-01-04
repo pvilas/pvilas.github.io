@@ -1,0 +1,13 @@
+---
+layout: post
+title: ubuntu no arranca una sesión X de usuario
+date: '2012-06-07T22:08:00.000+02:00'
+author: Pere Vilas
+tags:
+- ubuntu
+modified_time: '2012-06-07T22:08:08.163+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-3580278306977298680
+blogger_orig_url: http://www.pvilas.com/2012/06/ubuntu-no-arranca-una-sesion-x-de.html
+---
+
+Me ha ocurrido que de un momento para otro ubuntu no me deja abrir mi sesión. En cambio con otros usuarios si lo permite. Después de buscar toda una tarde la solución ha sido entrar por cónsola Ctrl+Alt+F1 y hacer<br /><br /><code>sudo mv ~/.Xauthority ~/.Xauthority.old<br /></code>

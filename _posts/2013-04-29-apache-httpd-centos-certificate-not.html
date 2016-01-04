@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Apache httpd CentOS Certificate not verified: ''Server-Cert'''
+date: '2013-04-29T14:20:00.002+02:00'
+author: Pere Vilas
+tags:
+- Linux
+- centos
+- apache
+modified_time: '2013-05-11T10:47:53.166+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-3490340753105493362
+blogger_orig_url: http://www.pvilas.com/2013/04/apache-httpd-centos-certificate-not.html
+---
+
+En CentOS, si de repente tenéis el servidor web caido y os sale este error en /var/log/nss_error_log es porque está instalado el módulo mod_nss y aunque el httpd no lo está cargando, detecta que el certificado de prueba que instala nss automáticamente está caducado.<br /><br />La solución es desinstalar el módulo<br /><br /><code>yum remove mod_nss<br /></code><br /><br />Ejemplo de error: <br /><br /><code>[Mon Apr 29 13:37:24 2013] [error] Certificate not verified: 'Server-Cert'<br />[Mon Apr 29 13:37:24 2013] [error] SSL Library Error: -8181 Certificate has expired<br />[Mon Apr 29 13:37:24 2013] [error] Unable to verify certificate 'Server-Cert'. Add "NSSEnforceValidCerts off" to nss.conf so the server can start until the problem can be resolved. </code><br /><br />Bug en RH:<br /><br /><a href="https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;id=711085" target="_blank">https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;id=711085</a>

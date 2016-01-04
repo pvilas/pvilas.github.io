@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Mikrotik SwOS: Creación de VLANs'
+date: '2014-09-12T02:00:00.005+02:00'
+author: Pere Vilas
+tags:
+- mikrotik
+modified_time: '2014-09-12T14:19:23.507+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-8368744548780537941
+blogger_orig_url: http://www.pvilas.com/2014/09/mikrotik-swos-creacion-de-vlans.html
+---
+
+<h2 id="creación-de-las-vlan">Creación de las VLAN</h2> <p>Lo primero que hay que hacer es entrar en la pestaña de VLANs y crear todas las que necesitemos en el switch. Marcar los puertos que necesitemos y dejar el resto como <code>not in group</code>.</p> <h2 id="reglas-de-aceptación">Reglas de aceptación</h2> <p>En la pestaña VLAN definimos el modo de aceptación de los paquetes, podemos: <br>1. Aceptar los tageados. <br>2. Drop los no tageados. <br>3. Remarcar los paquetes con una VLAN diferente. <br>4. Aceptar los no tageados en una VLAN.</p>   <h2 id="crear-puerto-de-trunk">Crear puerto de trunk</h2> <ol><li>Definit todas las VLANs que tengan que pasar en la pestaña VLANs.</li><li>En la pestaña VLAN poner el puerto como enable o algún derivado.</li></ol>   <h2 id="crear-puerto-access-para-tagear">Crear puerto access (para tagear)</h2> <ol><li>Setear la <code>Default VLAN ID</code> a la VLAN con la que queramos tagear.</li><li>Poner el modo como <code>strict</code>.</li><li>Poner el <code>VLAN header</code>como <code>add if is missing</code>.</li></ol> <p><strong>Fuentes:</strong> <br><a href="http://wiki.mikrotik.com/wiki/SwOS">Wiki mikrotik</a> <br><a href="http://gregsowell.com/?p=2063">Greg Sowell</a></p>

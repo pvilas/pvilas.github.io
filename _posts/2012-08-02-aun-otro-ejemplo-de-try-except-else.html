@@ -1,0 +1,15 @@
+---
+layout: post
+title: Aún otro ejemplo de try, except, else, finally / Yet another try, except, else,
+  finally example
+date: '2012-08-02T12:34:00.002+02:00'
+author: Pere Vilas
+tags:
+- django
+- python
+modified_time: '2012-08-02T14:41:39.631+02:00'
+blogger_id: tag:blogger.com,1999:blog-9191328551308072706.post-6571220016808482453
+blogger_orig_url: http://www.pvilas.com/2012/08/aun-otro-ejemplo-de-try-except-else.html
+---
+
+Estaba pasando datos de una DB mysql a otra en django y me ha salido este "snippet" que ejemplifica el uso de try-except-else-finally.<br /><br /><b>try</b> contiene el código que queremos proteger<br /><b>except</b> captura la excepción (usar la clase genérica exception para capturarlas todas)<br /><b>else</b> código que se ejecutará si no salta ninguna excepción<br /><b>finally</b> código que se ejecutará en todo caso tanto si hay como si no hay excepción<br /><br />Las únicas obligatorias son <b>try</b> y <b>except</b>. Si queremos capturar más de una excepción, las ponemos una detrás de otra:<br /><br />from django.core.exceptions import ObjectDoesNotExist<br />try:<br />&nbsp; &nbsp; cl=Cliente.objects.get(clave=id)<br />except ObjectDoesNotExist, ex:<br />&nbsp; &nbsp; print "el cliente no existe"<br />except Exception, ex:<br />&nbsp; &nbsp; print "se ha producido un error", str(ex)<br /><br />Ejemplo:<br /><br />   <pre class="prettyprint"><code><br />try:  <br />   try:  <br />     c=db_marcajes.cursor(MySQLdb.cursors.DictCursor)  <br />     c.execute("select id, fecha, event, door, user from logs where fecha&gt;%s", (last_marcaje,))  <br />     rows=c.fetchall()     <br />   except Exception, e:  <br />     print "Impossible efectuar consulta"  <br />     exit(1)  <br />   else:  <br />     elapsed = (time.clock() - start)  <br />     print "Consulta realitzada en", elapsed, "msegs"  <br />     num_rows=len(rows)  <br />     print "Numero de filas ", num_rows  <br />     i=0    <br />     while i&lt;num_rows:  <br />       row=rows[i]     <br />       print "procesando fila ", repr(row)  <br />       try:  <br />         em=Empleado.objects.get(pin=row['user'])  <br />         pt=Puerta.objects.get(pk=row['door'])  <br />         print ("guardando acceso %s de %s" % (row['user'],em.descripcion,))  <br />       except Exception, ex:  <br />         print ("Error de busqueda empleado %s puerta %s: %s", ( row['user'], row['door'], ex, ))  <br />       else:  <br />         try:  <br />           acc=Acceso(  <br />             empleado=em,  <br />             es=row['event'],  <br />             fecha=row['fecha'],  <br />             puerta=pt,  <br />             )  <br />           #acc.save()  <br />           print "Guardado"  <br />         except Exception, ex:  <br />           print ("Error grabando acceso: %s" % (ex,))  <br />       finally:  <br />         i+=1  <br />         last_marcaje=row['fecha']  <br />   finally:  <br />     c.close()           <br /> finally:  <br />   # guardam darrer marcatje  <br />   conv=Convenio.objects.get(pk=1)  <br />   conv.last_marcaje=last_marcaje  <br />   conv.save()  <br /></code></pre>
