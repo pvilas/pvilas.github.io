@@ -4,7 +4,7 @@ email:       pvilas@gmail.com
 name: 		 Estribancus
 description: "Blog de'n Pere Vilás. Hi ha coses de programació, espai, recetes i altres coses que m'interessan"
 baseurl:     ""
-# url:         "http://pvilas.com"
+url:         "http://pvilas.com"
 date_format: "%-d %b %Y"
 
 # els permalinks els posam a l'estil de blogger per mantenir els links
