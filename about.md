@@ -1,19 +1,82 @@
 ---
 layout: page
-title: About Pixyll
+title: About en Pere Vilás
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+![Pere Vilás](https://s.gravatar.com/avatar/18850e39781804e81fe98de693a22732?s=80)
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+En Pere viu a [sa illeta daurada d'Eivissa](https://ca.wikipedia.org/wiki/Illa_d%27Eivissa) amb sa seva familia. Fa feina en informàtica, telecomunicacions i empresa ([perfil de Linkedin](https://es.linkedin.com/in/pvilas)).
 
-Thanks to the following:
+Us deix sa lletra de *Roqueta, sa meua roca* per que pugeu cantar una mica ;-).
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
+### Roqueta, sa meua roca
+
+##### Lletra i música del mestre Joan Gamisans Arabí
+_composada a la Ciutat d'Eivissa el mes d'octubre de 1930 
+per a l'Orfeó Eivissenc._
+
+1 
+(canten tots)
+Eivissa, illeta daurada.
+Ramell de polida màgia
+on canta l'alba argentada,
+on canta el llevant ses gales.
+
+
+2
+Capseta tota enjoiada
+enmig d'una llum mai vista.
+Llumeta que del cel mana,
+llumeta dels ulls de nina.
+
+
+3
+Perla d'escuma marina.
+Lliri blanc que surt del mar.
+Cambra d'amor perfumada
+d'aures que vénen i van.
+
+4 (es repeteix l'estrofa 3)
+
+5 (canta solista)
+Roqueta, sa meua roca.
+Castell de sa gentilesa.
+Roqueta, sa meua roca.
+Palau de vida serena.
+
+
+6
+Besades de ses ondines
+hi arriben amb l'ona brava
+portant els pits que sospiren
+l'encís de veus d'enyorança.
+
+7 (canten tots)
+Roqueta, sa meua roca.
+Castell de sa gentilesa.
+Roqueta, sa meua roca.
+Palau de vida serena.
+
+
+8
+Besades de ses ondines
+hi arriben amb l'ona brava
+portant els pits que sospiren
+l'encís de veus d'enyorança.
+
+
+9
+Perla d'escuma marina.
+Lliri blanc que surt del mar.
+Cambra d'amor perfumada
+d'aures que vénen i van.
+
+10 (es repeteix l'estrofa 9)
+
+11
+D'aures que venen i van.
+Lliri blanc que surt del mar.
+Cambra d'amor perfumada
+d'aures que vénen i van,
+d'aures que vénen i van.

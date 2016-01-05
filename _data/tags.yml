@@ -1,0 +1,33 @@
+apache:
+  slug: apache
+  name: Apache
+django:
+  slug: django
+  name: Django
+ebook:
+  slug: ebook
+  name: Ebook
+esa:
+  slug: esa
+  name: ESA
+estadistica:
+  slug: estadistica
+  name: Estadística
+filosofia:
+  slug: filosofia
+  name: filosofia
+git:
+  slug: git
+  name: Git
+javascript:
+  slug: javascript
+  name: Javascript
+linux:
+  slug: linux
+  name: Linux
+marte:
+  slug: marte
+  name: Marte
+oracle:
+  slug: oracle
+  name: Oracle

@@ -6,6 +6,9 @@ description: "Blog de'n Pere Vilás. Hi ha coses de programació, espai, recetes
 baseurl:     ""
 url:         "http://pvilas.com"
 date_format: "%-d %b %Y"
+timezone: 	 Europe/Madrid
+encoding:  	 utf-8
+
 
 # els permalinks els posam a l'estil de blogger per mantenir els links
 permalink: ./:year/:month/:title.html
@@ -18,8 +21,8 @@ google_verification:
 # Optional features
 animated:             false
 show_related_posts:   false
-show_post_footers:    false
-show_social_icons:    false
+show_post_footers:    true
+show_social_icons:    false 
 ajaxify_contact_form: false
 
 # Disqus post comments
