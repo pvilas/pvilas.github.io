@@ -11,7 +11,7 @@ python -m SimpleHTTPServer 8000
 `
 
 Para python2, en python3:
-
+ 
 
 `
 python3 -m http.server

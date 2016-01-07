@@ -4,7 +4,12 @@ title: Archivo
 permalink: /archive/
 ---
 
-Veure totes les entrades d'Estribancus per [categories](#cat), [etiquetes](#etiq) o ordenades [cronològicament](#crono).
+Veure totes les entrades d'Estribancus ordenades [cronològicament](#crono), per [categories](#cat) o per [etiquetes](#etiq).
+
+
+
+{% if crea_index %}
+
 
 ## Arxiu per categories {#cat}
 
@@ -80,3 +85,7 @@ Veure totes les entrades d'Estribancus per [categories](#cat), [etiquetes](#etiq
     </li>
   {% endfor %}
 </ul>
+
+{% else %}
+# Posar crea_index per regenerar-lo
+{% endif %}

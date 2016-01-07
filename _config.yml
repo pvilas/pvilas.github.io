@@ -9,6 +9,8 @@ date_format: "%-d %b %Y"
 timezone: 	 Europe/Madrid
 encoding:  	 utf-8
 
+# posar a true per crear l'index
+crea_index: False
 
 # els permalinks els posam a l'estil de blogger per mantenir els links
 permalink: ./:year/:month/:title.html

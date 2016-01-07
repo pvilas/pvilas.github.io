@@ -8,7 +8,7 @@ layout: null
     <description>Estribancus - Posts dedicados a Django</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.categories.django limit:10 %}
+    {% for post in site.tags.django limit:100 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}</description>
