@@ -66,7 +66,12 @@ share_hackernews: false
 
 # Build settings
 #markdown:     kramdown
-markdown:     redcarpet
+#kramdown:
+#  input: GFM
+
+
+highlighter: rouge
+markdown: redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data', 'fenced_code_blocks']
 # permalink:    pretty
