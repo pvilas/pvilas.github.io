@@ -10,7 +10,7 @@ timezone: 	 Europe/Madrid
 encoding:  	 utf-8
 
 # posar a true per crear l'index
-crea_index: False
+crea_index: True
 
 # els permalinks els posam a l'estil de blogger per mantenir els links
 permalink: ./:year/:month/:title.html

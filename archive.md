@@ -8,7 +8,36 @@ Veure totes les entrades d'Estribancus ordenades [cronològicament](#crono), per
 
 
 
-{% if crea_index %}
+{% if site.crea_index %}
+
+
+## Arxiu cronològic {#crono}
+
+<ul>
+  {% for post in site.posts %}
+
+    {% unless post.next %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h3>{{ post.date | date: '%Y' }}</h3>
+      {% endif %}
+    {% endunless %}
+
+        {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+        {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+        {% if month != nmonth %}
+           <h4 >{{ post.date | date: '%B' }}</h4>
+        {% endif %}
+
+
+    <li><a href="{{ post.url }}">{{ post.title }}</a> 
+    
+    </li>
+  {% endfor %}
+</ul>
 
 
 ## Arxiu per categories {#cat}
@@ -57,34 +86,6 @@ Veure totes les entrades d'Estribancus ordenades [cronològicament](#crono), per
 </ul>  
 {% endfor %}
 
-
-## Arxiu cronològic {#crono}
-
-<ul>
-  {% for post in site.posts %}
-
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-      {% endif %}
-    {% endunless %}
-
-        {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-        {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
-        {% if month != nmonth %}
-           <h4 >{{ post.date | date: '%B' }}</h4>
-        {% endif %}
-
-
-    <li><a href="{{ post.url }}">{{ post.title }}</a> 
-    
-    </li>
-  {% endfor %}
-</ul>
 
 {% else %}
 # Posar crea_index per regenerar-lo

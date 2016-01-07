@@ -9,7 +9,7 @@ tags: python
 `
 python -m SimpleHTTPServer 8000
 `
-
+ 
 Para python2, en python3:
  
 
