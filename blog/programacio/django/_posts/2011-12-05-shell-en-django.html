@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Shell en django
+date: 2011-12-05 12:03:16 UTC
+updated: 2011-12-05 12:03:16 UTC
+comments: false
+tags: django python
+---
+
+Ocurre muchas veces que necesitamos una shell en django para realizar pruebas o tareas de mantenimiento. Conseguirla es muy sencillo ya que settings.py se cargará desde el primer momento en que importemos un modelo o cualquier módulo de django. &nbsp;Lo único que tenemos que hacer es exportar la variable DJANGO_SETTINGS_MODULE con el valor del fichero de settings que queremos utilizar. Yo uso este script (suponiendo que nuestros settings están en settings.py):<br /><br /><b>shell.sh</b><br /><code>export DJANGO_SETTINGS_MODULE="settings"</code><br /><code>python </code><br /><span class="Apple-style-span" style="font-family: monospace;"><br /></span><br />desde aquí ya podemos operar con los modelos:<br /><br /><code>from gesion.models import Cliente<br />c=Cliente(clave='444', descripcion='Pepe Perez')<br />c.save()</code><br /><br />Si queremos acceder desde un script independiente en python podemos usar setup_environ de esta forma: <br /><br /><b>mantenimiento.py</b><br /><code>from django.core.management import setup_environ<br /><br />try:<br />&nbsp;&nbsp;import settings<br />except ImportError:<br />&nbsp;&nbsp;import sys<br />&nbsp;&nbsp;sys.stderr.write("No encuentro el fichero de settings")<br />&nbsp;&nbsp;sys.exit(1)<br /><br />setup_environ(settings)<br /><br />.... </code><br /><br />Espero que os sirva.

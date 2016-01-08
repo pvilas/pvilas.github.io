@@ -43,23 +43,22 @@ Veure totes les entrades d'Estribancus ordenades [cronològicament](#crono), per
 ## Arxiu per categories {#cat}
 
 
-{% for pt in site.categories %}[{{pt[0]}}](#cat-{{pt[0]}}), {% endfor %}
+{% for pt in site.categories %}[{{pt[0]}}](#cat-{{pt[0]}}){% if forloop.last %}.{% else %}, {% endif %} {% endfor %}
 
-{% for cat in site.categories %}
-{% assign nt = cat[0] %}
 
-#### {{ nt }} {#cat-{{nt}}}
-<ul> 
-  {% for post in site.posts %}
-     {% for pt in post.categories %}
-    {% if nt == pt %}
-      <li>
-        {{post.published}} <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endif %}  
-   {% endfor %} 
-  {% endfor %}
-</ul>  
+{% for category in site.categories %}
+#### {{ category | first }} {#cat-{{ category | first }}}
+<ul>
+    {% for posts in category %}
+      {% for post in posts %}
+        {% if post.title %}
+          <li>
+            {{post.published}} <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+</ul>
 {% endfor %}
 
 
@@ -67,24 +66,24 @@ Veure totes les entrades d'Estribancus ordenades [cronològicament](#crono), per
 
 ## Arxiu per etiquetes {#etiq}
 
-{% for pt in site.tags %}[{{pt[0]}}](#tag-{{pt[0]}}), {% endfor %}
+{% for pt in site.tags %}[{{pt[0]}}](#tag-{{pt[0]}}){% if forloop.last %}.{% else %}, {% endif %} {% endfor %}
 
 {% for tag in site.tags %}
-{% assign nt = tag[0] %}
-
-#### {{ nt }} {#tag-{{nt}}}
-<ul> 
-  {% for post in site.posts %}
-     {% for pt in post.tags %}
-	  {% if nt == pt %}
-	    <li>
-	      {{post.published}} <a href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-	  {% endif %}  
-	 {% endfor %} 
-  {% endfor %}
-</ul>  
+#### {{ tag | first }} {#tag-{{ tag | first }}}
+<ul>
+    {% for posts in tag %}
+      {% for post in posts %}
+        {% if post.title %}
+          <li>
+            {{post.published}} <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+</ul>
 {% endfor %}
+
+
 
 
 {% else %}

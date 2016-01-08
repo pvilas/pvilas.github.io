@@ -1,0 +1,9 @@
+---           
+layout: post
+title: Django Guardar imágenes desde string
+date: 2011-02-24 17:52:40 UTC
+comments: false
+tags: django
+---
+
+Para guardar una imagen en un campo de tipo ImageField de Model desde una cadena como un POST http o desde memoria hacemos lo siguiente:<br /><br /><code><br />from django.core.files.uploadedfile import SimpleUploadedFile<br />import cStringIO<br /><br />buf = cStringIO.StringIO()     <br /># adquirimos imagen y la guardamos en buf i.e. mediante pycurl<br /><br />foto = SimpleUploadedFile('imagen.jpg', buf.getvalue(), "image/jpeg")  <br /><br /># ahora foto contiene el stream pero en formato 'fichero'<br /><br />p=Modelo( imagen=foto )<br />p.save()<br /></code><br /><br /><br />Espero que os sirva ;-)
