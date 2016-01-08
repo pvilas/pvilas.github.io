@@ -1,22 +1,22 @@
 <div class="py2 post-footer">
-<hr/>
-Etiquetes:
-<nav>
 
+<hr/>
+    Arxivat a:
+    {% for cat in page.categories %}
+      <a href="/archive/#cat-{{cat}}"><strong>{{cat}}</strong></a> {% if forloop.last %}{% else %} / {% endif %}
+    {% endfor %}
+
+    ; Etiquetes:
      {% for t in page.tags %}
-        
          <a href="/archive/#tag-{{t}}"><strong>{{t}}</strong></a> {% if forloop.last %}.{% else %}, {% endif %}
-     
-     
      {% endfor %}
-</nav>
-
 <hr/>
-Altres categories:
-<nav>
+
+    Altres categories:
+    <nav>
      <a href="/archive">Tots (all), </a>
      {% for category in site.categories %}
-         <a href="/archive/#cat-{{ category | first | remove:' ' }}"><strong>{{ category | first }}</strong></a> {% if forloop.last %}.{% else %}, {% endif %}
+         <a href="/archive/#cat-{{ category | first | remove:' ' }}">{{ category | first }}</a> {% if forloop.last %}.{% else %}, {% endif %}
      {% endfor %}
 </nav>
 </div>

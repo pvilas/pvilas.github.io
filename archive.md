@@ -7,10 +7,6 @@ permalink: /archive/
 Veure totes les entrades d'Estribancus ordenades [cronològicament](#crono), per [categories](#cat) o per [etiquetes](#etiq).
 
 
-
-{% if site.crea_index %}
-
-
 ## Arxiu cronològic {#crono}
 
 <ul>
@@ -83,9 +79,3 @@ Veure totes les entrades d'Estribancus ordenades [cronològicament](#crono), per
 </ul>
 {% endfor %}
 
-
-
-
-{% else %}
-# Posar crea_index per regenerar-lo
-{% endif %}
