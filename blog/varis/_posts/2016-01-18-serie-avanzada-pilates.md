@@ -1,14 +1,17 @@
-Esta es la lista de ejercicios avanzada de pilates según los vídeos de Peter Fiasca:
+Esta es la lista de ejercicios avanzada de pilates mat según los vídeos de Peter Fiasca:
 
 The Hundred
 Roll Up
 Roll Over
 One Leg Circle
 Rolling like a ball
-One Leg Stretch
+Single Leg Stretch
 Double Leg Stretch
-Spine Stretch
-Rocker with Open Legs
+Single Straight Leg Stretch (tijeras)
+Double Straight Leg Stretch
+Criss Cross
+Spine Stretch Forward
+Open Leg Rocker
 Cork-Screw
 Saw
 Swan-Dive
