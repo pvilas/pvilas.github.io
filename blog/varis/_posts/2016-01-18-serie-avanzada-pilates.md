@@ -1,6 +1,15 @@
+---
+layout: post
+title: 'Serie avanzada clásica de mat pilates - Classical pilates advances series'
+date: '2016-01-18'
+author: Pere Vilas
+tags:
+- pilates
+---
+
 Esta es la lista de ejercicios avanzada de pilates clásico mat según los vídeos de Peter Fiasca:
 
-*The advanced classical pilates mat exercices list according Peter Fiasca vídeos*
+*The advanced classical pilates mat exercices series according Peter Fiasca vídeos*
 
 
 1. The Hundred
