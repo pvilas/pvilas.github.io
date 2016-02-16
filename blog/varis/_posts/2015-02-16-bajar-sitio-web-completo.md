@@ -34,3 +34,6 @@ Las opciones son:
 **--convert-links**: convertir links para que funcionen localmente, off-line.  
 **--restrict-file-names=windows**: modificar nombres de fichero para que funcionen tamvién en windows  
 **--no-clobber**: no sobreescribir ficheros existentes (en caso de que la bajada se hubiera interrumpido).  
+
+### Bola extra
+Una vez bajado, podemos pasarlo a pdf con [htmldoc](http://linuxpoison.blogspot.com.es/2012/05/convert-html-pages-or-websites-to-pdf.html)
