@@ -14,4 +14,4 @@ Si existe algún problema de derechos, hacédmelo saber y lo retiraré inmediata
 
 > <cite>[Iaido. Todas las bases y los katas exigidos para cinto negro]({{ site.url }}/images/iaido-los-katas.pdf). Ed. Alas. José Santos Nalda. ISBN 84-203-0202-3. pdf (19.2Mb)</cite>
 
-![Iadio. Los katas]({{ site.url }}/images/iaido.png)
+![Iaidio. Los katas]({{ site.url }}/images/iaido.png)
