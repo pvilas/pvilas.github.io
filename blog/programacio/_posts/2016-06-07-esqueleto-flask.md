@@ -7,7 +7,7 @@ author: Pere Vilas
 
 Un esqueleto para [Flask](http://flask.pocoo.org/Flask), con logger, plantilla, etc...
 
-#### prova.py
+prova.py
 
 ```
 #!/usr/bin/env python
