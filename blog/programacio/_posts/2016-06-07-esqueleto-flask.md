@@ -51,23 +51,3 @@ if __name__=="__main__":
     app.logger.addHandler(handler)
     app.run()
 </pre>
-
-### plantilla (en directorio templates)
-
-<pre>
-<!doctype html>
-<title>Hello from Flask</title>
-{% if name %}
-  <h1>Hello {{ name }}!</h1>
-{% else %}
-  <h1>Hello, World!</h1>
-{% endif %}
-</pre>
-
-### arranque servidor flask con opciones
-
-<pre>
-export FLASK_APP=prova.py
-export FLASK_DEBUG=1
-flask run
-</pre>
