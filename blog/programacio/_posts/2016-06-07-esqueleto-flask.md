@@ -5,7 +5,7 @@ date: 2016-06-07
 author: Pere Vilas
 ---
 
-Un esqueleto para [http://flask.pocoo.org/](Flask), con logger, plantilla, etc...
+Un esqueleto para [Flask](http://flask.pocoo.org/Flask), con logger, plantilla, etc...
 
 #### prova.py
 
