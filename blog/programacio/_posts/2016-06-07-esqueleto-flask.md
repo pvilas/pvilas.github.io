@@ -1,8 +1,8 @@
 ---           
 layout: post
 title: Esqueleto para Flask
-date: 2016-06-07
-comments: false
+date: '2016-06-07'
+author: Pere Vilas
 tags: python flask
 ---
 
