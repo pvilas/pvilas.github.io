@@ -6,3 +6,7 @@ author: Pere Vilas
 ---
 
 Un esqueleto para [Flask](http://flask.pocoo.org/Flask), con logger, plantilla, etc...
+
+```
+hola
+```
