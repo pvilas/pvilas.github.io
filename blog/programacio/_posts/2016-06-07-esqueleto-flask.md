@@ -10,7 +10,7 @@ Un esqueleto para [Flask](http://flask.pocoo.org/Flask), con logger, plantilla, 
 prova.py
 
 
-```
+```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask
@@ -22,5 +22,21 @@ app=Flask(__name__)
 @app.route("/")
 def arrel():
     return "Hello World!"
+
+
+@app.route('/hello/')
+@app.route('/hello/<name>')
+def hello(name=None):
+    return render_template('hello.html', name=name)
+
+
+@app.route('/user/<username>')
+def show_user_profile(username):
+    # show the user profile for that user
+    app.logger.warning('A warning occurred (%d apples)', 42)
+    app.logger.error('An error occurred')
+    app.logger.info('Info')
+    return 'User %s' % username
+
 
 ```
