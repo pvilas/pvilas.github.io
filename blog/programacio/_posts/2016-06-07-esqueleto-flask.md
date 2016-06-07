@@ -38,6 +38,8 @@ def show_user_profile(username):
     app.logger.info('Info')
     return 'User %s' % username
 
+if __name__=="__main__":
+    handler=RotatingFileHandler('logs/foo.log', maxBytes=10000, backupCount=1)
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(formatter)
     # gravar també els logs de werkzeug
