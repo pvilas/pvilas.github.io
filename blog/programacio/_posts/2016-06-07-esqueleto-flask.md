@@ -10,7 +10,7 @@ Un esqueleto para [Flask](http://flask.pocoo.org/Flask), con logger, plantilla, 
 prova.py
 #### prova.py
 
-<code>
+<pre>
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask
@@ -50,11 +50,11 @@ if __name__=="__main__":
     log.addHandler(handler)
     app.logger.addHandler(handler)
     app.run()
-</code>
+</pre>
 
 ### plantilla (en directorio templates)
 
-<code>
+<pre>
 <!doctype html>
 <title>Hello from Flask</title>
 {% if name %}
@@ -62,12 +62,12 @@ if __name__=="__main__":
 {% else %}
   <h1>Hello, World!</h1>
 {% endif %}
-</code>
+</pre>
 
 ### arranque servidor flask con opciones
 
-<code>
+<pre>
 export FLASK_APP=prova.py
 export FLASK_DEBUG=1
 flask run
-</code>
+</pre>
