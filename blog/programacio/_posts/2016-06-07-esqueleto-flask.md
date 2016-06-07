@@ -50,3 +50,23 @@ if __name__=="__main__":
     app.run()
     
 ```
+
+### plantilla (en directorio templates)
+
+```html
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+```
+
+### arranque servidor flask con opciones
+
+```
+export FLASK_APP=prova.py
+export FLASK_DEBUG=1
+flask run
+```
