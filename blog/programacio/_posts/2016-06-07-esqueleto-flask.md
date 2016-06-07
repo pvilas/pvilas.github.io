@@ -23,31 +23,4 @@ app=Flask(__name__)
 def arrel():
     return "Hello World!"
 
-@app.route('/hello/')
-@app.route('/hello/<name>')
-def hello(name=None):
-    return render_template('hello.html', name=name)
-
-
-@app.route('/user/<username>')
-def show_user_profile(username):
-    # show the user profile for that user
-    app.logger.warning('A warning occurred (%d apples)', 42)
-    app.logger.error('An error occurred')
-    app.logger.info('Info')
-    return 'User %s' % username
-
-
-if __name__=="__main__":
-    formatter = logging.Formatter(
-                 "[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s")
-    handler=RotatingFileHandler('logs/foo.log', maxBytes=10000, backupCount=1)
-    handler.setLevel(logging.DEBUG)
-    handler.setFormatter(formatter)
-    # gravar també els logs de werkzeug
-    log = logging.getLogger('werkzeug')
-    log.setLevel(logging.DEBUG)
-    log.addHandler(handler)
-    app.logger.addHandler(handler)
-    app.run()
 ```
