@@ -8,8 +8,8 @@ author: Pere Vilas
 Un esqueleto para [Flask](http://flask.pocoo.org/Flask), con logger, plantilla, etc...
 
 prova.py
+#### prova.py
 
-```
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask
@@ -49,4 +49,24 @@ if __name__=="__main__":
     log.addHandler(handler)
     app.logger.addHandler(handler)
     app.run()
-```
+
+
+### plantilla (en directorio templates)
+
+
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+
+
+### arranque servidor flask con opciones
+
+
+export FLASK_APP=prova.py
+export FLASK_DEBUG=1
+flask run
+
