@@ -1,5 +1,12 @@
-Un esqueleto para [http://flask.pocoo.org/](Flask), con logger, plantilla, etc...
+---           
+layout: post
+title: Esqueleto para Flask
+date: 2016-06-07
+comments: false
+tags: python flask
+---
 
+Un esqueleto para [http://flask.pocoo.org/](Flask), con logger, plantilla, etc...
 
 #### prova.py
 
