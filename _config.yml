@@ -9,6 +9,14 @@ date_format: "%-d %b %Y"
 timezone: 	 Europe/Madrid
 encoding:  	 utf-8
 
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+ noscript: false
+
+
 
 # els permalinks els posam a l'estil de blogger per mantenir els links
 permalink: ./:year/:month/:title.html
@@ -66,6 +74,12 @@ share_hackernews: false
 
 # Build settings
 markdown:     kramdown
+
+github: [metadata]
+kramdown:
+ input: GFM
+ hard_wrap: false
+
 
 #redcarpet:
 #  extensions: ['autolink', 'no_intra_emphasis', 'smart', 'tables', 'with_toc_data', 'fenced_code_blocks']
