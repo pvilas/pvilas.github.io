@@ -40,7 +40,7 @@ def show_user_profile(username):
 
 if __name__=="__main__":
     formatter = logging.Formatter(
-                 "[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s")
+                 "[%(asctime)s] %(pathname)s:%(lineno)d} %(levelname)s - %(message)s")
     handler=RotatingFileHandler('logs/foo.log', maxBytes=10000, backupCount=1)
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(formatter)
