@@ -8,7 +8,7 @@ permalink: /about/
 
 En Pere viu a sa illeta daurada d'[Eivissa](https://ca.wikipedia.org/wiki/Illa_d%27Eivissa) amb sa seva familia. Fa feina en informàtica, telecomunicacions i empresa ([perfil de Linkedin](https://es.linkedin.com/in/pvilas)).
 
-Per a contactar a mi, enviar-me correu a pvilas *at* gmail *dot* com. També podeu fer servir aquesta [fitxa de contacte](#fitxa-de-contacte).
+Per a contactar amb mi, enviau-me un correu a pvilas *at* gmail *dot* com. També podeu fer servir aquesta [fitxa de contacte](#fitxa-de-contacte).
 
 Us deix sa lletra de *Roqueta, sa meua roca* per que pugeu cantar una mica ;-).
 
