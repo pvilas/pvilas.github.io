@@ -22,7 +22,7 @@ Como lo oyen, una **Inteligencia Artificial orientada a la Astronáutica**, un p
 secreto de los 70 que fue abandonado por considerar que no era viable técnicamente estaría en realidad activo.
 <strong>Esta Inteligencia Artificial estaría ayudando a Daniel Martín a escribir su blog</strong>.
 
-![Centro de cálculo en la URSS](/images/centro-calculo-ruso.jpg)
+![Centro de cálculo en la URSS](/images/centro_calculo.jpg)
 
 Pero vayamos por partes; Todo empieza a principios de los 70 cuando Vitali Navarrenco, en ese momento
 Jefe de la Oficina de Diseños Informáticos número 3 (OIB3) propone el proyecto
@@ -32,7 +32,7 @@ para su financiación. Se trataría de un sistema que recogiera toda la informac
 astronáuticos y fuera capaz de combinarlos para extraer nuevas reglas.
 Esto otorgaría a la URSS una ventaja de inteligencia sobre el enemigo.
 
-![El general Dimitri Castanyof](/images/dimitri.jpg)
+![El general Dimitri Castanyof](/images/general_ruso.jpg)
 
  Después de varias visicitudes, finalmente el proyecto es aprobado gracias al interés del todopoderoso
  General Dimitri Castanyof (Decreto del Comité Central del PCUS nro. 33457/71 y orden del Kremlin nro. 897-54).
@@ -51,7 +51,7 @@ Esto otorgaría a la URSS una ventaja de inteligencia sobre el enemigo.
  influyeron en el resto de módulos y en realidad, después de varios años de actividad en secreto y en vista de los
  problemas de financiamiento, el proyecto acabó abandonándose.
 
-![John McDonals](/images/bush.jpg)
+![John McDonals](/images/john.jpg)
 
 
  Desde luego el “secreto” no era tal ya que la propia CIA ha asegurado que tuvo conocimiento
@@ -60,7 +60,7 @@ Esto otorgaría a la URSS una ventaja de inteligencia sobre el enemigo.
  Lo único que quedó del proyecto IAA fue el recuerdo.
 
 
-![Fragmento del código fuente original de IAA](/images/codi-font-paper.gif)
+![Fragmento del código fuente original de IAA](/images/paper_tape_reader.gif)
 
 
  Pero no tan deprisa. ¿Cómo entonces se asegura ahora que una IA está ayudando a escribir el blog
@@ -87,7 +87,7 @@ Esto otorgaría a la URSS una ventaja de inteligencia sobre el enemigo.
  Teóricamente la noche del 25 de agosto de 1997 fue la última en que IAA existiría ya que Carmona aseguró
  que borró el programa porque ocupaba espacio y chupaba mucho de la conexión a Internet.
 
-![Primer centro de cálculo de La Laguna](/images/data-center.jpg)
+![Primer centro de cálculo de La Laguna](/images/Data-Center.jpg)
 
  A partir de aquí la historia se hubiera perdido en la noche de los tiempos pero quiso la casualidad
  que el 19 de octubre de 2009 un joven estudiante de doctorado en supercomputación de la
