@@ -5,6 +5,9 @@ date: 2017-03-28
 author: Pere Vilas
 tags:
 - exomars
+- marte
+- ESA
+- mars
 ---
 
 La ESA ha sacado nuevos renders y un *[aburrido](http://www.esa.int/spaceinimages/Images/2017/03/ExoMars_poster)* poster de [exomars](http://exploration.esa.int/mars/48088-mission-overview/).
