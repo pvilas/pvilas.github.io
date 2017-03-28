@@ -27,6 +27,15 @@ em img {
   margin-left: 0;
 }
 
+img + em { 
+  max-width: 100%;
+  margin-left: 0;
+  text-align: center;
+  font-size: x-small;
+  font-style: italic;
+}
+
+
 body {
           box-sizing: border-box;
      -moz-box-sizing: border-box;
