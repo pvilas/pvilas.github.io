@@ -2,6 +2,8 @@
 layout: post
 title: Introducción a Tensorflow
 tags: machinelearning tensorflow
+date: 2017-08-21
+author: Pere Vilas
 ---
 
 Siguiendo la guia de [Analitics Vidhya](https://www.analyticsvidhya.com/blog/2016/10/an-introduction-to-implementing-neural-networks-using-tensorflow/), tomo unos apuntes de uso de tensorflow.
