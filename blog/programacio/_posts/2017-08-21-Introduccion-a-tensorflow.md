@@ -1,7 +1,7 @@
 ---           
 layout: post
 title: Introducción a Tensorflow
-tags: machine-learning tensorflow
+tags: machinelearning tensorflow
 ---
 
 Siguiendo la guia de [Analitics Vidhya](https://www.analyticsvidhya.com/blog/2016/10/an-introduction-to-implementing-neural-networks-using-tensorflow/), tomo unos apuntes de uso de tensorflow.
@@ -71,4 +71,5 @@ with tf.Session() as sess:
 # Paso 5 - Cerrar la sesión
 sess.close()
 ```
+
 
