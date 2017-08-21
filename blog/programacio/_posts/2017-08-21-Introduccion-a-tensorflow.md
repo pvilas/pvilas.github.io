@@ -9,9 +9,9 @@ Siguiendo la guia de [Analitics Vidhya](https://www.analyticsvidhya.com/blog/201
 
 En sklearn el flujo de trabajo es el siguiente:
 
-1 - Crear un objeto con el algoritmo deseado
-2 - Alimentar el objeto con datos para entrenarlo
-3 - Hacer predicciones
+1. Crear un objeto con el algoritmo deseado
+2. Alimentar el objeto con datos para entrenarlo
+3. Hacer predicciones
 
 En código sera algo tal como esto:
 ```python
@@ -42,11 +42,11 @@ feed-dict:
 
 El flujo de trabajo quedara resumido como:
 
-1 - Crear el grafo de operaciones
-2 - Inicializar variables
-3 - Crear una sesión
-4 - Correr el grafo en la sesión
-5 - Cerrar la sesión
+1. Crear el grafo de operaciones
+2. Inicializar variables
+3. Crear una sesión
+4. Correr el grafo en la sesión
+5. Cerrar la sesión
 
 Y un ejemplo en python
 
