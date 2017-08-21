@@ -1,7 +1,7 @@
 ---           
 layout: post
 title: Introducción a Tensorflow
-tags: machinelearning tensorflow
+tags: machine-learning tensorflow
 date: 2017-08-21
 author: Pere Vilas
 ---
