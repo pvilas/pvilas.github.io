@@ -73,7 +73,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python \
     -D WITH_NVCUVID=1 -D WITH_CUFFT=ON -D WITH_EIGEN=ON -D WITH_IPP=ON \
     -D CUDA_GENERATION=Auto \
-    -D WITH_QT=ON \    
+    -D WITH_QT=ON \
     -D BUILD_opencv_java=OFF \
     -D WITH_OPENGL=ON \
     -D CUDA_NVCC_FLAGS="-D_FORCE_INLINES" \
