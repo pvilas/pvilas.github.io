@@ -15,12 +15,19 @@ sudo apt update
 sudo apt-get install nvidia-367
 
 echo "Installing CUDA 8. Download it form https://developer.nvidia.com/cuda-downloads"
+scp -i ...
 sudo dpkg -i cuda-repo-ubuntu1604-8-0-local_8.0.44-1_amd64.deb
 sudo apt update
 sudo apt install cuda
 
+echo "testing cuda"vi 
+nvcc --version
+nvidia-smi
+
 echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64" >> ~/.bashrc
 echo "export PATH=$PATH:/usr/local/cuda-8.0/bin" >> ~/.bashrc
+source ~/.bashrc
+
 
 echo "Install libraries"
 sudo apt-get install --assume-yes build-essential cmake git
@@ -69,10 +76,11 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D WITH_CUBLAS=1 \
     -D INSTALL_PYTHON_EXAMPLES=ON \
     -D INSTALL_C_EXAMPLES=OFF \
-    -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.1.0/modules \
+    -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
     -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python \
-    -D WITH_NVCUVID=1 -D WITH_CUFFT=ON -D WITH_EIGEN=ON -D WITH_IPP=ON \
+    -D WITH_CUFFT=ON -D WITH_EIGEN=ON \
     -D CUDA_GENERATION=Auto \
+    -D WITH_GTK=OFF -D WITH_GTK_2_X=OFF -D WITH_MATLAB=OFF \
     -D WITH_QT=ON \
     -D BUILD_opencv_java=OFF \
     -D WITH_OPENGL=ON \
