@@ -29,3 +29,11 @@ That is my [python-mode](https://github.com/python-mode/python-mode) configurati
  19 let g:pep8_ignore="E501,W601"
  20 let g:pymode_options_colorcolumn = 0
 ```
+
+Some useful keys:
+- **K** See documentation
+- **Ctrl+space** Autocomplete
+- **Ctrl+w** Change window
+- **Ctrl+c+ro** Organize imports
+- **Ctrl+c+g** Goto definition
+- **Ctrl+c+rr** Refactor
