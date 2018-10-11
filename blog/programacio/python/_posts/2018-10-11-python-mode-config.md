@@ -55,4 +55,11 @@ on ~/.vimrc
 nmap <F8> :TagbarToggle<CR>
 ```
 
+Install airline
+```
+git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+```
+
+
+
 
