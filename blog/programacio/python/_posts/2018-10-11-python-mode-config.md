@@ -31,9 +31,16 @@ That is my [python-mode](https://github.com/python-mode/python-mode) configurati
 ```
 
 Some useful keys:
-- **K** See documentation
-- **Ctrl+space** Autocomplete
-- **Ctrl+w** Change window
-- **Ctrl+c+ro** Organize imports
-- **Ctrl+c+g** Goto definition
-- **Ctrl+c+rr** Refactor
+*K* -- See documentation
+*Ctrl+space* -- Autocomplete
+*Ctrl+w* -- Change window
+*Ctrl+c+ro* -- Organize imports
+*Ctrl+c+g* -- Goto definition
+*Ctrl+c+rr* -- Refactor
+
+Commands:
+*:PymodeLint* -- Check code in current buffer
+*:PymodeLintToggle* -- Toggle code checking
+*:PymodeLintAuto* -- Fix PEP8 errors in current buffer automatically
+
+
