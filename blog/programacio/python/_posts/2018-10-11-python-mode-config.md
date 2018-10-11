@@ -31,16 +31,28 @@ That is my [python-mode](https://github.com/python-mode/python-mode) configurati
 ```
 
 Some useful keys:
-*K* -- See documentation
-*Ctrl+space* -- Autocomplete
-*Ctrl+w* -- Change window
-*Ctrl+c+ro* -- Organize imports
-*Ctrl+c+g* -- Goto definition
-*Ctrl+c+rr* -- Refactor
+- *K* -- See documentation
+- *Ctrl+space* -- Autocomplete
+- *Ctrl+w* -- Change window
+- *Ctrl+c+ro* -- Organize imports
+- *Ctrl+c+g* -- Goto definition
+- *Ctrl+c+rr* -- Refactor
 
 Commands:
-*:PymodeLint* -- Check code in current buffer
-*:PymodeLintToggle* -- Toggle code checking
-*:PymodeLintAuto* -- Fix PEP8 errors in current buffer automatically
+- *:PymodeLint* -- Check code in current buffer
+- *:PymodeLintToggle* -- Toggle code checking
+- *:PymodeLintAuto* -- Fix PEP8 errors in current buffer automatically
+
+Install Tagbar
+```
+sudo apt install exuberant-ctags
+cd ~/.vim/bundles
+git clone git://github.com/majutsushi/tagbar
+```
+
+on ~/.vimrc
+```
+nmap <F8> :TagbarToggle<CR>
+```
 
 
