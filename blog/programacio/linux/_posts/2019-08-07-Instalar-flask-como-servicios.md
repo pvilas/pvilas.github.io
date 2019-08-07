@@ -54,7 +54,7 @@ Si hay errores de configuración ```sudo nginx -t```
 
 Ver página de inicio en http://ip_servidor
 
-Logs en ```/var/log/nginx/errors.log```
+Logs en ```/var/log/nginx/error.log```
 
 
 ## Configurar los servicios
@@ -209,7 +209,10 @@ Ahora creamos el enlace en sites-enabled
 
 ```sudo ln -s /etc/nginx/sites-available/ejemplo.com /etc/nginx/sites-enabled/```
 
-Descomentamos la línea de nginx.conf que puede causar problemas en multisite
+Y recargamos
+
+```sudo systemctl restart nginx```
+Ahora podemos probar el sitio. Para mayor seguridad, descomentamos la línea de nginx.conf que puede causar problemas en multisite
 
 ```sudo vi /etc/nginx/nginx.conf```
 
@@ -238,8 +241,6 @@ Y cambiar la ruta del certificado en /etc/nginx/sites-available/ejemplo.com
 
 #### Letsencrypt
 
-
-
 Hay que seguir las instrucciones de ```https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx```. Básicamente nos bajamos y ejecutamos el certbot.
 
 ```
@@ -252,6 +253,25 @@ sudo apt-get install certbot python-certbot-nginx
 sudo certbot certonly --nginx
 ```
 
-El directorio de instalación de los certificados es ```/etc/letsencrypt/live/ejemplo.com```.
+El directorio de instalación de los certificados es ```/etc/letsencrypt/live/ejemplo.com```. Una vez terminado todo, comprobar que el certificado se autorenovará con
 
+```sudo certbot renew --dry-run```
 
+Editamos ejemplo.com para que busque los certificados de letsencrypt
+
+**/etc/nginx/sites-available/ejemplo.com**
+```
+...
+ssl on;
+ssl_certificate /etc/letsencrypt/live/ejemplo.com/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/ejemplo.com/privkey.pem; 
+...
+
+```
+
+Comprobamos todo
+
+```
+sudo nginx -t
+sudo service nginx restart
+```
