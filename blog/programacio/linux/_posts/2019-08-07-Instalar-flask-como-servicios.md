@@ -5,11 +5,25 @@ date: 2019-08-07
 tags: linux, flask
 ---
 
-Es un tema repetitivo el instalar web apps hechas en Flask como servicios de linux, así que he creado esta chuleta como recordatorio.
+Es un tema repetitivo el instalar web apps hechas en Flask como servicios de linux, así que he creado esta chuleta como recordatorio. 
 
 Está basada en Ubuntu 18.04 LTS, pero se puede adaptar fácilmente a cualquier otra distro.
 
 Primero instalaremos el software que necesitamos tanto en el SO como en el entorno de ejecución. Después configuraremos los servicios.
+
+Suelo usar esta estrutura de directorio para las aplicaciones Flask:
+
+* ejemplo
+  * venv
+  * ejemplo
+    * uwsgi.ini
+    * log
+    * static
+    * models
+    * project
+    * lib
+    
+Todo el proyecto Flask está en *ejemplo/ejemplo*. El entorno virtual está en *ejemplo/venv*. La configuración de uwsgi está en *ejemplo/ejemplo/uwsgi.conf*. En esta chuleta usaremos también los directorios *log* para el log de uwsgi y *static* que es el mismo static de Flask. 
 
 ## Instalación y manejo del software
 
@@ -112,13 +126,13 @@ del entorno virtual. Finalmente, ExecStart es el script de arranque de Flask.
 *LimitNOFILE* controla el número de ficheros abiertos simultáneamente, este número suele ser muy bajo por defecto y nos puede crear 
 problemas en cualquier momento siendo mejor aumentarlo.
 
-*ExecStart* apunta al puente uwsgi que tendremos en el entorno de ejecución anteriormente creado, el --ini apunta al fichero de inicio 
-que lucirá más o menos como en la sección siguiente.
+*ExecStart* apunta al puente uwsgi que tendremos en el entorno de ejecución anteriormente creado, el --ini apunta al fichero de inicio que lucirá más o menos como en la sección siguiente.
+
 
 ### Configuración del uwsgi
 En este fichero controlamos la comunicación entre nginx y la aplicación via uwsgi.
 
-/home/ubuntu/ejemplo/ejemplo/uwsgi.ini
+**/home/ubuntu/ejemplo/ejemplo/uwsgi.ini**
 ```
 [uwsgi]
 module = wsgi:app
@@ -140,10 +154,104 @@ número de procesos que se lanzarán simultáneamente y que debe tunearse a mano
 *socket* que es el socket donde en realidad se conectará nginx con uwsgi.
 
 Adicionalmente, podemos cambiar la localización del log de todo lo que hace el uwsgi, es interesante porque podemos localizar 
-problemas rápidamente.
+problemas rápidamente. Evidentemente, el directorio debe existir.
+
+#### Enablar el servicio
+Para que el script arranque al principio
+
+```sudo systemctl enable /etc/systemd/system/ejemplo.service```
+
+Arrancamos ahora con
+
+```sudo systemctl start ejemplo.service```
+
+Y comprobemos errores en el log
+
+```cat /home/ubuntu/ejemplo/ejemplo/log/uwsgi.log```
+
 
 ### Configuración del nginx
+Vamos al directorio de configuración de nginx y editamos el fichero del sitio
+
+**/etc/nginx/sites-available/ejemplo.com**
+```
+
+server {
+    listen 80;
+    server_name ejemplo.ejemplo.com;
+    return 301 https://$host$request_uri;
+}
 
 
+server {
+	listen 443;
+
+	ssl on;
+	ssl_certificate /home/ubuntu/server/ejemplo.ejemplo.cer;
+	ssl_certificate_key /home/ubuntu/server/server.key;
+
+	server_name ejemplo.ejemplo.com;
+	
+	location /static {
+    		root /home/ubuntu/ejemplo/ejemplo;
+	}	
+	
+	location / {
+		include uwsgi_params;
+		uwsgi_pass unix:/tmp/ejemplo.sock;
+	}
+}
+```
+
+En la primera entrada *server* enrutamos las peticiones al 80 hacia el 443. En la segunda configuramos las rutas a los certificados y la ruta estática a los recursos para Flask. Finalmente, en *location /* le decimos a nginx el socket donde debe enrutar las peticiones, es decir, cuando entre una petición a ejemplo.ejemplo.com la enrutará al socket destrás del cuál está el uwsgi. 
+
+Ahora creamos el enlace en sites-enabled
+
+```sudo ln -s /etc/nginx/sites-available/ejemplo.com /etc/nginx/sites-enabled/```
+
+Descomentamos la línea de nginx.conf que puede causar problemas en multisite
+
+```sudo vi /etc/nginx/nginx.conf```
+
+Buscar **server_names_hash_bucket_size** y descomentarla, dejar valor de 64.
+
+Comprobamos sintaxis en las configuraciones
+
+```sudo nginx -t```
+
+Reiniciamos el servicio
+
+```sudo systemctl restart nginx```
+
+La webapp debería funcionar en su dirección https://ejemplo.com
+
+
+### Certificados
+
+Si queremos usar un certificado auto firmado podemos hacer
+
+```
+sudo mkdir /etc/nginx/ssl
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt
+```
+Y cambiar la ruta del certificado en /etc/nginx/sites-available/ejemplo.com
+
+#### Letsencrypt
+
+
+
+Hay que seguir las instrucciones de ```https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx```. Básicamente nos bajamos y ejecutamos el certbot.
+
+```
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install certbot python-certbot-nginx
+sudo certbot certonly --nginx
+```
+
+El directorio de instalación de los certificados es ```/etc/letsencrypt/live/ejemplo.com```.
 
 
