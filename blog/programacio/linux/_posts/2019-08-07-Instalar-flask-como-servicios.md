@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Instalar web apps Flask como servicios de Linux (Ubuntu)
+title: Instalar web apps Flask como servicios de Linux (Ubuntu,nginx,uwsgi)
 date: 2019-08-07
 tags: linux, flask
 ---
@@ -275,3 +275,15 @@ Comprobamos todo
 sudo nginx -t
 sudo service nginx restart
 ```
+
+### Instalación de la aplicación
+
+```
+sudo apt-get install libpq-dev
+cd ~/ejemplo
+git clone https://github.com/ejemplo/ejemplo
+. venv/bin/activate
+pip install Psycopg2
+pip install -r requirements.txt
+```
+
