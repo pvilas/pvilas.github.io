@@ -168,7 +168,7 @@ Reiniciamos el servicio
 
 ```sudo systemctl restart nginx```
 
-La webapp debería funcionar en su dirección https://ejemplo.com
+Probamos https://ejemplo.com
 
 
 ### Certificados
@@ -220,13 +220,26 @@ sudo service nginx restart
 
 ### Instalación de la aplicación
 
+En este caso, primero instalamos los requerimientos para el driver de postgre y de weasyprint. Después clonamos el proyecto desde github.
+
 ```
 sudo apt-get install libpq-dev
+sudo apt-get install build-essential python3-dev python3-pip python3-setuptools python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
 cd ~/ejemplo
 git clone https://github.com/ejemplo/ejemplo
 . venv/bin/activate
 pip install Psycopg2
 pip install -r requirements.txt
+```
+
+Una vez hecho esto podemos arancar la aplicación en local para ver si todo está correcto.
+
+```
+export LC_ALL=es_ES.UTF-8
+export LANG=es_ES.UTF-8
+export RUN_MODE=DEVELOPMENT
+export FLASK_APP=ejemplo.py
+flask
 ```
 
 
@@ -284,7 +297,7 @@ Arrancamos ahora con
 
 ```sudo systemctl start ejemplo.service```
 
-Y comprobemos errores en el log
+Y comprobamos errores en el log
 
 ```cat /home/ubuntu/ejemplo/ejemplo/log/uwsgi.log```
 
