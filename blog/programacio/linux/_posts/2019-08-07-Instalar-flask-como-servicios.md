@@ -112,22 +112,6 @@ Adicionalmente, podemos cambiar la localización del log de todo lo que hace el 
 problemas rápidamente. Evidentemente, el directorio debe existir.
 
 
-
-
-#### Enablar el servicio
-Para que el script arranque al principio
-
-```sudo systemctl enable /etc/systemd/system/ejemplo.service```
-
-Arrancamos ahora con
-
-```sudo systemctl start ejemplo.service```
-
-Y comprobemos errores en el log
-
-```cat /home/ubuntu/ejemplo/ejemplo/log/uwsgi.log```
-
-
 ### Configuración del nginx
 Vamos al directorio de configuración de nginx y editamos el fichero del sitio
 
@@ -289,4 +273,18 @@ del entorno virtual. Finalmente, ExecStart es el script de arranque de Flask.
 problemas en cualquier momento siendo mejor aumentarlo.
 
 *ExecStart* apunta al puente uwsgi que tendremos en el entorno de ejecución anteriormente creado, el --ini apunta al fichero de inicio que lucirá más o menos como en la sección siguiente.
+
+
+#### Enablar el servicio
+Para que el script arranque al principio
+
+```sudo systemctl enable /etc/systemd/system/ejemplo.service```
+
+Arrancamos ahora con
+
+```sudo systemctl start ejemplo.service```
+
+Y comprobemos errores en el log
+
+```cat /home/ubuntu/ejemplo/ejemplo/log/uwsgi.log```
 
