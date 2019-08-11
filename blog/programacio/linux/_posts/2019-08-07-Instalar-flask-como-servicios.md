@@ -233,6 +233,7 @@ cd ~/ejemplo
 git clone https://github.com/ejemplo/ejemplo
 . venv/bin/activate
 pip install Psycopg2
+pip install weasyprint
 pip install -r requirements.txt
 ```
 
@@ -301,7 +302,14 @@ Arrancamos ahora con
 
 ```sudo systemctl start ejemplo.service```
 
-Y comprobamos errores en el log
+Y comprobamos errores en el log de uwsgi
 
-```cat /home/ubuntu/ejemplo/ejemplo/log/uwsgi.log```
+```tail -n 50 /home/ubuntu/ejemplo/ejemplo/log/uwsgi.log```
 
+en el de nginx
+
+```tail -n 50 /var/log/nginx/error.log```
+
+y en de sistema
+
+```tail -n 50 /var/log/syslog```
