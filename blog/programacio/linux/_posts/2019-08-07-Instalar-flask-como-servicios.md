@@ -31,7 +31,7 @@ Todo el proyecto Flask está en *ejemplo/ejemplo*. El entorno virtual está en *
 ```
 sudo apt update
 ```
-Comprobar que tenemos abiertos los puertos de ssh, http, https y si queremos el de Postgre.
+Comprobar que tenemos abiertos los puertos de ssh, http, https y si queremos, el de Postgre.
 
 Comprobar versión de python ```python3 -V```. Si es necesario, subirla con ```sudo apt-get upgrade python3```.
 
