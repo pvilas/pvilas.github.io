@@ -45,6 +45,10 @@ Recordar la sintaxis de systemctl
 
 ```sudo systemctl {status, start, stop, restart, reload, enable, disable} nombre_servicio```
 
+Para ver un listado de los módulos
+
+```sudo systemctl list-units```
+
 
 ### Instalar Nginx
 Instalar ```sudo apt install nginx```
@@ -261,7 +265,7 @@ Restart=always
 RestartSec=5
 StartLimitIntervalSec=0
 WorkingDirectory=/home/ubuntu/ejemplo
-Environment="PATH=/home/ubuntu/paylink/venv/bin"
+Environment="PATH=/home/ubuntu/ejemplo/venv/bin"
 Environment="FLASK_ENV=development"
 Environment="RUN_MODE=PRODUCTION"
 Environment="LC_ALL=es_ES.UTF-8"
