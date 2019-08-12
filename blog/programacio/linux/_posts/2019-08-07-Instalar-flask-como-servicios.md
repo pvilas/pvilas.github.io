@@ -292,6 +292,16 @@ problemas en cualquier momento siendo mejor aumentarlo.
 
 *ExecStart* apunta al puente uwsgi que tendremos en el entorno de ejecución anteriormente creado, el --ini apunta al fichero de inicio que lucirá más o menos como en la sección siguiente.
 
+### Probar el uwsgi
+Vamos al directorio de la aplicación y arrancamos en local con
+
+```uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app```
+
+y miramos si el log en log/wsgi.log tiene errores.
+
+Probamos la página con
+
+```curl localhost:5000```
 
 #### Enablar el servicio
 Para que el script arranque al principio
