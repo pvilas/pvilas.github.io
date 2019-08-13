@@ -241,15 +241,45 @@ pip install weasyprint
 pip install -r requirements.txt
 ```
 
-Una vez hecho esto podemos arancar la aplicación en local para ver si todo está correcto.
+Una vez hecho esto podemos arrancar la aplicación en local para ver si todo está correcto.
 
 ```
+# database connection string
+export SQLALCHEMY_DATABASE_URI="postgresql+psycopg2://user:pass@localhost:5432/dbname"
+
+# primera vista después de login
+export SECURITY_POST_LOGIN_VIEW='/ejemplo/'
+
+# log level critical, error, warning, info, debug
+export LOG_LEVEL=DEBUG
+export LOG_ROOT_NAME='ejemplo'
+export LOG_FILE=./log/error.log
+
+# development server
+export HOST='0.0.0.0'
+export PORT=5555
+export USE_RELOADER=1
+
+# información de la empresa
+export COMPANY_NAME='My company'
+export APP_NAME='My app name'
+
+# requerido por weasyprint
 export LC_ALL=es_ES.UTF-8
 export LANG=es_ES.UTF-8
+
 export RUN_MODE=DEVELOPMENT
+
 export FLASK_APP=ejemplo.py
 flask
 ```
+
+### Probamos el uwsgi
+Ahora lanzamos el uwsgi, con el entorno activado, para probar:
+
+```/home/ubuntu/ejemplo/venv/bin/uwsgi --ini /home/ubuntu/ejemplo/ejemplo/uwsgi.ini```
+
+Comprobaremos que esté todo correcto en ```./log/uwsgi.log```.
 
 
 ### Script de arranque
@@ -282,6 +312,7 @@ Environment="LOG_LEVEL=WARNING"
 Environment="LOG_ROOT_NAME=example"
 Environment="COMPANY_NAME=My company"
 Environment="APP_NAME=my app name"
+Environment="LOG_FILE=/var/log/ejemplo.log"
 LimitNOFILE=50000
 ExecStart=/home/ubuntu/ejemplo/venv/bin/uwsgi --ini /home/ubuntu/ejemplo/ejemplo/uwsgi.ini
 
