@@ -278,7 +278,7 @@ Environment="LANG=es_ES.UTF-8"
 Environment="SQL_DEBUG=0"
 Environment="SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://user:pass@dbserver:5432/dbname"
 Environment="SECURITY_POST_LOGIN_VIEW=/example/" # first page after login
-Environment="LOG_LEVEL=10"
+Environment="LOG_LEVEL=WARNING"
 Environment="LOG_ROOT_NAME=example"
 Environment="COMPANY_NAME=My company"
 Environment="APP_NAME=my app name"
