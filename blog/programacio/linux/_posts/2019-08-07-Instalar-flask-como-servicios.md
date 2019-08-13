@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Instalar web apps Flask como servicios de Linux (Ubuntu,nginx,uwsgi)
+title: Instalar web apps Flask como servicios de Linux (Ubuntu, nginx, uwsgi)
 date: 2019-08-07
 tags: linux, flask
 ---
@@ -104,6 +104,10 @@ chmod-socket = 660
 vacuum = true
 
 die-on-term = true
+
+# socket = :8080
+virtualenv = /home/ubuntu/ejemplo/venv
+chdir = /home/ubuntu/ejemplo/ejemplo
 
 logto = /home/ubuntu/ejemplo/ejemplo/log/uwsgi.log
 ```
@@ -272,6 +276,12 @@ Environment="RUN_MODE=PRODUCTION"
 Environment="LC_ALL=es_ES.UTF-8"
 Environment="LANG=es_ES.UTF-8"
 Environment="SQL_DEBUG=0"
+Environment="SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://user:pass@dbserver:5432/dbname"
+Environment="SECURITY_POST_LOGIN_VIEW=/example/" # first page after login
+Environment="LOG_LEVEL=10"
+Environment="LOG_ROOT_NAME=example"
+Environment="COMPANY_NAME=My company"
+Environment="APP_NAME=my app name"
 LimitNOFILE=50000
 ExecStart=/home/ubuntu/ejemplo/venv/bin/uwsgi --ini /home/ubuntu/ejemplo/ejemplo/uwsgi.ini
 
