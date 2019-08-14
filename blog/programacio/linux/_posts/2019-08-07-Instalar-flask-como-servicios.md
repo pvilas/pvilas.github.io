@@ -357,6 +357,12 @@ en el de nginx
 
 ```tail -n 50 /var/log/nginx/error.log```
 
-y en de sistema
+en el de sistema
 
 ```tail -n 50 /var/log/syslog```
+
+y en el de aplicación
+
+```tail -n 50 /var/log/ejemplo.log```
+
+
