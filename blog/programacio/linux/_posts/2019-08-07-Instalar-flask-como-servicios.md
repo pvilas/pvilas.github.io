@@ -333,6 +333,13 @@ problemas en cualquier momento siendo mejor aumentarlo.
 
 *ExecStart* apunta al puente uwsgi que tendremos en el entorno de ejecución anteriormente creado, el --ini apunta al fichero de inicio que lucirá más o menos como en la sección siguiente.
 
+Tenemos que crear y cambiar permisos del fichero de log de la aplicación *LOG_FILE*. Notar que el log del uwsgi va por otra parte.
+
+```
+sudo touch /var/log/ejemplo.log
+sudo chmod 666 /var/log/ejemplo.log
+```
+
 ### Probar el uwsgi
 Vamos al directorio de la aplicación y arrancamos en local con
 
