@@ -293,9 +293,12 @@ Puede que el log nos muestre varios mensajes de advertencia, entre ellos:
 
 El primero nos indica que si arrancamos un threads desde un proceso, estos se bloquearán mientras no se suelte el main thread. Por lo tanto, si usamos threads es mejor usar la opción `--enable-threads`, si no los usamos es mejor no activarla por temas de rendimiento.
 
+El segundo indica problemas con el build del wsgi. Posiblemente no se insalaron las librerías libpcre antes del build. Hay que reinstalar y recompilar con `--no-cache`.
 
-
-
+```
+sudo apt-get install libpcre3 libpcre3-dev
+pip install uwsgi -I --no-cache-dir
+```
 
 ### Script de arranque
 Los servicios se configuran mediante la creación de un script en ```/etc/systemd/system/ejemplo.service```.
