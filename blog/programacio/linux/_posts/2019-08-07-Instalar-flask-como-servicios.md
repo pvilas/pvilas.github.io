@@ -5,18 +5,18 @@ date: 2019-08-07
 tags: linux, flask
 ---
 
-- [Instalación y manejo del software](#instalaci-n-y-manejo-del-software)
+- [Instalación y manejo del software](#instalación-y-manejo-del-software)
   * [Inicio](#inicio)
   * [Gestionar servicios](#gestionar-servicios)
   * [Instalar Nginx](#instalar-nginx)
 - [Configurar los servicios](#configurar-los-servicios)
   * [Directorio del servicio](#directorio-del-servicio)
-  * [Creación del entorno de ejecución python](#creaci-n-del-entorno-de-ejecuci-n-python)
-  * [Configuración del uwsgi](#configuraci-n-del-uwsgi)
-  * [Configuración del nginx](#configuraci-n-del-nginx)
+  * [Creación del entorno de ejecución python](#creación-del-entorno-de-ejecución-python)
+  * [Configuración del uwsgi](#configuración-del-uwsgi)
+  * [Configuración del nginx](#configuración-del-nginx)
   * [Certificados](#certificados)
     + [Letsencrypt](#letsencrypt)
-  * [Instalación de la aplicación](#instalaci-n-de-la-aplicaci-n)
+  * [Instalación de la aplicación](#instalación-de-la-aplicaci-n)
   * [Probamos el uwsgi](#probamos-el-uwsgi)
     + [Notas acerca de los mensajes de uwsgi](#notas-acerca-de-los-mensajes-de-uwsgi)
   * [Script de arranque](#script-de-arranque)
