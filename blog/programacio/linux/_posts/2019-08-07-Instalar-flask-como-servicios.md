@@ -11,7 +11,7 @@ Está basada en Ubuntu 18.04 LTS, pero se puede adaptar fácilmente a cualquier 
 
 Primero instalaremos el software que necesitamos tanto en el SO como en el entorno de ejecución. Después configuraremos los servicios.
 
-Suelo usar esta estrutura de directorio para las aplicaciones Flask:
+Suelo usar esta estructura de directorio para las aplicaciones Flask:
 
 * ejemplo
   * venv
