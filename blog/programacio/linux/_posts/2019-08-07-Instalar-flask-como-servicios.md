@@ -86,7 +86,10 @@ python -V
 
 Con el entorno activado, instalamos el uwsgi que necesita las librerías de desarrollo de python3 instaladas anteriormente.
 
-```pip install uwsgi```
+```
+sudo apt-get install libpcre3 libpcre3-dev
+pip install uwsgi
+```
 
 ### Configuración del uwsgi
 En este fichero controlamos la comunicación entre nginx y la aplicación via uwsgi.
@@ -280,6 +283,18 @@ Ahora lanzamos el uwsgi, con el entorno activado, para probar:
 ```/home/ubuntu/ejemplo/venv/bin/uwsgi --ini /home/ubuntu/ejemplo/ejemplo/uwsgi.ini```
 
 Comprobaremos que esté todo correcto en ```./log/uwsgi.log```.
+
+#### Notas acerca de los mensajes de uwsgi
+
+Puede que el log nos muestre varios mensajes de advertencia, entre ellos:
+
+1. *** Python threads support is disabled. You can enable it with --enable-threads ***
+2. !!! no internal routing support, rebuild with pcre support !!!
+
+El primero nos indica que si arrancamos un threads desde un proceso, estos se bloquearán mientras no se suelte el main thread. Por lo tanto, si usamos threads es mejor usar la opción `--enable-threads`, si no los usamos es mejor no activarla por temas de rendimiento.
+
+
+
 
 
 ### Script de arranque
