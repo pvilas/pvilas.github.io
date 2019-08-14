@@ -340,17 +340,6 @@ sudo touch /var/log/ejemplo.log
 sudo chmod 666 /var/log/ejemplo.log
 ```
 
-### Probar el uwsgi
-Vamos al directorio de la aplicación y arrancamos en local con
-
-```uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app```
-
-y miramos si el log en log/wsgi.log tiene errores.
-
-Probamos la página con
-
-```curl localhost:5000```
-
 #### Enablar el servicio
 Para que el script arranque al principio
 
