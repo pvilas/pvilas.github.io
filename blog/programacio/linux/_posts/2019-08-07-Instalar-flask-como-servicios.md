@@ -22,7 +22,8 @@ tags: linux, flask
     + [Notas acerca de los mensajes de uwsgi](#notas-acerca-de-los-mensajes-de-uwsgi)
   * [Script de arranque](#script-de-arranque)
     + [Enablar el servicio](#enablar-el-servicio)
-
+- [Post Instalación](#post-instalación)
+  * [Comprobación de la zona horaria](#comprobación-de-la-zona-horaria)
 
 
 Es un tema repetitivo el instalar web apps hechas en Flask como servicios de linux, así que he creado esta chuleta como recordatorio. 
@@ -405,4 +406,12 @@ y en el de aplicación
 
 ```tail -n 50 /var/log/ejemplo.log```
 
+## Post-instalación
 
+### Comprobación de la zona horaria
+
+Comprobamos la zona horaria con `timedatectl`, si no está correcta, la fijamos con
+
+```sudo timedatectl set-timezone Europe/Madrid```
+
+Y volvemos a pasar `timedatectl` para comprobar.
