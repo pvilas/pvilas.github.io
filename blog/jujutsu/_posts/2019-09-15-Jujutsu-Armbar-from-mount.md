@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Armbar from mount
+title: Jujutsu Armbar from mount
 comments: false
 tags: jujutsu, armbar
 ---
