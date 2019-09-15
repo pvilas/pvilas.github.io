@@ -9,9 +9,6 @@ tags: jujutsu, armbar
 
 Font: [Draculino: Arm Bar from Mount Position](https://www.youtube.com/watch?v=5uuU0LfsZOY)
 
-# Armbar from mount
-
-
 ### 2019-09-15-Armbar-from-mount01 - posició inicial
 ![2019-09-15-Armbar-from-mount01 - posició inicial](/images/jujutsu/2019-09-15-armbar/2019-09-15-Armbar-from-mount01_-_posició_inicial.png)
 
