@@ -7,7 +7,7 @@ tags: jujutsu, armbar
 
 
 
-# Armbar from mount
+# Jujutsu Armbar from mount
 
 
 ### 01 - posició inicial
