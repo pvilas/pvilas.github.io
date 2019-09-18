@@ -33,7 +33,7 @@ Font: [Draculino: Arm Bar from Mount Position](https://www.youtube.com/watch?v=5
 ### 08 - ens apoyam sobre genoll i passam a X-mount. Notar que peu està baix hombre. Notar que tenim es cul quasi fora per poder passar sa cama
 ![2019-09-15-Armbar-from-mount08 - ens apoyam sobre genoll i passam a X-mount. Notar que peu està baix hombre. Notar que tenim es cul quasi fora per poder passar sa cama](/images/jujutsu/2019-09-15-armbar/2019-09-15-Armbar-from-mount08_-_ens_apoyam_sobre_genoll_i_passam_a_X-mount._Notar_que_peu_està_baix_hombre._Notar_que_tenim_es_cul_quasi_fora_per_poder_passar_sa_cama.png)
 
-### 09 - treim es peu i posam a uke de costat. Passam braç per baix des seu
+### 09 - treim es peu i posam a uke de costat. Passam braç per baix des seu. Duim pes endavant.
 ![2019-09-15-Armbar-from-mount09 - treim es peu i posam a uke de costat. Passam braç per baix des seu](/images/jujutsu/2019-09-15-armbar/2019-09-15-Armbar-from-mount09_-_treim_es_peu_i_posam_a_uke_de_costat._Passam_braç_per_baix_des_seu.png)
 
 ### 10 - mos apoyam amb uke per passar s altra cama
