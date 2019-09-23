@@ -46,14 +46,14 @@ Font: Versió de Roy Dean
 ### 12 - Ens deixam caure
 ![12 - Ens deixam caure](/images/jujutsu/2019-09-23-armbarroydean/12_-_Ens_deixam_caure.png)
 
-### 13 - Pes endavant i feim una rotació sobre es genoll. Tota sa pelvis rota fins posar-se perpendicular a uke
-![13 - Pes endavant i feim una rotació sobre es genoll. Tota sa pelvis rota fins posar-se perpendicular a uke](/images/jujutsu/2019-09-23-armbarroydean/13_-_Pes_endavant_i_feim_una_rotació_sobre_es_genoll._Tota_sa_pelvis_rota_fins_posar-se_perpendicular_a_uke.png)
-
 ### 13 - uke estira braços
 ![13 - uke estira braços](/images/jujutsu/2019-09-23-armbarroydean/13_-_uke_estira_braços.png)
 
-### 14 - Passam peu baix hombro
+### 14 - Pes endavant i feim una rotació sobre es genoll. Tota sa pelvis rota fins posar-se perpendicular a uke
+![13 - Pes endavant i feim una rotació sobre es genoll. Tota sa pelvis rota fins posar-se perpendicular a uke](/images/jujutsu/2019-09-23-armbarroydean/13_-_Pes_endavant_i_feim_una_rotació_sobre_es_genoll._Tota_sa_pelvis_rota_fins_posar-se_perpendicular_a_uke.png)
+
+### 15 - Passam peu baix hombro
 ![14 - Passam peu baix hombro](/images/jujutsu/2019-09-23-armbarroydean/14_-_Passam_peu_baix_hombro.png)
 
-### 15 - Arm bar
+### 16 - Arm bar
 ![15 - Arm bar](/images/jujutsu/2019-09-23-armbarroydean/15_-_Arm_bar.png)
