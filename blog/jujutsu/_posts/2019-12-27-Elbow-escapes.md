@@ -10,6 +10,7 @@ Moviments bàsics
 
 - [Bridge](#bridge-asimetric)
 - [Gamba](#gamba-asimetrica)
+- [Gamba frontal](#gamba-frontal)
 
 Monta
 
@@ -52,6 +53,8 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 
 ### Gamba asimètrica
 
+En aquest moviment, igual que en els altres, ficam es colçe de baix cap endins per protegir-lo. La punta del colçe queda baix es nostre costat.
+
 ### 2.1 - iniciam gamba amb cames asimètriques
 ![2.1 - iniciam gamba amb cames asimètriques](/images/jujutsu/2019-12-27-pin2/2.1_-_iniciam_gamba_amb_cames_asimètriques.png)
 
@@ -61,10 +64,28 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 ### 2.3 - fugam cadera. seguim sobre tres punts fins al final. sa cama de baix te genoll totalment mirant enterra i es pot moure
 ![2.3 - fugam cadera. seguim sobre tres punts fins al final. sa cama de baix te genoll totalment mirant enterra i es pot moure](/images/jujutsu/2019-12-27-pin2/2.3_-_fugam_cadera._seguim_sobre_tres_punts_fins_al_final._sa_cama_de_baix_te_genoll_totalment_mirant_enterra_i_es_pot_moure.png)
 
+### Gamba frontal
+
+Ens serveix per fer espai entre sa nostra pelvis i sa de uke quan uke ens seguix per entrerra.
+
+
+### 3.1 - Tirar el peu de fora i apoyar bola dels dits enterra. es cul fa pressió contra uke.
+![6.9 - Detall de com fer la gamba final quan uke ens segueix. tirar el peu de fora i apoyar enterra. es cul fa pressió contra uke.](/images/jujutsu/2019-12-27-pin2/6.9_-_Detall_de_com_fer_la_gamba_final_quan_uke_ens_segueix._tirar_el_peu_de_fora_i_apoyar_enterra._es_cul_fa_pressió_contra_uke..png)
+
+### 3.2 - ens retorcim retrocedint sa cadera
+![6.10 - ens retorcim retrocedint sa cadera](/images/jujutsu/2019-12-27-pin2/6.10_-_ens_retorcim_retrocedint_sa_cadera.png)
+
+### 3.3 - tornam amb es genoll apuntant enterra
+![6.11 - tornam amb es genoll apuntant enterra](/images/jujutsu/2019-12-27-pin2/6.11_-_tornam_amb_es_genoll_apuntant_enterra.png)
+
+
+
+
+
 
 ## Monta. Tècnica 1. Captura de braç.
 
-### 3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe
+### 3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe. Sa ma de tori rota cap endins i es Gi s'estira.
 ![3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe](/images/jujutsu/2019-12-27-pin2/3.1_-_desde_monta,_agafam_gi_amb_quatre_dits_per_banda_de_dins_colçe.png)
 
 ### 3.2 - ma de uke passat mitj cos de tori
@@ -79,7 +100,7 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 ### 3.5 - cames a 90 graus. una amunt s altra cap a costat
 ![3.5 - cames a 90 graus. una amunt s altra cap a costat](/images/jujutsu/2019-12-27-pin2/3.5_-_cames_a_90_graus._una_amunt_s_altra_cap_a_costat.png)
 
-### 3.6 - brige a tres punts. miram amunt per que es nostre cap no bloqueji es moviment
+### 3.6 - brige asimètric a tres punts. miram amunt per que es nostre cap no bloqueji es moviment
 ![3.6 - brige a tres punts. miram amunt per que es nostre cap no bloqueji es moviment](/images/jujutsu/2019-12-27-pin2/3.6_-_brige_a_tres_punts._miram_amunt_per_que_es_nostre_cap_no_bloqueji_es_moviment.png)
 
 ### 3.7 - agafam impuls i passam a estar dins seva guàrdia
@@ -88,6 +109,8 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 
 
 ## Monta. Tècnica 2. Elbow escape.
+
+És una tècnica en forma d'espiral. Feim una S per sortir de baix de uke espitjant es seu genoll per capturar sa cama.
 
 ### 4.1 - elbow escape from mount. bloquejam sobre sa nostra pelvis i espitjam amb patadeta perque es pes de uke estigui més sobre braços
 ![4.1 - elbow escape from mount. bloquejam sobre sa nostra pelvis i espitjam amb patadeta perque es pes de uke estigui més sobre braços](/images/jujutsu/2019-12-27-pin2/4.1_-_elbow_escape_from_mount._bloquejam_sobre_sa_nostra_pelvis_i_espitjam_amb_patadeta_perque_es_pes_de_uke_estigui_més_sobre_braços.png)
@@ -110,7 +133,7 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 ### 4.6 - fer triangle sobre la seva cama
 ![4.6 - fer triangle sobre la seva cama](/images/jujutsu/2019-12-27-pin2/4.6_-_fer_triangle_sobre_la_seva_cama.png)
 
-### 4.7 - capturam tota sa cama
+### 4.7 - capturam tota sa cama espitjant amb es colçe
 ![4.7 - capturam tota sa cama](/images/jujutsu/2019-12-27-pin2/4.7_-_capturam_tota_sa_cama.png)
 
 ### 4.8 - posam frame sobre espalda contrària de uke
@@ -152,19 +175,39 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 ### 5.1 - side control. posició inicial
 ![5.1 - side control. posició inicial](/images/jujutsu/2019-12-27-pin2/5.1_-_side_control._posició_inicial.png)
 
-### 5.2 - es nostre objectiu és introduïr es colçe de dins. movem pes cap enfora
+### 5.2 - es nostre objectiu és introduïr es colçe de dins. movem pes cap enfora. També es pot fer un cross face.
 ![5.2 - es nostre objectiu és introduïr es colçe de dins. movem pes cap enfora](/images/jujutsu/2019-12-27-pin2/5.2_-_es_nostre_objectiu_és_introduïr_es_colçe_de_dins._movem_pes_cap_enfora.png)
 
-### 5.3 - introduïm colçe de dins. ara, es nostre objectiu és introduïr es genoll de dins. per fer-ho tenim que moure es cap de uke a s altra banda
+### 5.3 - introduïm colçe de dins. ara, es nostre objectiu és introduïr es genoll de dins. per fer-ho tenim que moure es cap de uke a s altra banda des nostre cos, és a dir, que es cos i es cap de uke estiguin al mateix costat.
 ![5.3 - introduïm colçe de dins. ara, es nostre objectiu és introduïr es genoll de dins. per fer-ho tenim que moure es cap de uke a s altra banda](/images/jujutsu/2019-12-27-pin2/5.3_-_introduïm_colçe_de_dins._ara,_es_nostre_objectiu_és_introduïr_es_genoll_de_dins._per_fer-ho_tenim_que_moure_es_cap_de_uke_a_s_altra_banda.png)
 
 ### 5.4 - feim biceps cross face amb impuls de bridge. notar que la cama de dins apunta **es genoll cap a terra i el peu puja, estan més alt que genoll**. Aquest és el punt óptim d'inserció.
 ![5.4 - feim biceps cross face amb impuls de bridge. notar que la cama de dins apunta es genoll cap a terra](/images/jujutsu/2019-12-27-pin2/5.4_-_feim_biceps_cross_face_amb_impuls_de_bridge._notar_que_la_cama_de_dins_apunta_es_genoll_cap_a_terra.png)
 
-### 5.5.1 - apoyam colçe a genoll de uke
+Per poder introduïr correctament el genoll hi ha dos requeriments necessaris:
+
+- Punt d'inserció
+- Angle d'inserció
+
+Si falla algun dels dos l'inserció no serà possible. Vegem la seqüència:
+
+#### 5.4.1. - Peu de fora una mica cap enfora de la linea de la pelvis, peu de dins s'aixeca 
+![](/images/jujutsu/2019-12-27-pin2/5.4.1.png)
+
+#### 5.4.2. - El genoll es dirigeix cap a l'inserció de la pelvis de uke (baix es cinturó)
+![](/images/jujutsu/2019-12-27-pin2/5.4.2.png)
+
+#### 5.4.3. - Es genoll toca amb es punt d'inserció, el peu passa per dalt del nivell del genoll per aconseguir l'angle d'inserció correcte
+![](/images/jujutsu/2019-12-27-pin2/5.4.3.png)
+
+#### 5.4.4. - Es passa el genoll ben endins de la pelvis de uke. L'inserció està acabada.
+![](/images/jujutsu/2019-12-27-pin2/5.4.4.png)
+
+
+### 5.5 - apoyam colçe a genoll de uke
 ![5.5.1 - apoyam colçe a genoll de uke](/images/jujutsu/2019-12-27-pin2/5.5.1_-_apoyam_colçe_a_genoll_de_uke.png)
 
-### 5.5 - introduïm genoll des de baix
+### 5.5(bis) - introduïm genoll des de baix
 ![5.5 - introduïm genoll des de baix](/images/jujutsu/2019-12-27-pin2/5.5_-_introduïm_genoll_des_de_baix.png)
 
 ### 5.6 - passam peu de fora dins cama de uke per bloquejar 
@@ -218,9 +261,6 @@ En aquesta tècnica, buscam posar es colçe enterra per poder fer elbow escape.
 
 ### 6.11 - tornam amb es genoll apuntant enterra
 ![6.11 - tornam amb es genoll apuntant enterra](/images/jujutsu/2019-12-27-pin2/6.11_-_tornam_amb_es_genoll_apuntant_enterra.png)
-
-### 6.12 - vista des de darrera
-![6.12 - vista des de darrera](/images/jujutsu/2019-12-27-pin2/6.12_-_vista_des_de_darrera.png)
 
 ## Reverse Kesa Gatame
 
