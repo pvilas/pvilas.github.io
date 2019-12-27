@@ -38,16 +38,16 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 ### Bridge asimetric
 
 
-### 1.1 - bridge asimètric. Treim cama externa amb el genoll cap enterra. Només ens suportam sobre puntes des peus i esquena
+#### 1.1 - bridge asimètric. Treim cama externa amb el genoll cap enterra. Només ens suportam sobre puntes des peus i esquena
 ![1.1 - bridge asimètric. Treim cama externa amb el genoll cap enterra. Només ens suportam sobre puntes des peus i esquena](/images/jujutsu/2019-12-27-pin2/1.1_-_bridge_asimètric._Treim_cama_externa_amb_el_genoll_cap_enterra._Només_ens_suportam_sobre_puntes_des_peus_i_esquena.png)
 
-### 1.2 - passam cama del darrera cap endavant. seguim sobre tres punts. es peus estan vius
+#### 1.2 - passam cama del darrera cap endavant. seguim sobre tres punts. es peus estan vius
 ![1.2 - passam cama del darrera cap endavant. seguim sobre tres punts. es peus estan vius](/images/jujutsu/2019-12-27-pin2/1.2_-_passam_cama_del_darrera_cap_endavant._seguim_sobre_tres_punts._es_peus_estan_vius.png)
 
-### 1.3 - acaban en seiza
+#### 1.3 - acaban en seiza
 ![1.3 - acaban en seiza](/images/jujutsu/2019-12-27-pin2/1.3_-_acaban_en_seiza.png)
 
-### 1.4 - Detall de com l orella va enterra. la mirada va totalment cap amunt i així no ens bloqueja el cap. el cos te que estar totalment estirat amb la pelvis enfora. notar que es cap està descentrat
+#### 1.4 - Detall de com l orella va enterra. la mirada va totalment cap amunt i així no ens bloqueja el cap. el cos te que estar totalment estirat amb la pelvis enfora. notar que es cap està descentrat
 ![1.4 - Detall de com l orella va enterra. la mirada va totalment cap amunt i així no ens bloqueja el cap. el cos te que estar totalment estirat amb la pelvis enfora. notar que es cap està descentrat](/images/jujutsu/2019-12-27-pin2/1.4_-_Detall_de_com_l_orella_va_enterra._la_mirada_va_totalment_cap_amunt_i_així_no_ens_bloqueja_el_cap._el_cos_te_que_estar_totalment_estirat_amb_la_pelvis_enfora._notar_que_es_cap_està_descentrat.png)
 
 
@@ -55,13 +55,13 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 
 En aquest moviment, igual que en els altres, ficam es colçe de baix cap endins per protegir-lo. La punta del colçe queda baix es nostre costat.
 
-### 2.1 - iniciam gamba amb cames asimètriques
+#### 2.1 - iniciam gamba amb cames asimètriques
 ![2.1 - iniciam gamba amb cames asimètriques](/images/jujutsu/2019-12-27-pin2/2.1_-_iniciam_gamba_amb_cames_asimètriques.png)
 
-### 2.2 - apoyo a tres punts
+#### 2.2 - apoyo a tres punts
 ![2.2 - apoyo a tres punts](/images/jujutsu/2019-12-27-pin2/2.2_-_apoyo_a_tres_punts.png)
 
-### 2.3 - fugam cadera. seguim sobre tres punts fins al final. sa cama de baix te genoll totalment mirant enterra i es pot moure
+#### 2.3 - fugam cadera. seguim sobre tres punts fins al final. sa cama de baix te genoll totalment mirant enterra i es pot moure
 ![2.3 - fugam cadera. seguim sobre tres punts fins al final. sa cama de baix te genoll totalment mirant enterra i es pot moure](/images/jujutsu/2019-12-27-pin2/2.3_-_fugam_cadera._seguim_sobre_tres_punts_fins_al_final._sa_cama_de_baix_te_genoll_totalment_mirant_enterra_i_es_pot_moure.png)
 
 ### Gamba frontal
@@ -69,13 +69,13 @@ En aquest moviment, igual que en els altres, ficam es colçe de baix cap endins 
 Ens serveix per fer espai entre sa nostra pelvis i sa de uke quan uke ens seguix per entrerra.
 
 
-### 3.1 - Tirar el peu de fora i apoyar bola dels dits enterra. es cul fa pressió contra uke.
+#### 3.1 - Tirar el peu de fora i apoyar bola dels dits enterra. es cul fa pressió contra uke.
 ![6.9 - Detall de com fer la gamba final quan uke ens segueix. tirar el peu de fora i apoyar enterra. es cul fa pressió contra uke.](/images/jujutsu/2019-12-27-pin2/6.9_-_Detall_de_com_fer_la_gamba_final_quan_uke_ens_segueix._tirar_el_peu_de_fora_i_apoyar_enterra._es_cul_fa_pressió_contra_uke..png)
 
-### 3.2 - ens retorcim retrocedint sa cadera
+#### 3.2 - ens retorcim retrocedint sa cadera
 ![6.10 - ens retorcim retrocedint sa cadera](/images/jujutsu/2019-12-27-pin2/6.10_-_ens_retorcim_retrocedint_sa_cadera.png)
 
-### 3.3 - tornam amb es genoll apuntant enterra
+#### 3.3 - tornam amb es genoll apuntant enterra
 ![6.11 - tornam amb es genoll apuntant enterra](/images/jujutsu/2019-12-27-pin2/6.11_-_tornam_amb_es_genoll_apuntant_enterra.png)
 
 
