@@ -85,6 +85,8 @@ Ens serveix per fer espai entre sa nostra pelvis i sa de uke quan uke ens seguix
 
 ## Monta. Tècnica 1. Captura de braç.
 
+Aqui intentam deixar sense base a uke. És important que tant es braç con es genoll i es peu de uke estiguin bloquejats.
+
 #### 3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe. Sa ma de tori rota cap endins i es Gi s'estira.
 ![3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe](/images/jujutsu/2019-12-27-pin2/3.1_-_desde_monta,_agafam_gi_amb_quatre_dits_per_banda_de_dins_colçe.png)
 
@@ -172,6 +174,8 @@ Ens serveix per fer espai entre sa nostra pelvis i sa de uke quan uke ens seguix
 
 ## Side control.
 
+Aquesta és la tècnica més bàsica de totes i fonament de tota la resta. La passa bàsica és introduïr el colçe per evitar que uke s'ens vengui al damunt. Hi ha que seguir bé les passes de la seqüència d'inserció del genoll perque la tècnica funcioni bé.
+
 #### 5.1 - side control. posició inicial
 ![5.1 - side control. posició inicial](/images/jujutsu/2019-12-27-pin2/5.1_-_side_control._posició_inicial.png)
 
@@ -189,7 +193,7 @@ Per poder introduïr correctament el genoll hi ha dos requeriments necessaris:
 - Punt d'inserció
 - Angle d'inserció
 
-Si falla algun dels dos l'inserció no serà possible. Vegem la seqüència:
+Si falla algun dels dos, l'inserció no serà possible. Vegem la seqüència:
 
 ##### 5.4.1. - Peu de fora una mica cap enfora de la linea de la pelvis, peu de dins s'aixeca 
 ![](/images/jujutsu/2019-12-27-pin2/5.4.1.png)
