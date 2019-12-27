@@ -87,7 +87,7 @@ Ens serveix per fer espai entre sa nostra pelvis i sa de uke quan uke ens seguix
 
 Aqui intentam deixar sense base a uke. És important que tant es braç con es genoll i es peu de uke estiguin bloquejats.
 
-#### 3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe. Sa ma de tori rota cap endins i es Gi s'estira.
+#### 3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe. Sa ma de tori rota cap endins i es Gi s'estira. Sa ma de uke queda cap amunt amb es colço fortament aferrat a n'es seu costat.
 ![3.1 - desde monta, agafam gi amb quatre dits per banda de dins colçe](/images/jujutsu/2019-12-27-pin2/3.1_-_desde_monta,_agafam_gi_amb_quatre_dits_per_banda_de_dins_colçe.png)
 
 #### 3.2 - ma de uke passat mitj cos de tori
