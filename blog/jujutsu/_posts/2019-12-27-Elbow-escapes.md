@@ -24,12 +24,14 @@ Side Control
 
 Kesa Gatame
 
-- [Directa](#kesa-gatame.)
+- [Directa](#kesa-gatame)
 - [Reversa](#reverse-kesa-gatame)
 
+Knee on Belly
 
+- [Knee on belly](#knee-on-belly)
 
-Totes les tècniques (menys sortida de monta per captura del braç) es basen en la fuita del colçe *elbow escape*. Feim servir el colçe com a palanca per introduïr el genoll i fer puesto per retornar a la guàrdia.
+Totes les tècniques (menys sortida de monta per captura del braç) es basen en la fuita del colçe *elbow escape*. Feim servir el colçe com a palanca per introduïr el genoll i fer puesto per retornar a la guàrdia. L'objectiu és no deixar que ens tanquin espai i arribar a un chest-to-chest, però si hi arriba, sempre mantenir els frames i intentar fer distància entre naltros i uke.
 
 ## Moviments bàsics
 
@@ -285,3 +287,42 @@ En aquesta tècnica, buscam posar es colçe enterra per poder fer elbow escape.
 
 #### 7.6 - tancam guàrdia
 ![7.6 - tancam guàrdia](/images/jujutsu/2019-12-27-pin2/7.6_-_tancam_guàrdia.png)
+
+## Knee on Belly
+
+### Knee on belly
+
+#### 8.1 - Posició inicial
+![8.1](/images/jujutsu/2019-12-27-pin2/kob1.png)
+
+#### 8.2 - Patadeta a la vegada que aixecam pelvis
+![8.2](/images/jujutsu/2019-12-27-pin2/kob2.png)
+
+#### 8.3 - Enganxam genoll de uke i estrenyem contra naltros, colçe de baix es recull.
+![8.3](/images/jujutsu/2019-12-27-pin2/kob3.png)
+
+#### 8.4 - Giram i agafam implus
+![8.4](/images/jujutsu/2019-12-27-pin2/kob4.png)
+
+#### 8.5 - Sobre genolls, cap ALT, braç de fora estirat i apoyant
+![8.5](/images/jujutsu/2019-12-27-pin2/kob5.png)
+
+#### 8.6 - Cap encara més amunt desequilibra a uke
+![8.6](/images/jujutsu/2019-12-27-pin2/kob6.png)
+
+#### 8.7 - Agafam taló
+![8.7](/images/jujutsu/2019-12-27-pin2/kob7.png)
+
+#### 8.8 - Li estiram cama
+![8.8](/images/jujutsu/2019-12-27-pin2/kob8.png)
+
+#### 8.9 - Li agafam cama de fora
+![8.9](/images/jujutsu/2019-12-27-pin2/kob9.png)
+
+
+
+
+
+
+
+
