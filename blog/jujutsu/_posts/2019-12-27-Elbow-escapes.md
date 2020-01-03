@@ -17,7 +17,7 @@ Monta
 - [Captura de braç]()
 - [Elbow escape]()
 
-Side Control
+Detall Side Control
 
 - [Side Control](#side-control)
 
