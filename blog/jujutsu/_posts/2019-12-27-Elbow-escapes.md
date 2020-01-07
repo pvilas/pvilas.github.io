@@ -178,6 +178,8 @@ Aqui intentam deixar sense base a uke. És important que tant es braç con es ge
 
 Aquesta és la tècnica més bàsica de totes i fonament de tota la resta. La passa bàsica és introduïr el colçe per evitar que uke s'ens vengui al damunt. Hi ha que seguir bé les passes de la seqüència d'inserció del genoll perque la tècnica funcioni bé.
 
+La idea bàsica és que **uke ha de tenir sa cadera i es cap a n'es mateix costat**. D'aquesta manera no pot fer força per mantenir-nos baix.
+
 
 ### Tres possibles col.locacions del braç exterior
 
