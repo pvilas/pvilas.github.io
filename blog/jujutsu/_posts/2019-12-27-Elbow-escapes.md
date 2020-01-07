@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Jujutsu escapes
+title: Jujutsu fugides bàsiques
 comments: false
 tags: jujutsu, pin-escapes
 ---
