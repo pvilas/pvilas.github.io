@@ -6,7 +6,7 @@ tags: jujutsu, pin-escapes
 ---
 <style>
 img {
-   width:350px;
+   width:550px;
 }
 </style>
 ## Index
