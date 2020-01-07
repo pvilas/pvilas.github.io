@@ -51,7 +51,7 @@ Tant en el bridge com a la gamba, la cama de fora surt enfora i apoya es peu pla
 
 
 #### 1.1 - Bridge asimètric. Treim cama externa amb el genoll cap enterra. Només ens suportam sobre puntes des peus i esquena
-![1.1 - bridge asimètric. Treim cama externa amb el genoll cap enterra. Només ens suportam sobre puntes des peus i esquena](/images/jujutsu/2019-12-27-pin2/1.1_-_bridge_asimètric._Treim_cama_externa_amb_el_genoll_cap_enterra._Només_ens_suportam_sobre_puntes_des_peus_i_esquena.png){:height="36px" width="36px"}
+![1.1 - bridge asimètric. Treim cama externa amb el genoll cap enterra. Només ens suportam sobre puntes des peus i esquena](/images/jujutsu/2019-12-27-pin2/1.1_-_bridge_asimètric._Treim_cama_externa_amb_el_genoll_cap_enterra._Només_ens_suportam_sobre_puntes_des_peus_i_esquena.png)
 
 #### 1.2 - Passam cama del darrera cap endavant. seguim sobre tres punts. es peus estan vius
 ![1.2 - passam cama del darrera cap endavant. seguim sobre tres punts. es peus estan vius](/images/jujutsu/2019-12-27-pin2/1.2_-_passam_cama_del_darrera_cap_endavant._seguim_sobre_tres_punts._es_peus_estan_vius.png)
