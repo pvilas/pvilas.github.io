@@ -260,6 +260,10 @@ Si falla algun dels dos, l'inserció no serà possible. Vegem la seqüència:
 #### 5.13 - Asseguram cama de fora i anam a guàrdia tancada
 ![5.13](/images/jujutsu/2019-12-27-pin2/513.png)
 
+#### 5.14 - Si hi ha puesto, passam peu dins
+![5.14](/images/jujutsu/2019-12-27-pin2/puesto.png)
+
+
 
 ## Kesa Gatame
 
