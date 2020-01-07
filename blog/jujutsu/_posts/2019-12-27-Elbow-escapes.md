@@ -4,7 +4,11 @@ title: Jujutsu fugides bàsiques
 comments: false
 tags: jujutsu, pin-escapes
 ---
-
+<style>
+img {
+   width:350px;
+}
+</style>
 ## Index
 [Moviments bàsics](#moviments-bàsics)
 
