@@ -6,30 +6,30 @@ tags: jujutsu, pin-escapes
 ---
 
 ## Index
-Moviments bàsics
+[Moviments bàsics](#moviments-bàsics)
 
 - [Bridge](#bridge-asimetric)
 - [Gamba](#gamba-asimetrica)
 - [Gamba frontal](#gamba-frontal)
 
-Monta
+[Monta](#monta)
 
 - [Captura de braç]()
 - [Elbow escape]()
 
-Detall Side Control
+[Side Control](#side-control)
+- [Tres possibles col.locacions del braç exterior](#tres-possibles-col.locacions-del-braç-exterior)
+- [Side Control en detall](#side-control-en-detall)
+- [Vista posterior](#vista-posterior)
 
-- [Side Control](#side-control)
-
-
-Kesa Gatame
+[Kesa Gatame](#kesa-gatame)
 
 - [Directa](#kesa-gatame)
 - [Reversa](#reverse-kesa-gatame)
 
-Knee on Belly
+[Knee on Belly](#knee-on-belly)
 
-- [Knee on belly](#knee-on-belly)
+- [Escapada de Knee on belly](#escapada-de-knee-on-belly)
 
 Totes les tècniques (menys sortida de monta per captura del braç) es basen en la fuita del colçe *elbow escape*. Feim servir el colçe com a palanca per introduïr el genoll i fer puesto per retornar a la guàrdia. L'objectiu és no deixar que ens tanquin espai i arribar a un chest-to-chest, però si hi arriba, sempre mantenir els frames i intentar fer distància entre naltros i uke.
 
@@ -178,6 +178,22 @@ Aqui intentam deixar sense base a uke. És important que tant es braç con es ge
 
 Aquesta és la tècnica més bàsica de totes i fonament de tota la resta. La passa bàsica és introduïr el colçe per evitar que uke s'ens vengui al damunt. Hi ha que seguir bé les passes de la seqüència d'inserció del genoll perque la tècnica funcioni bé.
 
+
+### Tres possibles col.locacions del braç exterior
+
+#### 5.0.1 - Un colçe a hombro i ma a l altra hombro. Pressionam coll de uke.
+![5.0.1](/images/jujutsu/2019-12-27-pin2/sc-501.png)
+
+#### 5.0.2 - Underhook, possiblement des de defensa amb ma aferrada a pit. 
+![5.0.2](/images/jujutsu/2019-12-27-pin2/sc-502.png)
+*Nota: Veure knee escape per una altra sortida des de aquesta posició*
+
+#### 5.0.3 - Biceps cross face.
+![5.0.3](/images/jujutsu/2019-12-27-pin2/sc-503.png)
+
+
+### Side control en detall
+
 #### 5.1 - side control. posició inicial
 ![5.1 - side control. posició inicial](/images/jujutsu/2019-12-27-pin2/5.1_-_side_control._posició_inicial.png)
 
@@ -228,6 +244,19 @@ Si falla algun dels dos, l'inserció no serà possible. Vegem la seqüència:
 #### 5.9 - tancam guàrdia
 ![5.9 - tancam guàrdia](/images/jujutsu/2019-12-27-pin2/5.9_-_tancam_guàrdia.png)
 
+### Vista posterior
+
+#### 5.10 - Cama de fora surt enfora i s'apropa a cul. Sa de dins s obri assimètricment i apoyam boles dels dits enterra
+![5.10](/images/jujutsu/2019-12-27-pin2/510.png)
+
+#### 5.11 - Pont cap a la cara de uke. Volem dur-lo al mateix costat que te el cos
+![5.11](/images/jujutsu/2019-12-27-pin2/511.png)
+
+#### 5.12 - Aprofitam espai per introduir genoll des de dalt a altura cadera uke. Es nostre peu està més alt que el genoll
+![5.12](/images/jujutsu/2019-12-27-pin2/512.png)
+
+#### 5.13 - Asseguram cama de fora i anam a guàrdia tancada
+![5.13](/images/jujutsu/2019-12-27-pin2/513.png)
 
 
 ## Kesa Gatame
