@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Elbow-escapes
+title: Jujutsu escapes
 comments: false
 tags: jujutsu, pin-escapes
 ---
@@ -30,6 +30,12 @@ tags: jujutsu, pin-escapes
 [Knee on Belly](#knee-on-belly)
 
 - [Escapada de Knee on belly](#escapada-de-knee-on-belly)
+
+TODO:
+- knee escapes
+- north-south escapes
+- tècnica sweep desde butterfly
+
 
 Totes les tècniques (menys sortida de monta per captura del braç) es basen en la fuita del colçe *elbow escape*. Feim servir el colçe com a palanca per introduïr el genoll i fer puesto per retornar a la guàrdia. L'objectiu és no deixar que ens tanquin espai i arribar a un chest-to-chest, però si hi arriba, sempre mantenir els frames i intentar fer distància entre naltros i uke.
 
