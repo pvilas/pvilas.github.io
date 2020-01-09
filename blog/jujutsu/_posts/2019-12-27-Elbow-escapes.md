@@ -38,6 +38,7 @@ img {
 TODO:
 - knee escapes
 - north-south escapes
+- baralla de peus
 - tècnica sweep desde butterfly
 
 
