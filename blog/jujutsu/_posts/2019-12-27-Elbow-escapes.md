@@ -21,6 +21,7 @@ img {
 - [Captura de braç](#captura-del-braç)
 - [Elbow escape](#elbow-escape)
 - [Baralla de peus](#baralla-de-peus)
+- [High mount](#high-mount)
 
 [Side Control](#side-control)
 - [Tres possibles col.locacions del braç exterior](#tres-possibles-col.locacions-del-braç-exterior)
@@ -277,6 +278,30 @@ Observar que la cama plegada te es peu molt aferrat a nes cul i l'estirada te es
 
 #### Iniciam elbow escape espitjant amb el colçe i pujant es genoll amb es peu apuntant cap a dalt
 ![](/images/jujutsu/2019-12-27-pin2/bp21.png)
+
+
+### High Mount
+
+Es problema és que uke escala cap amunt, intentant posar es genolls per baix des nostres braços. Per evitar-ho el primer que podem fer (**molt ràpid per no deixar es coll desprotegit!**) és
+
+#### Fer petita gamba i passar un braç. Fer frame amb s'altra ma i espitjar cap avall per fer elbow escape
+![](/images/jujutsu/2019-12-27-pin2/hm1.png)
+
+Ha de ser **ràpid**, si no, ens claven es puny al coll.
+
+#### Si uke ja està en posició. L'espitjam amb una patadeta per esquena perque posi ses mans enterra
+![](/images/jujutsu/2019-12-27-pin2/hm2.png)
+![](/images/jujutsu/2019-12-27-pin2/hm3.png)
+
+#### Abans que es pugui recuperar, feim frame
+![](/images/jujutsu/2019-12-27-pin2/hm4.png)
+
+#### Aixecam pelvis i començam a caminar sobre es hombros mentre espitjam es frame
+![](/images/jujutsu/2019-12-27-pin2/hm5.png)
+
+#### Fins arribar a l'elbow escape convencional
+![](/images/jujutsu/2019-12-27-pin2/hm6.png)
+
 
 
 
