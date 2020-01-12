@@ -22,6 +22,8 @@ img {
 - [Elbow escape](#elbow-escape)
 - [Baralla de peus](#baralla-de-peus)
 - [High mount](#high-mount)
+- [Captures dinàmiques](#captures-dinàmiques)
+
 
 [Side Control](#side-control)
 - [Tres possibles col.locacions del braç exterior](#tres-possibles-col.locacions-del-braç-exterior)
@@ -45,7 +47,7 @@ img {
 
 TODO:
 - north-south escapes
-
+- monta, captures dinàmiques
 
 
 Totes les tècniques (menys sortida de monta per captura del braç) es basen en la fuita del colçe *elbow escape*. Feim servir el colçe com a palanca per introduïr el genoll i fer puesto per retornar a la guàrdia. L'objectiu és no deixar que ens tanquin espai i arribar a un chest-to-chest, però si hi arriba, sempre mantenir els frames i intentar fer distància entre naltros i uke.
