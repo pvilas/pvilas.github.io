@@ -40,10 +40,9 @@ img {
 - [Escapada de Knee on belly](#escapada-de-knee-on-belly)
 
 [Sumi Gaeshi](#sumi-gaeshi)
-- Sweep des de butterfly
+- [Sweep des de butterfly](#sweep-des-de-butterfly)
 
 TODO:
-- knee escapes
 - north-south escapes
 
 
