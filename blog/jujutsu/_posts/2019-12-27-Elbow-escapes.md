@@ -35,6 +35,9 @@ img {
 
 - [Escapada de Knee on belly](#escapada-de-knee-on-belly)
 
+[Sumi Gaeshi](#sumi-gaeshi)
+- Sweep des de butterfly
+
 TODO:
 - knee escapes
 - north-south escapes
@@ -366,8 +369,42 @@ En aquesta tècnica, buscam posar es colçe enterra per poder fer elbow escape.
 ![8.9](/images/jujutsu/2019-12-27-pin2/kob9.png)
 
 
+## Sumi Gaeshi
+És un barrido des de mariposa i te moltes variants. L'exposam aqueí perque és molt comú acabar aquesta posició (butterfly) com a resultat dels elbow escapes.
 
+### Sweep des de butterfly
 
+<small>Font: [What Are The Most Important Skills Needed For A BJJ Blue Belt by John Danaher](https://www.youtube.com/watch?v=ifk_UWknVKY&t=779s)</small>
+
+#### 9.1 - Inici amb mariposa i solapa contrària agafada
+![9.1](/images/jujutsu/2019-12-27-pin2/sg1.png)
+
+#### 9.2 - Forta estirada mentre passam ma cap a esquena d'uke en direcció al seu cinturó
+![9.2](/images/jujutsu/2019-12-27-pin2/sg2.png)
+
+#### 9.3 - Agafam cinturó pel costat, no pel mig
+![8.9](/images/jujutsu/2019-12-27-pin2/sg3.png)
+
+#### 9.4 - Passam cap a l'altra banda i l'apoyam a hombro. Agafam colçe de uke
+![8.9](/images/jujutsu/2019-12-27-pin2/sg4.png)
+
+#### 9.5 - Duim sa ma cap endins per tensar el gi
+![8.9](/images/jujutsu/2019-12-27-pin2/sg5.png)
+
+#### 9.6 - Ens feim endarrera i paoyan hombro enterra. Mai ens posam esquena enterra.
+![8.9](/images/jujutsu/2019-12-27-pin2/sg6.png)
+
+#### 9.7 - Seguim entrant la ma cap a naltros mentre pujam peu de fora
+![8.9](/images/jujutsu/2019-12-27-pin2/sg7.png)
+
+#### 9.8 - Uke treurà la cama per no caure
+![8.9](/images/jujutsu/2019-12-27-pin2/sg8.png)
+
+#### 9.9 - Però naltros APOYAM BOLA del peu de terra per fer força cap amunt mentre estiram sa ma cap endins 
+![8.9](/images/jujutsu/2019-12-27-pin2/sg9.png)
+
+#### 9.10 - Anam a monta
+![8.9](/images/jujutsu/2019-12-27-pin2/sg10.png)
 
 
 
