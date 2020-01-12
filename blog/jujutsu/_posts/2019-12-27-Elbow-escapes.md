@@ -18,13 +18,17 @@ img {
 
 [Monta](#monta)
 
-- [Captura de braç]()
-- [Elbow escape]()
+- [Captura de braç](#captura-del-braç)
+- [Elbow escape](#elbow-escape)
+- [Baralla de peus](#baralla-de-peus)
 
 [Side Control](#side-control)
 - [Tres possibles col.locacions del braç exterior](#tres-possibles-col.locacions-del-braç-exterior)
 - [Side Control en detall](#side-control-en-detall)
 - [Vista posterior](#vista-posterior)
+
+[Knee escapes](#knee-escapes)
+- [Knee escape to butterfly](#knee-escape-to-butterfly)
 
 [Kesa Gatame](#kesa-gatame)
 
@@ -41,11 +45,13 @@ img {
 TODO:
 - knee escapes
 - north-south escapes
-- baralla de peus
-- tècnica sweep desde butterfly
+
 
 
 Totes les tècniques (menys sortida de monta per captura del braç) es basen en la fuita del colçe *elbow escape*. Feim servir el colçe com a palanca per introduïr el genoll i fer puesto per retornar a la guàrdia. L'objectiu és no deixar que ens tanquin espai i arribar a un chest-to-chest, però si hi arriba, sempre mantenir els frames i intentar fer distància entre naltros i uke.
+
+En cap tècnica "*agafam*" a uke pel gi! El que volem és precisament el contrari: Fer espai entre ell i naltros.
+
 
 ## Moviments bàsics
 
@@ -188,7 +194,19 @@ Aqui intentam deixar sense base a uke. És important que tant es braç con es ge
 ![4.19 - i treure cama](/images/jujutsu/2019-12-27-pin2/4.19_-_i_treure_cama.png)
 
 
-## Side control.
+### Baralla de peus
+
+Sovint ens traben es peus quan estam montats i ens impideixen posar-nos de costat per iniciar la sortida. S'ens poden presentar tres escenaris:
+
+- No ens traben
+- Ens traben amb els peus cap enfora
+- Ens traben amb es peus baix nostre cul
+
+L'objectiu sempre serà arribar a la situació on una de ses nostres cames està estirada totalment enterra (sa de fora) i per tant no ens la poden tornar a trabar i s'altra amb es peu apoyat enterra que serà la primera que treurem en la sortida.
+
+
+
+## Side control
 
 Aquesta és la tècnica més bàsica de totes i fonament de tota la resta. La passa bàsica és introduïr el colçe per evitar que uke s'ens vengui al damunt. Hi ha que seguir bé les passes de la seqüència d'inserció del genoll perque la tècnica funcioni bé.
 
@@ -278,11 +296,50 @@ Si falla algun dels dos, l'inserció no serà possible. Vegem la seqüència:
 ![5.14](/images/jujutsu/2019-12-27-pin2/puesto.png)
 
 
+## Knee escapes
+Tots els knee escapes parteixen del side control on tori a passat el braç de fora en underhook. Hi ha que destacar la manera d'agafar l'espinilla de uke i que tori mai colapsa enterra sino que apoya l'orella la cadera de uke i te l'altra braç estirat amb la ma enterra per evitar anar enterra.
+
+### Knee escape to butterfly
+
+#### Posició inicial amb braç de fora passat en underhook. El braç està ben passat per l'aixella de uke. La ma apunta al cap. 
+![](/images/jujutsu/2019-12-27-pin2/keb1.png)
+
+Nota: No "*agafam*" a uke pel gi!.
+
+#### Duim es dos peus enfora. Feim gamba forta a la vegada que duim cos cap avall
+![](/images/jujutsu/2019-12-27-pin2/keb2.png)
+
+#### Li agafam espinilla (veure detall més endavant)
+![](/images/jujutsu/2019-12-27-pin2/keb3.png)
+
+#### Feim estissores
+![](/images/jujutsu/2019-12-27-pin2/keb4.png)
+
+#### Feim tortuga però no baixam es cap. Si podem, estiram braç de fora si podem i apoyam ma (no es veu en aquesta imatge). Uke estira cama de fora.
+![](/images/jujutsu/2019-12-27-pin2/keb5.png)
+
+#### Estiram cama de dins mentre es genoll de fora s'apoya contra genoll de uke.
+![](/images/jujutsu/2019-12-27-pin2/keb6.png)
+
+#### Uke apoya tot el seu pes sobre naltros
+![](/images/jujutsu/2019-12-27-pin2/keb7.png)
+
+#### Agafam a uke pel cinturó i li passam es peu de dins en mariposa
+![](/images/jujutsu/2019-12-27-pin2/keb8.png)
+
+#### Agafam mànega de uke
+![](/images/jujutsu/2019-12-27-pin2/keb9.png)
+
+#### Posam hombro enterra, ma cap endins i peu cap amunt
+![](/images/jujutsu/2019-12-27-pin2/keb10.png)
+
+#### Feim barrido
+![](/images/jujutsu/2019-12-27-pin2/keb11.png)
+
 
 ## Kesa Gatame
 
 En aquesta tècnica, buscam posar es colçe enterra per poder fer elbow escape.
-
 
 #### 6.1 - kesa gatame. posició inicial. Buscam posar es colçe enterra
 ![6.1 - kesa gatame. posició inicial. Buscam posar es colçe enterra](/images/jujutsu/2019-12-27-pin2/6.1_-_kesa_gatame._posició_inicial._Buscam_posar_es_colçe_enterra.png)
