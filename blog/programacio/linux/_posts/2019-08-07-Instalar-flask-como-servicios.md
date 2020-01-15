@@ -381,6 +381,14 @@ sudo touch /var/log/ejemplo.log
 sudo chmod 666 /var/log/ejemplo.log
 ```
 
+**Nota**
+
+Si estamos instalando otro tipo de servicio, posiblemente User y Group seran `ubuntu` y el ExecStart será parecido a:
+
+```ExecStart=/bin/sh /home/ubuntu/aplicacion/run.sh````
+
+
+
 #### Enablar el servicio
 Para que el script arranque al principio
 
