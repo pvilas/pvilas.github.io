@@ -81,6 +81,9 @@ Ver página de inicio en http://ip_servidor
 
 Logs en ```/var/log/nginx/error.log```
 
+### Nota acerca del monitorizado de logs
+
+Una forma particularmente útil de hacerlo es abriendo un shell y `tail -f nombre_log.log`.
 
 ## Configurar los servicios
 
