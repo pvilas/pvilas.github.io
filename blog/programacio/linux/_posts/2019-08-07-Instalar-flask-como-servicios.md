@@ -15,6 +15,7 @@ tags: linux, flask
   * [Configuración del uwsgi](#configuración-del-uwsgi)
   * [Configuración del nginx](#configuración-del-nginx)
   * [Certificados](#certificados)
+    + [Regular](#regular)
     + [Autofirmado](#autofirmado)
     + [Letsencrypt](#letsencrypt)
   * [Instalación de la aplicación](#instalación-de-la-aplicaci-n)
