@@ -208,6 +208,32 @@ Probamos https://ejemplo.com
 
 ### Certificados
 
+
+#### Regular
+Creamos el `csr` con 
+
+```
+mkdir ~/server 
+cd ~/server
+openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out ejemplo.csr
+```
+
+Recordar poner como nombre el DNS del servidor.
+
+Pedimos el certificado (en thawte, por ejemplo). Descargamos todos los ficheros y vemos que tenemos el certificado del sitio más los intermedios, en Nginx podemos usar la cadena, enlazando un certificado detrás de otro, primero el del sitio y seguidamente los intermedios. Es decir, primero el sitio, después la autoridad que firma el sitio, después la autoridad que firma el anterior, etc.
+
+```
+cat ssl_certificate.cer IntermediateCA.cer crossRootCA.cer >> bundle.cer
+```
+
+Ahora, en el fichero de configuración ponemos
+
+```
+	ssl on;
+	ssl_certificate /home/ubuntu/server/bundle.cer;
+	ssl_certificate_key /home/ubuntu/server/server.key;
+```
+
 #### Autofirmado
 
 Si queremos usar un certificado auto firmado podemos hacer
