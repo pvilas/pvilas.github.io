@@ -221,6 +221,8 @@ openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out ejemplo.csr
 
 Recordar poner como nombre el DNS del servidor.
 
+> Si tenemos un certificado del tipo *.ejemplo.com, poner este como nombre (con el asterisco).
+
 Pedimos el certificado (en thawte, por ejemplo). Descargamos todos los ficheros y vemos que tenemos el certificado del sitio más los intermedios, en Nginx podemos usar la cadena, enlazando un certificado detrás de otro, primero el del sitio y seguidamente los intermedios. Es decir, primero el sitio, después la autoridad que firma el sitio, después la autoridad que firma el anterior, etc.
 
 ```
