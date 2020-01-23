@@ -400,7 +400,7 @@ Si falla algun dels dos, l'inserció no serà possible. Vegem la seqüència:
 
 
 ### Prop
-Es refereix a sortir ajudats de l'implus donat amb s'altra braç.
+Es refereix a sortir ajudats de l'implus donat amb s'altra braç. La característica d'aquesta tècnica és que la podem usar quan tenim una ma passada entre la nostra cara i es braç d'uke, sigui per que hem defensat des de el principi o bé perque la col.locam fent una gamba prèvia.
 
 
 #### Posició inicial
