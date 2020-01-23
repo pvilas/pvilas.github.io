@@ -29,6 +29,8 @@ img {
 - [Tres possibles col.locacions del braç exterior](#tres-possibles-col.locacions-del-braç-exterior)
 - [Side Control en detall](#side-control-en-detall)
 - [Vista posterior](#vista-posterior)
+- [Prop](#prop)
+- [Spinning](#spinning)
 
 [Knee escapes](#knee-escapes)
 - [Knee escape to butterfly](#knee-escape-to-butterfly)
@@ -47,7 +49,7 @@ img {
 
 TODO:
 - north-south escapes
-- monta, captures dinàmiques
+- spinning escape
 
 
 Totes les tècniques (menys sortida de monta per captura del braç) es basen en la fuita del colçe *elbow escape*. Feim servir el colçe com a palanca per introduïr el genoll i fer puesto per retornar a la guàrdia. L'objectiu és no deixar que ens tanquin espai i arribar a un chest-to-chest, però si hi arriba, sempre mantenir els frames i intentar fer distància entre naltros i uke.
@@ -395,6 +397,35 @@ Si falla algun dels dos, l'inserció no serà possible. Vegem la seqüència:
 
 #### 5.14 - Si hi ha puesto, passam peu dins
 ![5.14](/images/jujutsu/2019-12-27-pin2/puesto.png)
+
+
+### Prop
+Es refereix a sortir ajudats de l'implus donat amb s'altra braç.
+
+
+#### Posició inicial
+![](/images/jujutsu/2019-12-27-pin2/prop1.png)
+
+#### Forta gamba, duim cap de uke a mateixa banda que cadera. Notar que cama de dins està a 45 graus, sobre bola de peus, espitjant, i la de fora està espitjant també. Quasi mos posam de cara enterra. Entram es braç de baix per dins.
+![](/images/jujutsu/2019-12-27-pin2/prop2.png)
+
+#### Recuperam amb posició interior
+![](/images/jujutsu/2019-12-27-pin2/prop3.png)
+
+#### Posam esquena plana. Ma de dins agafa triceps. Ma de fora s'introdueix a l'aixella de uke amb es dit gord passat.
+![](/images/jujutsu/2019-12-27-pin2/prop4.png)
+
+#### Posam ses dos mans, notar que la ma de dins agafa triceps de uke. Es braços estan estirats i anam desequilibrant a uke cap enfora.
+![](/images/jujutsu/2019-12-27-pin2/prop5.png)
+
+#### Quan uke ja està mitj desequilibrat, ens donam sa volta.
+![](/images/jujutsu/2019-12-27-pin2/prop6.png)
+
+#### Apoyam colçe i ens anam aixecant
+![](/images/jujutsu/2019-12-27-pin2/prop7.png)
+
+#### sortim enfora per es forat que ha quedat
+![](/images/jujutsu/2019-12-27-pin2/prop8.png)
 
 
 ## Knee escapes
