@@ -44,11 +44,18 @@ img {
 
 - [Escapada de Knee on belly](#escapada-de-knee-on-belly)
 
+[North South](#north-south)
+- [Com fer North-South](#com-fer-north-south)
+- [Fuita dinàmica](#fuita-dinàmica)
+- [Tres diferents tipus de ns](#tres-diferents-tipus-de-ns)
+- [Dos per dins](#dos-per-dins)
+- [Dos per fora](#dos-per-fora)
+- [Un dins i un fora](#un-dins-i-un-fora)
+
 [Sumi Gaeshi](#sumi-gaeshi)
 - [Sweep des de butterfly](#sweep-des-de-butterfly)
 
 TODO:
-- north-south escapes
 - spinning escape
 
 
@@ -556,6 +563,20 @@ En aquesta tècnica, buscam posar es colçe enterra per poder fer elbow escape.
 
 #### 8.9 - Li agafam cama de fora
 ![8.9](/images/jujutsu/2019-12-27-pin2/kob9.png)
+
+
+## North South
+Veurem com fer aquesta tècnica i com aprofitar la transició des de side control per intentar que uke no acabi la presa. Després veurem tres tipus de NS en funció de com quedin els braços de uke.
+
+- [Com fer North-South](#com-fer-north-south)
+- [Fuita dinàmica](#fuita-dinàmica)
+- [Tres diferents tipus de ns](#tres-diferents-tipus-de-ns)
+- [Dos per dins](#dos-per-dins)
+- [Dos per fora](#dos-per-fora)
+- [Un dins i un fora](#un-dins-i-un-fora)
+
+
+
 
 
 ## Sumi Gaeshi
