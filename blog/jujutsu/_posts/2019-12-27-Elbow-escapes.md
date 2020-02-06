@@ -48,9 +48,9 @@ img {
 - [Com fer North-South](#com-fer-north-south)
 - [Fuita dinàmica](#fuita-dinàmica)
 - [Tres diferents tipus de ns](#tres-diferents-tipus-de-ns)
-- [Dos per dins](#dos-per-dins)
-- [Dos per fora](#dos-per-fora)
-- [Un dins i un fora](#un-dins-i-un-fora)
+- [Double under](#double-under)
+- [Double over](#double-over)
+- [Over under](#over-under)
 
 [Sumi Gaeshi](#sumi-gaeshi)
 - [Sweep des de butterfly](#sweep-des-de-butterfly)
@@ -568,15 +568,66 @@ En aquesta tècnica, buscam posar es colçe enterra per poder fer elbow escape.
 ## North South
 Veurem com fer aquesta tècnica i com aprofitar la transició des de side control per intentar que uke no acabi la presa. Després veurem tres tipus de NS en funció de com quedin els braços de uke.
 
-- [Com fer North-South](#com-fer-north-south)
-- [Fuita dinàmica](#fuita-dinàmica)
-- [Tres diferents tipus de ns](#tres-diferents-tipus-de-ns)
-- [Dos per dins](#dos-per-dins)
-- [Dos per fora](#dos-per-fora)
-- [Un dins i un fora](#un-dins-i-un-fora)
+### Com fer North-South
+
+#### Posició inicial des de side control
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-1.png)
+
+#### Passam braç banda fora de cap
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-2.png)
+
+#### Bloquejam cadera 
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-3.png)
+
+#### Deplaçament cap el cap
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-4.png)
+
+#### Arribam a situació de north-south
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-5.png)
 
 
+### Tres diferents tipus de ns
 
+#### Double under
+Notar que es colçes estan molt aclavats baix aixelles d'uke i que els braços pressionen cap endins per no deixar que uke es deplaci cap es costats.
+![](/images/jujutsu/2019-12-27-pin2/ns-du.png)
+
+#### Double over
+Pressionam amb es colçes cap endins per no deixar moure a uke.
+
+![](/images/jujutsu/2019-12-27-pin2/ns-do.png)
+
+#### Over under
+Aquesta és la millor variació ja que agafa el millor del dos anteriors. Ens dona accés a un braç i l'hora ens dona estabilitat sobre l'atra. Ens col.locam lleugerament en diagonal sobre uke per que l'efecte sigui màxim, de hombro a cadera. 
+
+![](/images/jujutsu/2019-12-27-pin2/ns-ou.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-hc.png)
+
+### Fuita dinàmica
+Es tracta d'aprofitar la transició entre side control i north-south. És la fuguida més important.
+
+#### Posició de partida en side control
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-1.png)
+
+#### Quan mos passen es braç d'es cap, naltros ficam sa ma per dins
+Sa ma de fora està amb es canell a l'aixella de uke i s'altra braç s'apoya a la cadera de uke i el nostre pit.
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-6.png)
+#### Uke comença a moure's cap a ns
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-7.png)
+
+#### Quedam en una situació on es nostres antbraços estan baix aixelles d'uke
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-8.png)
+
+#### Llançam ses cames i duim UN genoll fins entrar per dins d'Un dels nostres colçes
+Feim una connexió entre un genoll i un colçe
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-9.png)
+
+#### Rodam dins dels braços d'uke
+Quedam en posició d'estisores
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-10.png)
+
+#### Espitjam i recuperam guàrdia
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-11.png)
 
 
 ## Sumi Gaeshi
