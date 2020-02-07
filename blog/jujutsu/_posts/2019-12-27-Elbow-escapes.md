@@ -51,6 +51,8 @@ img {
 - [Double under](#double-under)
 - [Double over](#double-over)
 - [Over under](#over-under)
+- [Exercicis per escalfar NS](#exercicis-per-escalfar-ns)
+
 
 [Sumi Gaeshi](#sumi-gaeshi)
 - [Sweep des de butterfly](#sweep-des-de-butterfly)
@@ -720,8 +722,46 @@ I insertam genoll
 
 
 
+#### Over under
+Aquesta és la millor variació ja que agafa el millor del dos anteriors. Ens dona accés a un braç i l'hora ens dona estabilitat sobre l'atra. Ens col.locam lleugerament en diagonal sobre uke per que l'efecte sigui màxim, de hombro a cadera. Tori no pot fer pont perque hi ha massa pes sobre cos.
 
 
+![](/images/jujutsu/2019-12-27-pin2/ns-ou.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-hc.png)
+
+Des d'aquest NS podem fer molts d'atacs. Una possibilitat és trincar es braç *over*, inmovilitzar en kimura i des d'aquí anar a arm lock.
+
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-1.png)
+
+Notar que apoyam tot es pes sobre hombro de uke i que passam sa ma per baix es seu colçe,
+
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-2.png)
+
+Per agafar-li escanell amb s'altra i fer kimura
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-3.png)
+
+Una vegada controlat, passam cama per sobre es seu cap
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-4.png)
+
+i feim clau de braç.
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-5.png)
+
+Una altra possibilitat és estrangular,
+
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-6.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-7.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-8.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-9.png)
+
+
+##### Extreim braç que està trincat per dalt (*over*), abans que uke el controli
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-10.png)
+
+##### Agafam a uke del cinturó amb ses dos mans
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-11.png)
+
+A partir d'aqui feim sa mateixa fugida que en double under.
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-12.png)
 
 ### Exercicis per escalfar NS
 
@@ -730,14 +770,6 @@ I insertam genoll
 - Jacknife
 - Estisores enterra
 
-
-
-
-#### Over under
-Aquesta és la millor variació ja que agafa el millor del dos anteriors. Ens dona accés a un braç i l'hora ens dona estabilitat sobre l'atra. Ens col.locam lleugerament en diagonal sobre uke per que l'efecte sigui màxim, de hombro a cadera. 
-
-![](/images/jujutsu/2019-12-27-pin2/ns-ou.png)
-![](/images/jujutsu/2019-12-27-pin2/ns-hc.png)
 
 
 ## Sumi Gaeshi
