@@ -50,7 +50,8 @@ img {
 - [Tres diferents tipus de ns](#tres-diferents-tipus-de-ns)
 - [Double under](#double-under)
 - [Double over](#double-over)
-- [Over under](#over-under)
+- [Over under 1](#over-under-1)
+- [Over under 2](#over-under-2)
 - [Exercicis per escalfar NS](#exercicis-per-escalfar-ns)
 
 
@@ -722,7 +723,7 @@ I insertam genoll
 
 
 
-#### Over under
+#### Over under 1
 Aquesta és la millor variació ja que agafa el millor del dos anteriors. Ens dona accés a un braç i l'hora ens dona estabilitat sobre l'atra. Ens col.locam lleugerament en diagonal sobre uke per que l'efecte sigui màxim, de hombro a cadera. Tori no pot fer pont perque hi ha massa pes sobre cos.
 
 
@@ -762,6 +763,30 @@ Una altra possibilitat és estrangular,
 
 A partir d'aqui feim sa mateixa fugida que en double under.
 ![](/images/jujutsu/2019-12-27-pin2/ns-ou-12.png)
+
+
+#### Over under 2
+Una altra possibilitat és, una vegada extret es braç, bloquejar amb sa ma baix aixella de uke i amb sa barbeta a s'altra costat. Després, passar es genoll per dins de sa ma de s'aixella. és un elbow escape.
+
+##### Feim balancí
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-16.png)
+
+##### Amb l'espi creat, possam es genoll i es colçe junts (amb es genoll passat)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-13.png)
+
+##### Espitjam amb es genoll i uke va endavant. Cream espai.
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-14.png)
+
+##### Passam genoll per dins i reposam guàrdia
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-15.png)
+
+##### Vista posterior de over under 2
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-16.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-17.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-18.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-19.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-20.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-ou-21.png)
 
 ### Exercicis per escalfar NS
 
