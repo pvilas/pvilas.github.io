@@ -585,26 +585,8 @@ Veurem com fer aquesta tècnica i com aprofitar la transició des de side contro
 #### Arribam a situació de north-south
 ![](/images/jujutsu/2019-12-27-pin2/ns-tr-5.png)
 
-
-### Tres diferents tipus de ns
-
-#### Double under
-Notar que es colçes estan molt aclavats baix aixelles d'uke i que els braços pressionen cap endins per no deixar que uke es deplaci cap es costats.
-![](/images/jujutsu/2019-12-27-pin2/ns-du.png)
-
-#### Double over
-Pressionam amb es colçes cap endins per no deixar moure a uke.
-
-![](/images/jujutsu/2019-12-27-pin2/ns-do.png)
-
-#### Over under
-Aquesta és la millor variació ja que agafa el millor del dos anteriors. Ens dona accés a un braç i l'hora ens dona estabilitat sobre l'atra. Ens col.locam lleugerament en diagonal sobre uke per que l'efecte sigui màxim, de hombro a cadera. 
-
-![](/images/jujutsu/2019-12-27-pin2/ns-ou.png)
-![](/images/jujutsu/2019-12-27-pin2/ns-hc.png)
-
 ### Fuita dinàmica
-Es tracta d'aprofitar la transició entre side control i north-south. És la fuguida més important.
+Es basa en l'anticipació. Es tracta d'aprofitar la transició entre side control i north-south. És la fuguida més important.
 
 #### Posició de partida en side control
 ![](/images/jujutsu/2019-12-27-pin2/ns-tr-1.png)
@@ -629,6 +611,134 @@ Quedam en posició d'estisores
 #### Espitjam i recuperam guàrdia
 ![](/images/jujutsu/2019-12-27-pin2/ns-tr-11.png)
 
+#### Seqüència de col.locació i inserció vista de s'altra banda
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-12.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-13.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-14.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-15.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-tr-16.png)
+
+### Tres diferents tipus de ns
+
+
+#### Double over (dos per dalt)
+Pressionam amb es colçes cap endins per no deixar moure a uke.
+
+![](/images/jujutsu/2019-12-27-pin2/ns-do.png)
+
+##### Posició inicial. Uke pressiona.
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-1.png)
+
+##### Fort bridge per fer "saltar" a uke
+Notar que primer duim peus cap a cos. Es cap de uke ha de pujar i després hem de fer que no baixi, pressionant amb l'avantbraç.
+
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-2.png)
+
+##### Duim genolls cap a colçes i en connectam un fent que el genoll entri per dins colçe
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-3.png)
+
+##### Rotam i reposam guàrdia
+Notar que un genoll queda baix de coll de uke i s'altra per dalt.
+
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-4.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-5.png)
+
+###### Detall del pont: Peus amunt i pont, després, els colçes s'aixecan
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-6.png)
+
+Primer es fa es pont.
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-7.png)
+
+Després es baixa es cul i simultàneament s'aixequen es colçes.
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-8.png)
+
+Es transfereix energia des de es genolls als colçes. Notar com es genoll entra per dins d'un colçe.
+![](/images/jujutsu/2019-12-27-pin2/ns-dof-9.png)
+
+#### Double under (dos per baix)
+Notar que es colçes estan molt aclavats baix aixelles d'uke i que els braços pressionen cap endins per no deixar que uke es deplaci cap es costats.
+![](/images/jujutsu/2019-12-27-pin2/ns-du.png)
+
+
+##### Posició inicial
+Sa característica és que uke està tant sobre el nostre cos, que no podem fer un pont.
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-1.png)
+
+##### Agafam cinturó d'uke o posam mans a seva pelvis
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-2.png)
+
+##### Estiram cames
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-3.png)
+
+##### Duim cap un costat (sempre juntes)
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-4.png)
+
+##### I cap a s'altra fins agafar aprou impuls 
+També intentam allunyar-nos de uke duguent es cul cap endavant.
+
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-5.png)
+
+##### Com per aconseguir un angle de 90 amb uke
+Intentam arribar a una situació més de perpendicularitat.
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-6.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-7.png)
+
+##### Aclavam es colçe de sa ma de fora cap es nostre pit
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-8.png)
+
+##### Agafam espinilla de uke per fora
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-9.png)
+
+##### FEIM ESTISSORES. Aferram orella a pelvis de uke
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-10.png)
+
+##### Actitud d'aixecar
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-11.png)
+
+##### Apoyam enterra estirant braç de fora per fer post
+Uke no pot derribar-nos.
+
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-12.png)
+
+##### Agafam taló
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-13.png)
+
+##### Derribam
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-14.png)
+
+##### Nota: Si uke bloqueja pelvis amb braç de dins.
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-15.png)
+
+Pujam, feim espai
+
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-16.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-17.png)
+
+I insertam genoll
+
+![](/images/jujutsu/2019-12-27-pin2/ns-duf-18.png)
+
+
+
+
+
+
+### Exercicis per escalfar NS
+
+- Pont
+- Cancan
+- Jacknife
+- Estisores enterra
+
+
+
+
+#### Over under
+Aquesta és la millor variació ja que agafa el millor del dos anteriors. Ens dona accés a un braç i l'hora ens dona estabilitat sobre l'atra. Ens col.locam lleugerament en diagonal sobre uke per que l'efecte sigui màxim, de hombro a cadera. 
+
+![](/images/jujutsu/2019-12-27-pin2/ns-ou.png)
+![](/images/jujutsu/2019-12-27-pin2/ns-hc.png)
+
 
 ## Sumi Gaeshi
 És un barrido des de mariposa i te moltes variants. L'exposam aqueí perque és molt comú acabar aquesta posició (butterfly) com a resultat dels elbow escapes.
@@ -638,6 +748,7 @@ Quedam en posició d'estisores
 <small>Font: [What Are The Most Important Skills Needed For A BJJ Blue Belt by John Danaher](https://www.youtube.com/watch?v=ifk_UWknVKY&t=779s)</small>
 
 #### 9.1 - Inici amb mariposa i solapa contrària agafada
+Notar que una de les cames està creuada baix.
 ![9.1](/images/jujutsu/2019-12-27-pin2/sg1.png)
 
 #### 9.2 - Forta estirada mentre passam ma cap a esquena d'uke en direcció al seu cinturó
