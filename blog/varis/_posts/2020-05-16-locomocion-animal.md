@@ -4,6 +4,12 @@ title: Locomoción animal
 tags: animal
 ---
 
+<style>
+img {
+   width:550px;
+}
+</style>
+
 ## Locomoción animal
 
 ## Calentamiento
