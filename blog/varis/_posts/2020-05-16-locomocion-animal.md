@@ -504,6 +504,27 @@ Repetir varias y después en sentido contrario.
 
 
 
+### Rotaciones desde squat
+
+Desde squat, llevamos lejos la mano hacia atrás hasta la linea media del cuerpo.
+
+![](/images/aninal/gir-1.png)
+
+Apoyamos la mano y vamos hacia atrás, la mirada va a la mano del suelo.
+
+![](/images/aninal/gir-2.png)
+
+Volvemos a squat
+
+![](/images/aninal/gir-3.png)
+
+De aquí, a seiza
+ 
+![](/images/aninal/gir-4.png)
+
+Repetimos por el otro lado
+
+
 #### Fuentes
 
 [Lista de reproducción animal moving](https://www.youtube.com/watch?v=t7n5QipBVO0&list=PLstx7X13vbfnYvr34QRNW84j1sxPgrNAo&index=2&t=520s)
