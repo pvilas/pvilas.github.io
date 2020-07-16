@@ -284,6 +284,20 @@ sudo nginx -t
 sudo service nginx restart
 ```
 
+#### nginx.service: Failed to read PID from file /run/nginx.pid: Invalid argument
+
+Si tenemos este error en `/var/log/syslog` con el arranque de nginx en ubuntu, podemos probar este [workarround](https://stackoverflow.com/questions/42078674/nginx-service-failed-to-read-pid-from-file-run-nginx-pid-invalid-argument):
+
+```
+sudo su
+mkdir /etc/systemd/system/nginx.service.d
+printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+systemctl daemon-reload
+systemctl restart nginx
+```
+
+
+
 ### Instalación de la aplicación
 
 En este caso, primero instalamos los requerimientos para el driver de postgre y de weasyprint. Después clonamos el proyecto desde github.
