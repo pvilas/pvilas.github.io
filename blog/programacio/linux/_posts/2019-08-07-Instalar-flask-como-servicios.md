@@ -346,6 +346,16 @@ export FLASK_APP=ejemplo.py
 flask
 ```
 
+### Creación del punto de montaje uwsgi
+
+Creamos el fichero `uwsgi.py` con algo similar a 
+
+```
+from server import main_proc
+
+app=main_proc()
+```
+
 ### Probamos el uwsgi
 Ahora lanzamos el uwsgi, con el entorno activado, para probar:
 
