@@ -122,7 +122,7 @@ En este fichero controlamos la comunicación entre nginx y la aplicación via uw
 **/home/ubuntu/ejemplo/ejemplo/uwsgi.ini**
 ```
 [uwsgi]
-module = wsgi:app
+module = uwsgi:app
 lazy-apps = true
 master = true
 processes = 5
