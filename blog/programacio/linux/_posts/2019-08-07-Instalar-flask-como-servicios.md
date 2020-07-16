@@ -356,6 +356,8 @@ from server import main_proc
 app=main_proc()
 ```
 
+Donde main_proc es una función que devuelve un objeto del tipo Flask app.
+
 ### Probamos el uwsgi
 Ahora lanzamos el uwsgi, con el entorno activado, para probar:
 
