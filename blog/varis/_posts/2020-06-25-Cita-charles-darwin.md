@@ -4,4 +4,4 @@ title: Cita C. Darwin
 tags: cites
 ---
 
-> "La ignorancia engendra más con frecuencia confianza que el conocimiento." -Charles Darwin, El descenso del hombre
+> "La ignorancia engendra con más frecuencia confianza que el conocimiento." -Charles Darwin, El descenso del hombre
