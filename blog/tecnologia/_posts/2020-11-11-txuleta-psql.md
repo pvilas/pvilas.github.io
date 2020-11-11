@@ -30,3 +30,44 @@ tags:
 
 * Backup: `pg_dump --username "username" dbname > file_name.sql`
 * Restore: `psql -U user_name dbname < file_name.sql` (o usar `\i filename`)
+
+
+## Crear rol
+
+```
+CREATE ROLE dbname_operator WITH
+  LOGIN
+  NOSUPERUSER
+  INHERIT
+  NOCREATEDB
+  NOCREATEROLE
+  NOREPLICATION;
+```
+
+## Crear DB
+
+L'owner serà l'admin, sinó, especificar Owner=user_name
+
+```
+CREATE DATABASE database_name
+    WITH     
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'es_ES.UTF-8'
+    LC_CTYPE = 'es_ES.UTF-8'    
+    template=template0
+    CONNECTION LIMIT = -1;
+```
+
+## Atorgar permissos
+
+```
+GRANT CONNECT, TEMPORARY ON DATABASE database_name TO PUBLIC;
+GRANT ALL ON DATABASE database_name TO operator;
+```
+
+## Canviar owner
+
+```
+ALTER SEQUENCE public.seq_num OWNER TO operator;
+```
+
