@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Txuleta psql
+title: Xuleta psql
 tags:
 - psql
 ---
