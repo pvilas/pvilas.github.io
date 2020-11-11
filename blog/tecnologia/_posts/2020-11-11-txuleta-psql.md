@@ -71,3 +71,6 @@ GRANT ALL ON DATABASE database_name TO operator;
 ALTER SEQUENCE public.seq_num OWNER TO operator;
 ```
 
+## Executables
+
+Si no tenim els executables al path, en osx estan a ```/Applications/pgAdmin 4.app/Contents/SharedSupport```
