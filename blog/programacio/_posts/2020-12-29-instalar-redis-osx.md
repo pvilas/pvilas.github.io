@@ -15,7 +15,8 @@ author: Pere Vilas
 ```brew install cmake
 git clone --recursive https://github.com/RediSearch/RediSearch.git 
 cd RediSearch
-make```
+make
+```
 
 Ara que ja tenim el mòdul (.so), el copiam a /usr/local/etc
 
