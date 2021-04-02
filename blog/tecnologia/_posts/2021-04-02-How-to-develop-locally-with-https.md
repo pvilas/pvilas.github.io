@@ -1,6 +1,4 @@
-# How to develop locally with https
-
-As more and more restrictions to http come with new versions of the browsers (especially Chrome) it is necessary find out a solution 
+As more and more restrictions to http come with the new versions of the browsers (especially Chrome) it is necessary find out a solution 
 to develop locally without the burden of self-signed certificates (that work on some browser versions but not in others), keys, etc.
 
 One option is to develop using local http developer servers (Flask, Django, etc.) but let a proxy (Nginx) to deal with https. 
