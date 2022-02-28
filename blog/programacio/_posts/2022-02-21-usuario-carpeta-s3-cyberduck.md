@@ -38,3 +38,5 @@ MY_BUCKET.s3.amazonaws.com
 
 Ya tenemos acceso sólo a esta carpeta por parte del usuario.
 
+Para accesos de usuario a carpetas determinadas, ver [este](https://aws.amazon.com/blogs/security/writing-iam-policies-grant-access-to-user-specific-folders-in-an-amazon-s3-bucket/) artículo.
+
