@@ -40,3 +40,5 @@ Ya tenemos acceso sólo a esta carpeta por parte del usuario.
 
 Para accesos de usuario a carpetas determinadas, ver [este](https://aws.amazon.com/blogs/security/writing-iam-policies-grant-access-to-user-specific-folders-in-an-amazon-s3-bucket/) artículo.
 
+Tengamos en cuenta que S3 no usa una estructura de directorio propiamente dicha sino que esta es plana. Restringir el acceso a determinadas "carpetas" se hace a través de "condiciones" en el nombre del recurso al que queremos acceder.
+
