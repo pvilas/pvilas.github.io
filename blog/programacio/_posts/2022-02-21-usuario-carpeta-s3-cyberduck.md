@@ -42,3 +42,70 @@ Para accesos de usuario a carpetas determinadas, ver [este](https://aws.amazon.c
 
 Tengamos en cuenta que S3 no usa una estructura de directorio propiamente dicha sino que esta es plana. Restringir el acceso a determinadas "carpetas" se hace a través de "condiciones" en el nombre del recurso al que queremos acceder.
 
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowUserToSeeBucketListInTheConsole",
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::*"
+            ]
+        },
+        {
+            "Sid": "AllowRootAndHomeListingOfCompanyBucket",
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::MY_BUCKET"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:prefix": [
+                        "",
+                        "MY_DIR/"
+                    ],
+                    "s3:delimiter": [
+                        "/"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "AllowListingOfUserFolder",
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::MY_BUCKET"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "s3:prefix": [
+                        "MY_DIR/*"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "AllowAllS3ActionsInUserFolder",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::MY_BUCKET/MY_DIR/*"
+            ]
+        }
+    ]
+}
+
+```
