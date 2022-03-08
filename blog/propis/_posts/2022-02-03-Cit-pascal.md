@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cita de Pascal
-date: '2022-02-22'
+date: '2022-02-03'
 author: Pere Vilas
 tags: cites
 ---
