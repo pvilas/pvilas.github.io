@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Nginx, how to proxy to a Cloudfront distribution
 ---
 
