@@ -1,3 +1,8 @@
+---           
+layout: post
+title: Cita Leandro Lo
+comments: false
+tags: jujutsu
 ---
 No dejes que tus miedos te afecten,
 
