@@ -1,4 +1,7 @@
-# Algunas aplicaciones de ChatGPT
+---
+layout: post
+title: Algunas aplicaciones de ChatGPt
+---
 
 Especialmente, favorecer la inmediatez y el bajo precio de servicios como:
 
