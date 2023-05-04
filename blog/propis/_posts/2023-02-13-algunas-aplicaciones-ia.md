@@ -14,6 +14,10 @@ Especialmente, favorecer la inmediatez y el bajo precio de servicios como:
 
 [Bark](https://github.com/suno-ai/bark)
 
+## Formats
+
+[Especificació de TOML](https://toml.io/en/v1.0.0)
+
 ## Serialitzadors
 
 [msgspec, amb suport per JSON, MessagePack, yaml i TOML](https://github.com/jcrist/msgspec) també te validatió i obtenció de plantilles json.
