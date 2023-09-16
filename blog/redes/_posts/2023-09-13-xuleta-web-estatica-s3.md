@@ -54,3 +54,41 @@ A **Cloud Front** creaar una distribució.
 5. Guardar la distribució
 
 Esperar un minut fins que s'activi la distribució, pujar alguna cosa al bucket i provar.
+
+## Extra bonus: Crear un usuari per pujar fitxers al website
+
+Anar a *Users->Policies->Create policy* 
+
+Escollir JSON i posar:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListBucket",
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*",
+                "arn:aws:s3:::/*"
+            ]
+        }
+    ]
+}
+```
+
+Posar-li per nom web_file_operator o similar. Crear usuari, escollir *Attach policies directly*, escollir web_file_operator. Esperar a que es crei.
+
+Escollir l'usuari->Security credentials->Crear access keys->Other->Create access key
+
+**Prendre nota de l'acces key i del secret access key**.
+
+
+
+
+
