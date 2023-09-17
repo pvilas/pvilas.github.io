@@ -3,7 +3,7 @@ layout: post
 title: Xuleta crear web estàtica a S3
 ---
 
-## Crear el bucket
+## 1. Crear el bucket
 
 1. Crear-lo a la arrel, amb el mateix nom que volem per el website, p.e.  `hola.exemple.com`. Escollir al zona que estarà mçés propera als usuaris (veure CloudFront però).
 2. Desmarcar *Block public access for this bucket*
@@ -32,18 +32,17 @@ Anar a `Permissions->Bucket policy` i posar:
 }
 ```
 
-## Crear el registre DNS
+## 2. Crear el registre DNS
 
-Anar a **Route 53** i crear `hola.exemple.com`
+Anar a **Route 53** i crear `hola.exemple.com`. De moment, el deixam així, posteriorment assignarem **Route trafic to** a la distribució de Cloud Front que crearem més endavant.
 
-## Crear el certificat
+## 3. Crear el certificat
 
-Anar a **Certificate manager** i demanar el certificat per a `hola.exemple.com`. Esperar uns segons, entrar a la petició
-i donar-li a Crear registre DNS (per validar la propietat del domini. Esperar un minut al issue. 
+Anar a **Certificate manager** i demanar el certificat per a `hola.exemple.com`. Esperar uns segons, entrar a la petició i donar-li a Crear registre DNS (per validar la propietat del domini. Esperar un minut al issue. 
 
 Refrescar pantalla de tant en tant fins que el certificat ens sigui lliurat.
 
-## Crear la distribució per apuntar a https
+## 4. Crear la distribució per apuntar a https
 
 A **Cloud Front** creaar una distribució.
 
@@ -54,6 +53,10 @@ A **Cloud Front** creaar una distribució.
 5. Guardar la distribució
 
 Esperar un minut fins que s'activi la distribució, pujar alguna cosa al bucket i provar.
+
+## 5. Editar el registre DNS 
+
+ASra que ja tenim la distribució (que té un domini de tipus xyz.cloudfront.net), anar al registre de **route 53**, editar-lo i escollir **Route trafic to** a la distribució de Cloud Front creada al punt anterior.
 
 ## Extra bonus: Crear un usuari per pujar fitxers al website
 
