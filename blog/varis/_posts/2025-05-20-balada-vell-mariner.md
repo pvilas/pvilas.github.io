@@ -5,13 +5,43 @@ tags: relats
 ---
 "La Balada del Vell Mariner" de Samuel Taylor Coleridge és una de les obres més icòniques del Romanticisme anglès, una odissea de pecat, patiment, redempció i la interconnexió de tota la vida. La història comença de manera abrupta i misteriosa, amb un vell mariner d'ulls brillants que deté un convidat de noces que anava de camí al banquet. El mariner, impulsat per una compulsió sobrenatural, comença a explicar la seva terrible història, i el convidat, captivat per la seva mirada, no pot fer altra cosa que escoltar.
 
+<figure>
+  <img src="/images/vell2.png" alt="Un vell mariner d'ulls brillants deté un convidat de noces que anava de camí al banquet">
+  
+  <figcaption>Un vell mariner d'ulls brillants deté un convidat de noces que anava de camí al banquet.</figcaption>
+</figure>
+
+
 El relat transporta l'oient (i el lector) a un viatge èpic. El vaixell del mariner es dirigeix cap al sud, cap a regions gèlides i inexplorades. Després d'una tempesta violenta, queden atrapats en un vast camp de gel. Quan les esperances semblen perdudes, apareix un albatros, un ocell majestuós i de bon auguri, que es converteix en el company del vaixell i porta bona sort, trencant el gel i obrint un camí. Però en un acte de crueltat inexplicable i sense motiu aparent, el mariner dispara i mata l'albatros amb la seva ballesta.
+
+
+<figure>
+  <img src="/images/ballesta.png" alt="La Mort de l’Albatros">
+  
+  <figcaption>La Mort de l’Albatros.</figcaption>
+</figure>
+
 
 Aquest acte de violència contra la natura desencadena una maldicció terrible. Els vents s'aturen completament, i el vaixell queda immobilitzat en una calma mortal sota un sol abrasador. La tripulació es desespera a causa de la set insuportable, el que els porta a culpar el mariner. Com a càstig simbòlic de la seva transgressió, li pengen el cadàver putrefacte de l'albatros al coll.
 
 Un a un, els membres de la tripulació comencen a morir de set, els seus ulls fixos en el mariner amb una mirada de retret abans que les seves ànimes s'escapin. El mariner es queda sol, envoltat pels cadàvers dels seus companys, condemnat a viure i a patir un turment d'una solitud i una culpabilitat extremes. Veu criatures horribles a les profunditats del mar i se sent perseguit per esperits. Desitja la mort, però no pot morir.
 
+
+<figure>
+  <img src="/images/malediccio.png" alt="La Mort de l’Albatros">
+  
+  <figcaption>La Calma Mortal i la Maledicció.</figcaption>
+</figure>
+
+
 La seva redempció comença en el moment més profund de la seva desesperació. Observant les serps marines nedant a la llum de la lluna, que abans havia vist amb repulsió, ara les veu amb una nova perspectiva, apreciant la seva bellesa i la seva vida. Un "broll d'amor" sorgeix del seu cor, i ell les beneeix de manera espontània. En aquest precís instant de reconeixement de la bellesa i la bondat de la creació de Déu, el pesat albatros cau del seu coll, i per fi pot dormir.
+
+
+<figure>
+  <img src="/images/serps-marines.png" alt="La Benedicció de les Serps Marines i l’Inici de la Redempció">
+  
+  <figcaption>La Benedicció de les Serps Marines i l’Inici de la Redempció.</figcaption>
+</figure>
 
 La maledicció comença a trencar-se. La pluja cau, alleujant la seva set. Els cossos dels mariners morts són reanimats per esperits angèlics, que els ajuden a navegar el vaixell de tornada cap a la llar. El mariner experimenta visions i una profunda transformació espiritual, sentint-se connectat amb una força divina i amb tota la creació.
 
