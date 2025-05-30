@@ -1,0 +1,46 @@
+---
+layout: post
+title: Txuleta lima
+---
+
+`brew install lima`
+
+
+## Crear una imatge
+
+Editar un nom_maquina.yaml tal com aquest, notar que el punt de muntatge és on arranquem la màquina amb el nom d'usuari del mac. Per exemple $HOME podria ser /Users/pvilas
+
+```
+# lima-ubuntu.yaml
+# Lima configuration for Ubuntu Server on macOS (Apple Silicon)
+arch: "aarch64"          # Architecture for Apple Silicon (ARM64)
+cpus: 2                  # Number of CPUs allocated to the VM
+memory: "4GiB"           # Amount of memory allocated to the VM
+disk: "40GiB"            # Disk space allocated to the VM
+
+images:
+  - location: "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-arm64.img"
+    arch: "aarch64"
+    # Optionally, specify the sha256 checksum to verify the image:
+    # sha256: "YOUR_IMAGE_SHA256_HASH_HERE"
+
+ssh:
+  localPort: 60022       # Local port for SSH access
+
+mounts:
+  - location: "~"        # Mount your home directory inside the VM
+    writable: true
+```
+
+i arrancar-la amb `limactl start nom_maquina.yaml`. El procés baixarà la imatge si és necessari. PEr obrir la shell fer `limactl shell nom_maquina`.
+
+
+- limactl start nom
+- limactl stop nom
+- limactl list
+- limactl delete nom
+- limactl show nom
+- limactl show-log nom
+- limactl edit nom
+- limactl shell nom
+- limactl shell nom comandament args
